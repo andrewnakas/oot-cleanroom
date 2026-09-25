@@ -28,7 +28,10 @@
  "enrui": "ruined entrance of a destroyed medieval castle town, broken stone walls, rubble, dark stormy red sky, gloomy",
  "market_alley": "narrow back alley of a medieval castle town, tall timber-framed houses, cobblestone path, hanging laundry, barrels and crates, daylight",
  "market_alley_n": "narrow back alley of a medieval castle town at night, tall timber-framed houses, cobblestone path, warm windows, lanterns, moonlight",
- "shrine": "a grand gothic stone temple with two tall spires at the end of a stone path, green lawn, trees and a distant mountain, bright blue sky with clouds",
- "shrine_n": "a grand gothic stone temple with two tall spires at the end of a stone path at night, moonlight, dark blue sky with stars, trees",
- "shrine_r": "a grand gothic stone temple with two tall spires under a dark stormy red sky, dead trees, gloomy ruined surroundings"
+ "shrine": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path, wide green lawn in the foreground, low stone walls, trees and a distant mountain, bright blue sky with clouds",
+ "shrine_n": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path at night, wide lawn in the foreground, moonlight, dark blue sky with stars, trees",
+ "shrine_r": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path, dead grass, dark stormy red sky, gloomy ruined surroundings",
+ "market_day": "lively medieval castle town market square, colorful timber-framed houses with shop signs and awnings, market stalls, a stone fountain, bunting, cobblestones, bright daylight",
+ "market_night": "quiet medieval castle town market square at night, timber-framed houses with warm glowing windows, closed stalls, a stone fountain, lanterns, moonlight, dark blue sky",
+ "market_ruins": "ruined medieval castle town market square, collapsed timber houses, broken walls, rubble, dead trees, dark stormy red sky, gloomy"
 }

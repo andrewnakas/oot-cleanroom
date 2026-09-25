@@ -1,0 +1,920 @@
+{
+ "kakariko_room_0Background_0057C0": {
+  "prompt": "bird's eye view looking straight down at the floor of inside a village carpenter's house, wooden floor, a table with plans, tools on the walls, barrels, a bed, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "link_home_room_0Background_002480": {
+  "prompt": "bird's eye view looking straight down at the floor of inside a small round room carved in the trunk of a giant tree, wooden floor with growth rings, curved bark walls, a simple wooden bed with a green blanket, a round wooden table and stool in the middle, clay pots and a small bookshelf, a round doorway with daylight, warm cozy lamp light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shrine_room_0Background_007AF0": {
+  "prompt": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path, wide green lawn in the foreground, low stone walls, trees and a distant mountain, bright blue sky with clouds, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "impa_room_0Background_0017A0": {
+  "prompt": "bird's eye view looking straight down at the floor of inside a village house, wooden floor, a cow pen with hay behind a wooden fence, plain plastered walls, wooden beams, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "alley_shop_room_0Background_001430": {
+  "prompt": "narrow medieval potion shop interior, wooden counter, shelves with glass bottles of red green and blue potions, dried herbs hanging, dim candle light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "drag_room_0Background_006660": {
+  "prompt": "village potion shop interior, heavy wooden counter, jars and bottles on shelves, cauldron, herbs hanging from beams, dim warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "enrui_room_0Background_000360": {
+  "prompt": "bird's eye view looking straight down at the floor of ruined entrance of a destroyed medieval castle town, broken stone walls, rubble, dark stormy red sky, gloomy, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "entra_n_room_0Background_000370": {
+  "prompt": "bird's eye view looking straight down at the floor of stone guard house at the entrance of a medieval castle town at night, cobblestone floor, barrels, crates and pots along the walls, torchlight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "entra_room_0Background_000370": {
+  "prompt": "bird's eye view looking straight down at the floor of stone guard house at the entrance of a medieval castle town, cobblestone floor, wooden barrels and crates, pots along the walls, torches, daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "face_shop_room_0Background_008E40": {
+  "prompt": "whimsical mask shop interior, walls covered with colorful carved wooden masks, wooden counter, warm lamplight, stone floor, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBackAlleyHouse2BgTex": {
+  "prompt": "inside an old village house, wooden floor, dusty furniture, cobwebs, a bed and a table, dim light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBackAlleyHouse3BgTex": {
+  "prompt": "inside an old village house, wooden floor, dusty furniture, cobwebs, a bed and a table, dim light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBackAlleyHouseBgTex": {
+  "prompt": "inside an old village house, wooden floor, dusty furniture, cobwebs, a bed and a table, dim light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBazaar2BgTex": {
+  "prompt": "busy medieval town bazaar interior, long wooden counter, shelves full of shields, arrows, bombs and potions, stone walls, wooden beams, lantern light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBazaarBgTex": {
+  "prompt": "busy medieval town bazaar interior, long wooden counter, shelves full of shields, arrows, bombs and potions, stone walls, wooden beams, lantern light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBombchuShop2BgTex": {
+  "prompt": "dark back-alley shop interior at night, wooden counter, crates and barrels of bombs, stone walls, a single hanging lantern, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gBombchuShopBgTex": {
+  "prompt": "dark back-alley shop interior at night, wooden counter, crates and barrels of bombs, stone walls, a single hanging lantern, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersHouse2BgTex": {
+  "prompt": "inside a village carpenter's house, wooden floor, a table with plans, tools on the walls, barrels, a bed, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersHouse3BgTex": {
+  "prompt": "inside a village carpenter's house, wooden floor, a table with plans, tools on the walls, barrels, a bed, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersHouse4BgTex": {
+  "prompt": "inside a village carpenter's house, wooden floor, a table with plans, tools on the walls, barrels, a bed, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersHouseBgTex": {
+  "prompt": "inside a village carpenter's house, wooden floor, a table with plans, tools on the walls, barrels, a bed, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersTent2BgTex": {
+  "prompt": "inside a canvas tent in a canyon, rugs on the ground, wooden crates, a bedroll, lamp light filtering through fabric, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersTent3BgTex": {
+  "prompt": "inside a canvas tent in a canyon, rugs on the ground, wooden crates, a bedroll, lamp light filtering through fabric, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCarpentersTentBgTex": {
+  "prompt": "inside a canvas tent in a canyon, rugs on the ground, wooden crates, a bedroll, lamp light filtering through fabric, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCowHouse2BgTex": {
+  "prompt": "a room, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCowHouse3BgTex": {
+  "prompt": "a room, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCowHouse4BgTex": {
+  "prompt": "a room, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gCowHouseBgTex": {
+  "prompt": "a room, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gGoronShop2BgTex": {
+  "prompt": "shop carved into volcanic rock, red stone walls, rough stone counter, torches, crates and clay jars, warm orange light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gGoronShopBgTex": {
+  "prompt": "shop carved into volcanic rock, red stone walls, rough stone counter, torches, crates and clay jars, warm orange light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gHouseOfTwins2BgTex": {
+  "prompt": "cozy round room inside a hollow tree shared by twins, two small beds, wooden floor, bark walls, baskets and toys, soft green daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gHouseOfTwins3BgTex": {
+  "prompt": "cozy round room inside a hollow tree shared by twins, two small beds, wooden floor, bark walls, baskets and toys, soft green daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gHouseOfTwinsBgTex": {
+  "prompt": "cozy round room inside a hollow tree shared by twins, two small beds, wooden floor, bark walls, baskets and toys, soft green daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKakPotionShop2BgTex": {
+  "prompt": "village potion shop interior, heavy wooden counter, jars and bottles on shelves, cauldron, herbs hanging from beams, dim warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKakPotionShopBgTex": {
+  "prompt": "village potion shop interior, heavy wooden counter, jars and bottles on shelves, cauldron, herbs hanging from beams, dim warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKnowItAllBrosHouse2BgTex": {
+  "prompt": "cozy round room inside a hollow tree, wooden plank floor, bark walls, shelves with books and jars, a small bed, woven rugs, green leafy light from a round window, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKnowItAllBrosHouse3BgTex": {
+  "prompt": "cozy round room inside a hollow tree, wooden plank floor, bark walls, shelves with books and jars, a small bed, woven rugs, green leafy light from a round window, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKnowItAllBrosHouse4BgTex": {
+  "prompt": "cozy round room inside a hollow tree, wooden plank floor, bark walls, shelves with books and jars, a small bed, woven rugs, green leafy light from a round window, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKnowItAllBrosHouseBgTex": {
+  "prompt": "cozy round room inside a hollow tree, wooden plank floor, bark walls, shelves with books and jars, a small bed, woven rugs, green leafy light from a round window, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKokiriShop2BgTex": {
+  "prompt": "small shop inside a huge hollow tree stump, wooden counter with shelves of seeds, arrows and shields, round wooden walls, lanterns, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gKokiriShopBgTex": {
+  "prompt": "small shop inside a huge hollow tree stump, wooden counter with shelves of seeds, arrows and shields, round wooden walls, lanterns, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gLinksHouse2BgTex": {
+  "prompt": "inside a small round room carved in the trunk of a giant tree, wooden floor with growth rings, curved bark walls, a simple wooden bed with a green blanket, a round wooden table and stool in the middle, clay pots and a small bookshelf, a round doorway with daylight, warm cozy lamp light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gLinksHouse3BgTex": {
+  "prompt": "inside a small round room carved in the trunk of a giant tree, wooden floor with growth rings, curved bark walls, a simple wooden bed with a green blanket, a round wooden table and stool in the middle, clay pots and a small bookshelf, a round doorway with daylight, warm cozy lamp light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gLinksHouse4BgTex": {
+  "prompt": "inside a small round room carved in the trunk of a giant tree, wooden floor with growth rings, curved bark walls, a simple wooden bed with a green blanket, a round wooden table and stool in the middle, clay pots and a small bookshelf, a round doorway with daylight, warm cozy lamp light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gLinksHouseBgTex": {
+  "prompt": "inside a small round room carved in the trunk of a giant tree, wooden floor with growth rings, curved bark walls, a simple wooden bed with a green blanket, a round wooden table and stool in the middle, clay pots and a small bookshelf, a round doorway with daylight, warm cozy lamp light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketDay2BgTex": {
+  "prompt": "lively medieval castle town market square, colorful timber-framed houses with shop signs and awnings, market stalls, a stone fountain, bunting, cobblestones, bright daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketDay3BgTex": {
+  "prompt": "lively medieval castle town market square, colorful timber-framed houses with shop signs and awnings, market stalls, a stone fountain, bunting, cobblestones, bright daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketDay4BgTex": {
+  "prompt": "lively medieval castle town market square, colorful timber-framed houses with shop signs and awnings, market stalls, a stone fountain, bunting, cobblestones, bright daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketDayBgTex": {
+  "prompt": "lively medieval castle town market square, colorful timber-framed houses with shop signs and awnings, market stalls, a stone fountain, bunting, cobblestones, bright daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketNight2BgTex": {
+  "prompt": "quiet medieval castle town market square at night, timber-framed houses with warm glowing windows, closed stalls, a stone fountain, lanterns, moonlight, dark blue sky, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketNight3BgTex": {
+  "prompt": "quiet medieval castle town market square at night, timber-framed houses with warm glowing windows, closed stalls, a stone fountain, lanterns, moonlight, dark blue sky, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketNight4BgTex": {
+  "prompt": "quiet medieval castle town market square at night, timber-framed houses with warm glowing windows, closed stalls, a stone fountain, lanterns, moonlight, dark blue sky, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketNightBgTex": {
+  "prompt": "quiet medieval castle town market square at night, timber-framed houses with warm glowing windows, closed stalls, a stone fountain, lanterns, moonlight, dark blue sky, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketPotionShop2BgTex": {
+  "prompt": "narrow medieval potion shop interior, wooden counter, shelves with glass bottles of red green and blue potions, dried herbs hanging, dim candle light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketPotionShopBgTex": {
+  "prompt": "narrow medieval potion shop interior, wooden counter, shelves with glass bottles of red green and blue potions, dried herbs hanging, dim candle light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketRuins2BgTex": {
+  "prompt": "ruined medieval castle town market square, collapsed timber houses, broken walls, rubble, dead trees, dark stormy red sky, gloomy, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketRuins3BgTex": {
+  "prompt": "ruined medieval castle town market square, collapsed timber houses, broken walls, rubble, dead trees, dark stormy red sky, gloomy, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketRuins4BgTex": {
+  "prompt": "ruined medieval castle town market square, collapsed timber houses, broken walls, rubble, dead trees, dark stormy red sky, gloomy, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMarketRuinsBgTex": {
+  "prompt": "ruined medieval castle town market square, collapsed timber houses, broken walls, rubble, dead trees, dark stormy red sky, gloomy, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMaskShop2BgTex": {
+  "prompt": "whimsical mask shop interior, walls covered with colorful carved wooden masks, wooden counter, warm lamplight, stone floor, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMaskShopBgTex": {
+  "prompt": "whimsical mask shop interior, walls covered with colorful carved wooden masks, wooden counter, warm lamplight, stone floor, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMidosHouse2BgTex": {
+  "prompt": "square wooden room inside a tree house, plank floor, a wooden bed, a chest, a table with a candle, pots and a small cabinet, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMidosHouse3BgTex": {
+  "prompt": "square wooden room inside a tree house, plank floor, a wooden bed, a chest, a table with a candle, pots and a small cabinet, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gMidosHouseBgTex": {
+  "prompt": "square wooden room inside a tree house, plank floor, a wooden bed, a chest, a table with a candle, pots and a small cabinet, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gRichardsHouse2BgTex": {
+  "prompt": "inside a village house, wooden floor, a cow pen with hay behind a wooden fence, plain plastered walls, wooden beams, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gRichardsHouse3BgTex": {
+  "prompt": "inside a village house, wooden floor, a cow pen with hay behind a wooden fence, plain plastered walls, wooden beams, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gRichardsHouse4BgTex": {
+  "prompt": "inside a village house, wooden floor, a cow pen with hay behind a wooden fence, plain plastered walls, wooden beams, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gRichardsHouseBgTex": {
+  "prompt": "inside a village house, wooden floor, a cow pen with hay behind a wooden fence, plain plastered walls, wooden beams, warm daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gSariasHouse2BgTex": {
+  "prompt": "tidy round room inside a tree, wooden floor with rugs, flower pots, a small bed with a green quilt, a table with a teapot, bright forest light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gSariasHouse3BgTex": {
+  "prompt": "tidy round room inside a tree, wooden floor with rugs, flower pots, a small bed with a green quilt, a table with a teapot, bright forest light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gSariasHouseBgTex": {
+  "prompt": "tidy round room inside a tree, wooden floor with rugs, flower pots, a small bed with a green quilt, a table with a teapot, bright forest light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gStable2BgTex": {
+  "prompt": "inside a wooden ranch stable, hay on the floor, wooden stalls and beams, pitchfork, warm sunlight through gaps in the planks, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gStable3BgTex": {
+  "prompt": "inside a wooden ranch stable, hay on the floor, wooden stalls and beams, pitchfork, warm sunlight through gaps in the planks, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gStable4BgTex": {
+  "prompt": "inside a wooden ranch stable, hay on the floor, wooden stalls and beams, pitchfork, warm sunlight through gaps in the planks, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gStableBgTex": {
+  "prompt": "inside a wooden ranch stable, hay on the floor, wooden stalls and beams, pitchfork, warm sunlight through gaps in the planks, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gZoraShop2BgTex": {
+  "prompt": "shop inside an underwater palace, blue stone walls, flowing water, pale blue light, shell decorations, stone counter, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "gZoraShopBgTex": {
+  "prompt": "shop inside an underwater palace, blue stone walls, flowing water, pale blue light, shell decorations, stone counter, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus, eye-level view of one wall",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "golon_room_0Background_0009D0": {
+  "prompt": "shop carved into volcanic rock, red stone walls, rough stone counter, torches, crates and clay jars, warm orange light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "hut_room_0Background_003DA0": {
+  "prompt": "inside a gravekeeper's small hut, wooden floor, a bed, a table with a candle, shovels, lantern, dim warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "kakariko3_room_0Background_004D80": {
+  "prompt": "bird's eye view looking straight down at the floor of inside an old village house, wooden floor, dusty furniture, cobwebs, a bed and a table, dim light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "kokiri_home3_room_0Background_0020C0": {
+  "prompt": "bird's eye view looking straight down at the floor of cozy round room inside a hollow tree shared by twins, two small beds, wooden floor, bark walls, baskets and toys, soft green daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "kokiri_home4_room_0Background_0000F0": {
+  "prompt": "bird's eye view looking straight down at the floor of square wooden room inside a tree house, plank floor, a wooden bed, a chest, a table with a candle, pots and a small cabinet, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "kokiri_home5_room_0Background_0000E0": {
+  "prompt": "bird's eye view looking straight down at the floor of tidy round room inside a tree, wooden floor with rugs, flower pots, a small bed with a green quilt, a table with a teapot, bright forest light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "kokiri_home_room_0Background_006430": {
+  "prompt": "bird's eye view looking straight down at the floor of cozy round room inside a hollow tree, wooden plank floor, bark walls, shelves with books and jars, a small bed, woven rugs, green leafy light from a round window, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "kokiri_shop_room_0Background_00B490": {
+  "prompt": "small shop inside a huge hollow tree stump, wooden counter with shelves of seeds, arrows and shields, round wooden walls, lanterns, warm light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "labo_room_0Background_006EF0": {
+  "prompt": "bird's eye view looking straight down at the floor of lakeside laboratory interior, a large stone water tank, wooden floor, shelves with jars and specimens, workbench, soft daylight, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "malon_stable_room_0Background_008A50": {
+  "prompt": "bird's eye view looking straight down at the floor of inside a wooden ranch stable, hay on the floor, wooden stalls and beams, pitchfork, warm sunlight through gaps in the planks, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "market_alley_n_room_0Background_000110": {
+  "prompt": "narrow back alley of a medieval castle town at night, tall timber-framed houses, cobblestone path, warm windows, lanterns, moonlight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "market_alley_n_room_0Background_025910": {
+  "prompt": "narrow back alley of a medieval castle town at night, tall timber-framed houses, cobblestone path, warm windows, lanterns, moonlight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "market_alley_n_room_0Background_04B110": {
+  "prompt": "narrow back alley of a medieval castle town at night, tall timber-framed houses, cobblestone path, warm windows, lanterns, moonlight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "market_alley_room_0Background_000120": {
+  "prompt": "narrow back alley of a medieval castle town, tall timber-framed houses, cobblestone path, hanging laundry, barrels and crates, daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "market_alley_room_0Background_025920": {
+  "prompt": "narrow back alley of a medieval castle town, tall timber-framed houses, cobblestone path, hanging laundry, barrels and crates, daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "market_alley_room_0Background_04B120": {
+  "prompt": "narrow back alley of a medieval castle town, tall timber-framed houses, cobblestone path, hanging laundry, barrels and crates, daylight, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "night_shop_room_0Background_003160": {
+  "prompt": "dark back-alley shop interior at night, wooden counter, crates and barrels of bombs, stone walls, a single hanging lantern, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shop1_room_0Background_003FB0": {
+  "prompt": "busy medieval town bazaar interior, long wooden counter, shelves full of shields, arrows, bombs and potions, stone walls, wooden beams, lantern light, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shrine_n_room_0Background_007B10": {
+  "prompt": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path at night, wide lawn in the foreground, moonlight, dark blue sky with stars, trees, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shrine_n_room_0Background_02D310": {
+  "prompt": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path at night, wide lawn in the foreground, moonlight, dark blue sky with stars, trees, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shrine_r_room_0Background_007AF0": {
+  "prompt": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path, dead grass, dark stormy red sky, gloomy ruined surroundings, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shrine_r_room_0Background_02D2F0": {
+  "prompt": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path, dead grass, dark stormy red sky, gloomy ruined surroundings, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "shrine_room_0Background_02D2F0": {
+  "prompt": "a grand gothic stone temple with two tall spires far away at the end of a straight stone path, wide green lawn in the foreground, low stone walls, trees and a distant mountain, bright blue sky with clouds, highly detailed realistic fantasy medieval town, daylight, soft clouds, cinematic lighting, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "tent_room_0Background_00DEA0": {
+  "prompt": "bird's eye view looking straight down at the floor of inside a canvas tent in a canyon, rugs on the ground, wooden crates, a bedroll, lamp light filtering through fabric, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ },
+ "zoora_room_0Background_0009E0": {
+  "prompt": "shop inside an underwater palace, blue stone walls, flowing water, pale blue light, shell decorations, stone counter, highly detailed realistic fantasy medieval interior, cinematic lighting, soft global illumination, rich textures, 3d render, sharp focus",
+  "negative": "text, letters, watermark, logo, people, person, character, face, blurry, lowres, deformed, cartoon, anime, noise, grain, frame, border",
+  "seed": 7,
+  "steps": 30,
+  "base": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "control": "lllyasviel/control_v11f1p_sd15_depth",
+  "guide": "depth of own collision, game camera"
+ }
+}

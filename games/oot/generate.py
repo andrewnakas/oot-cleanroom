@@ -192,7 +192,7 @@ def gen_textures(T, P, kept, hook_stats):
                 if any(k in path for k in SKY):
                     amp = 18
                 elif path in hooked and ROOMBG.search(path):
-                    amp = 14                       # our generated location pictures
+                    amp = 22                       # our generated location pictures
                 elif ROOMBG.search(path):
                     amp = 32                       # painted backdrops: calmer than the default, still taint-safe
                 elif path in hooked and re.search(r"(Eyes?|Mouth|Pupil|Iris)", path.rsplit("/", 1)[1]):

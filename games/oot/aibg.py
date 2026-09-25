@@ -21,6 +21,10 @@ BASE = os.environ.get("SD_MODEL", "stable-diffusion-v1-5/stable-diffusion-v1-5")
 CONTROL = os.environ.get("SD_CONTROL", "lllyasviel/control_v11f1p_sd15_depth")
 
 
+def panorama_scene(info):
+    return "texture" in info
+
+
 def brief_for(scene, briefs):
     keys = sorted((k for k in briefs if not k.startswith("_")), key=len, reverse=True)
     for k in keys:
@@ -43,9 +47,12 @@ def main(argv):
     out_bg = os.path.join(HERE, "overrides", "backgrounds")
     out_pic = os.path.join(HERE, "overrides", "pictures")
     os.makedirs(out_bg, exist_ok=True)
-    cn = ControlNetModel.from_pretrained(CONTROL, torch_dtype=torch.float16)
+    cn = ControlNetModel.from_pretrained(CONTROL, torch_dtype=torch.float16, variant="fp16",
+                                         cache_dir=os.environ.get("SD_CONTROL_CACHE"))
     pipe = StableDiffusionControlNetPipeline.from_pretrained(BASE, controlnet=cn, torch_dtype=torch.float16,
-                                                             safety_checker=None)
+                                                             variant="fp16", safety_checker=None,
+                                                             requires_safety_checker=False,
+                                                             cache_dir=os.environ.get("SD_CACHE"))
     pipe.scheduler = UniPCMultistepScheduler.from_config(pipe.scheduler.config)
     pipe.enable_model_cpu_offload()
     pipe.enable_attention_slicing()
@@ -60,16 +67,23 @@ def main(argv):
         info = json.load(open(info_p))
         scene = info["scene"].replace("_scene", "")
         outdoor = scene.startswith(("shrine", "market", "entra", "enrui"))
+        if scene.startswith("market") and panorama_scene(info):
+            outdoor = True
         prompt = brief_for(scene, briefs) + ", " + (briefs["_style_outdoor"] if outdoor else briefs["_style"])
         panorama = "texture" in info
+        fwd = info.get("fwd", [0, 0, 1])
+        topdown = (not panorama) and fwd[1] < -0.6         # camera looking down steeply
+        if topdown:
+            prompt = "bird's eye view looking straight down at the floor of " + prompt.replace(", seen from above", "")
         if panorama:
             prompt = prompt.replace(", seen from above", "") + ", eye-level view of one wall"
         depth = Image.open(os.path.join(gdir, name, "depth.png")).convert("RGB")
         size = (512, 512) if panorama else (576, 432)
         depth = depth.resize(size, Image.BILINEAR)
-        g = torch.Generator("cpu").manual_seed(seed + (hash(name) & 0) )
+        import zlib
+        g = torch.Generator("cpu").manual_seed(seed + zlib.crc32(name.encode()) % 100000)   # own seed per image
         img = pipe(prompt, image=depth, negative_prompt=briefs["_negative"], num_inference_steps=steps,
-                   guidance_scale=7.0, controlnet_conditioning_scale=0.9 if info.get("coverage", 1) > 0.3 else 0.5,
+                   guidance_scale=7.0, controlnet_conditioning_scale=(0.45 if outdoor else (1.0 if topdown else 0.85)),
                    width=size[0], height=size[1], generator=g).images[0]
         if panorama:
             img.resize((256, 256), Image.LANCZOS).save(os.path.join(out_pic, name + ".png"))
