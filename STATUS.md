@@ -16,6 +16,14 @@ Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-clean
   `CLEANROOM_GAME=games/oot python -m cleanroom.voice.takes cut <recording> <character> <takes>/<character>`.
   Until then, the voice slots use Piper TTS placeholders (`games/oot/voices`, lines in `voice_lines.json`).
 
+## Prerendered locations (new)
+- All 35 JPEG backgrounds and 67 first-person panorama walls are generated images (`games/oot/aibg.py`).
+  - Model: Stable Diffusion 1.5 + depth ControlNet on the local RTX 4050.
+  - Guided by a depth render of each location's own collision from the game's own camera (`games/oot/bgscenes.py`: bgCamIndex -> collision camera; panoramas are cube faces from the room centre) and our own description (`games/oot/location_briefs.json`).
+  - Prompts and seeds are in `games/oot/overrides/backgrounds/_log.json`. The model never sees retail pixels.
+- The model lives in `C:/Users/andre/n64work/hfcache` (2.7 GB). Regenerate: `SD_CACHE=... SD_CONTROL_CACHE=... HF_HUB_OFFLINE=1 python -m games.oot.aibg ../oot/bggen [--only regex]`.
+- Not yet eyeballed in-game (headless input flaked this round); please look at Link's house, the shops, Market and the Temple of Time front.
+
 ## Works (verified headless)
 - Item icons (~110) rendered from get-item models; quest icons (medallions, stones); dungeon minimaps (239) drawn from each room's geometry and placed with the game's compass tables; world map from Hyrule Field geometry; HUD digits; stone pause panels.
 - Voices: 163 Piper placeholder lines in the game; practice pack built.
