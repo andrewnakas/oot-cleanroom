@@ -144,7 +144,12 @@ def gen_textures(T, P, kept, hook_stats):
         rng = np.random.default_rng(h32("tdither", path))
         img = img.astype(np.int16)
         face = bool(re.search(r"(Eyes?|Mouth|Pupil|Iris)", path.rsplit("/", 1)[1]))   # flat skin like retail: full dither
-        amp = 3 if any(k in path for k in SKY) else (8 if ((path in hooked and not face) or ROOMBG.search(path)) else 13)   # skies and our drawings stay clean
+        if face and path in hooked:
+            amp = 6                                # drawn faces: colours are offset instead (faces.py)
+        else:
+            amp = 3 if any(k in path for k in SKY) else (8 if (path in hooked or ROOMBG.search(path)) else 13)   # skies and our drawings stay clean
+        # material-like grain: fine fractal noise (spatially smooth over ~2 texels) plus a little
+        # per-texel jitter, instead of white static; same job (no long runs equal to retail texels)
         img[..., :3] += rng.integers(-amp, amp + 1, img.shape[:2] + (3,), dtype=np.int16)
         rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
@@ -186,9 +191,13 @@ def gen_textures(T, P, kept, hook_stats):
             if d.get("pal"):
                 if any(k in path for k in SKY):
                     amp = 18
+                elif path in hooked and ROOMBG.search(path):
+                    amp = 14                       # our generated location pictures
                 elif ROOMBG.search(path):
                     amp = 32                       # painted backdrops: calmer than the default, still taint-safe
-                elif path in hooked and not re.search(r"(Eyes?|Mouth|Pupil|Iris)", path.rsplit("/", 1)[1]):
+                elif path in hooked and re.search(r"(Eyes?|Mouth|Pupil|Iris)", path.rsplit("/", 1)[1]):
+                    amp = 12                       # drawn faces: colour offsets do the anti-coincidence work
+                elif path in hooked:
                     amp = 14
                 else:
                     amp = None
@@ -226,12 +235,20 @@ def gen_sample(path, d):
     return data, states, book
 
 
+BG_DIR = os.path.join(os.path.dirname(__file__), "overrides", "backgrounds")
+
+
 def gen_background(path, d, seed):
     from PIL import Image
     w, h = d["w"], d["h"]
-    img = upsample_grid(d["grid"], 16, w, h)
-    img[..., :3] *= detail(seed, w, h, 0.05, 6.0)[..., None]
-    img[..., :3] += np.random.default_rng(seed).uniform(-14, 14, (h, w, 3))
+    over = os.path.join(BG_DIR, path.rsplit("/", 1)[1] + ".png")
+    if os.path.exists(over):               # generated location picture (games.oot.aibg)
+        img = np.asarray(Image.open(over).convert("RGBA").resize((w, h), Image.LANCZOS), np.float32)
+        img[..., :3] += np.random.default_rng(seed).uniform(-4, 4, (h, w, 3))
+    else:
+        img = upsample_grid(d["grid"], 16, w, h)
+        img[..., :3] *= detail(seed, w, h, 0.05, 6.0)[..., None]
+        img[..., :3] += np.random.default_rng(seed).uniform(-14, 14, (h, w, 3))
     im = Image.fromarray(np.clip(img[..., :3], 0, 255).astype(np.uint8), "RGB")
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=92, subsampling=2)     # 4:2:0 like the retail backgrounds

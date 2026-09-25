@@ -37,6 +37,11 @@ static void web_apply_dev_cvars() {
 extern "C" PlayState* gPlayState;
 static float s_web_pos[4];
 
+extern "C" EMSCRIPTEN_KEEPALIVE int web_console(const char* cmd) {
+    std::string out;
+    return Ship::Context::GetInstance()->GetConsole()->Run(std::string(cmd), &out);
+}
+
 extern "C" EMSCRIPTEN_KEEPALIVE int web_scene(void) {
     return gPlayState ? gPlayState->sceneNum : -1;
 }
@@ -60,7 +65,7 @@ void web_apply_anchor_config() {
     if (!web_has_anchor_config()) return;"""),
     ("soh/CMakeLists.txt",
      "_web_wants_text_input,_malloc,_free",
-     "_web_wants_text_input,_web_scene,_web_player_pos,_malloc,_free"),
+     "_web_wants_text_input,_web_scene,_web_player_pos,_web_console,_malloc,_free"),
     # 2. the site ships a clean oot.o2r: no in-browser ROM extraction, no 35 MB extractor data
     ("soh/CMakeLists.txt",
      "                --preload-file=${CMAKE_CURRENT_SOURCE_DIR}/assets/xml@assets/xml\n"

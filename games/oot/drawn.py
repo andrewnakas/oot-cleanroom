@@ -396,13 +396,19 @@ def picture_override(path, d):
 
 
 def soft_cloud(path, d):
-    """World-map fog: the grid's soft shape with our billowy edge, no grain."""
+    """World-map fog patch: billowy cloud that fades to nothing at the texture edges
+    (the patches overlap on the map, so hard edges show as rectangles)."""
     from cleanroom.decomp.gen import upsample_grid, h32
     w, h = d["w"], d["h"]
     n = int(round(len(d["grid"]) ** 0.5))
     g = upsample_grid(d["grid"], n, w, h)[..., 0] / 255.0
-    billow = fbm(h32("cloud", path), w, h, (12, 6, 3))
-    v = np.clip((g - 0.25) * 1.6 + 0.25 * billow, 0, 1)
+    billow = fbm(h32("cloud", path), w, h, (max(4, w // 4), max(2, w // 8), 2))
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    ex = np.minimum(xx + 0.5, w - 0.5 - xx) / (w * 0.35)
+    ey = np.minimum(yy + 0.5, h - 0.5 - yy) / (h * 0.35)
+    edge = np.clip(np.minimum(ex, ey), 0, 1)
+    edge = edge * edge * (3 - 2 * edge)
+    v = np.clip(0.55 + 0.8 * billow + 0.3 * (g - 0.5), 0, 1) * edge
     return grey_img(v)
 
 
@@ -429,14 +435,39 @@ def hud_glyph(path, d):
         return grey_img(_tri(w, h, [(4, 3), (13, 8), (4, 13)]))
     m = re.match(r"gOcarinaBtnIcon(A|CUp|CDown|CLeft|CRight)Tex", name)
     if m:
-        k = m.group(1)
-        cov = button_glyph(k if k == "A" else k, w, h)
-        img = grey_img(cov)
-        return img
+        return grey_img(button_glyph(m.group(1), w, h))
+    return None
+
+
+def fairy(path, d):
+    """Navi / fairy light: halves of a soft round glow, and a translucent wing."""
+    w, h = d["w"], d["h"]
+    name = path.rsplit("/", 1)[1]
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32) + 0.5
+    if name.startswith("gCircleGlow"):
+        cx = w if name.endswith("LTex") else 0.0          # left half: centre on the right edge, and vice versa
+        r = np.hypot(xx - cx, yy - h / 2) / (h / 2)
+        sharp = name.replace("gCircleGlow", "").startswith("S")
+        core = np.clip(1 - r, 0, 1)
+        v = core ** (1.2 if sharp else 2.2) + (0.35 * np.exp(-(r / 0.25) ** 2) if sharp else 0.25 * np.exp(-(r / 0.35) ** 2))
+        return grey_img(np.clip(v, 0, 1))
+    if name == "gFairyWingTex":
+        # teardrop wing along the texture's long axis, bright rim and faint veins
+        u = (xx / w - 0.5) * 2
+        t = yy / h
+        width = 0.95 * np.sin(np.clip(t, 0, 1) * np.pi) ** 0.7 * (1 - 0.35 * t)
+        inside = np.clip((width - np.abs(u)) * 6, 0, 1)
+        rim = np.clip(1 - np.abs(width - np.abs(u)) * 8, 0, 1)
+        vein = np.clip(1 - np.abs(np.sin(t * 9 + u * 2)) * 6, 0, 1) * 0.25
+        return grey_img(np.clip(inside * (0.35 + vein) + rim * 0.6, 0, 1) * inside)
     return None
 
 
 def texture(path, d):
+    if "/gameplay_keep/" in path and ("gCircleGlow" in path or path.endswith("gFairyWingTex")):
+        img = fairy(path, d)
+        if img is not None:
+            return img
     if "/parameter_static/" in path or "/message_static/" in path:
         img = hud_glyph(path, d)
         if img is not None:

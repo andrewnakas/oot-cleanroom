@@ -136,6 +136,9 @@ def texture(path, d):
     c.update(b["chars"][obj])
     if c.get("skin") in (None, "grid"):
         c["skin"] = skin_from(d, [230, 190, 150])
+    # step flat colours off the 5-bit grid values a retail texture would also land on
+    c["skin"] = [min(255, int(v) + 10) if i != 2 else max(0, int(v) - 7) for i, v in enumerate(c["skin"])]
+    c["sclera"] = [min(v, 236) - (4 if i == 2 else 0) for i, v in enumerate(c["sclera"])]
     c.setdefault("lip", [int(c["skin"][0] * 0.78), int(c["skin"][1] * 0.55), int(c["skin"][2] * 0.5)])
     name = path.rsplit("/", 1)[1]
     w, h = d["w"], d["h"]

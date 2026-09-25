@@ -161,6 +161,10 @@ def main():
                     pg.key(st.get("key", "KeyX"), st.get("down", 0.2))
                     pg.pump(st.get("every", 3.0))
                 print(f"press_until {'ok' if ok else 'TIMEOUT'} ({time.time()-t0:.1f}s): {st['press_until'][:60]}", flush=True)
+            elif "click" in st:
+                x, y = st["click"]
+                for t in ("mousePressed", "mouseReleased"):
+                    pg.call("Input.dispatchMouseEvent", type=t, x=x, y=y, button="left", clickCount=1)
             elif "netlog" in st:
                 pg.call("Network.enable")
                 urls = {}
