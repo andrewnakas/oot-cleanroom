@@ -104,6 +104,12 @@ ICONS = {
     "gItemIconDekuStickTex": ([G + "stick/gGiStickDL"], 90, 0, -45),
     "gItemIconSwordKokiriTex": ([G + "sword_1/gGiKokiriSwordDL"], 90, 0, -45),
     "gItemIconClaimCheckTex": ([G + "ticketstone/gGiClaimCheckDL", G + "ticketstone/gGiClaimCheckWritingDL"], 0, 20, 0),
+    "gItemIconSwordMasterTex": (["overlays/ovl_Boss_Ganon2/gGanonMasterSwordDL"], 0, 0, -45),
+    "gItemIconFishingPoleTex": (["objects/object_fish/gFishingRodMaterialDL", "objects/object_fish/gFishingRodSegmentDL"], 90, 0, -45),
+    "gItemIconBootsKokiriTex": ([G + "boots_2/gGiIronBootsDL"], 70, 10, 0),
+    "gItemIconBowFireTex": ([G + "bow/gGiBowDL", G + "m_arrow/gGiFireArrowColorDL", G + "m_arrow/gGiMagicArrowDL"], 0, 0, 0),
+    "gItemIconBowIceTex": ([G + "bow/gGiBowDL", G + "m_arrow/gGiIceArrowColorDL", G + "m_arrow/gGiMagicArrowDL"], 0, 0, 0),
+    "gItemIconBowLightTex": ([G + "bow/gGiBowDL", G + "m_arrow/gGiLightArrowColorDL", G + "m_arrow/gGiMagicArrowDL"], 0, 0, 0),
     "gQuestIconMedallionForestTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiForestMedallionFaceDL"], 0, 0, 0, (80, 220, 90, 255), (20, 110, 30, 255)),
     "gQuestIconMedallionFireTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiFireMedallionFaceDL"], 0, 0, 0, (255, 90, 50, 255), (150, 20, 10, 255)),
     "gQuestIconMedallionWaterTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiWaterMedallionFaceDL"], 0, 0, 0, (90, 160, 255, 255), (20, 50, 170, 255)),
@@ -130,6 +136,7 @@ ICONS = {
 # colour set by the game's draw code for models whose own DLs fix the colour:
 # (rgb, "whites" = only unsaturated light pixels, "all" = recolour by luminance)
 TINT = {
+    "gItemIconBootsKokiriTex": ((150, 95, 45), "all"),
     "gQuestIconKokiriEmeraldTex": ((60, 230, 110), "whites"),
     "gQuestIconGoronRubyTex": ((240, 60, 70), "whites"),
     "gQuestIconZoraSapphireTex": ((80, 140, 255), "all"),

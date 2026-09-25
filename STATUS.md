@@ -14,6 +14,8 @@ Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-clean
   Until then, the voice slots use Piper TTS placeholders (`games/oot/voices`, lines in `voice_lines.json`).
 
 ## Works (verified headless)
+- Item icons (~110) rendered from get-item models; quest icons (medallions, stones); dungeon minimaps (239) drawn from each room's geometry and placed with the game's compass tables; world map from Hyrule Field geometry; HUD digits; stone pause panels.
+- Voices: 163 Piper placeholder lines in the game; practice pack built.
 - Boot → N64 logo → title → file select → name entry, all with clean assets.
 - Debug scene select → Hyrule Field: Link walks (position changes), HUD with icons, hearts, magic, minimap.
 - Taint scan: **0 failing** (26,425 streams: textures raw+RGBA, samples raw+PCM, backgrounds RGB, SoH's soh.o2r).
@@ -45,11 +47,15 @@ Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-clean
 9. Web build: emsdk 6.0.10 needed `-DFMT_CONSTEVAL=` (old bundled fmt) and `-DBUILD_SHARED_LIBS=OFF` (libzip).
    Source patches are in `ports/soh/port_patches.py` (dev CVars via `?dev=`, `web_scene`, `web_player_pos`, no extractor preload: the site is 35 MB smaller).
 
+## Known issues
+- Once in ~4 headless runs, the game threw a wasm "memory access out of bounds" while loading a scene from the debug scene select. It isn't reproduced yet; it may be in the engine fork. If you hit it: reload.
+- Audio: the engine output is verified non-silent in headless tests, but nobody has listened yet. Please listen: music instruments and SFX are resynthesised from coarse outlines, and voices are TTS placeholders.
+
 ## Next
 - Sky/skybox smoothness (the dither makes skies look like static): smoother clean generation for vr_* textures, keeping taint 0.
 - Pause-screen stone panels (slot frames, quest-status relief): draw them.
-- Remaining icons without get-item models: Master Sword, fishing pole, Kokiri boots, quest items (medallions, stones, songs) via renders or briefs.
-- Pause dungeon maps (runtime palette index maps) and area minimaps: render from collision.
+- Pause-screen dungeon maps (map_48x85, runtime-palette index maps): render from room geometry like the minimaps.
+- Multi-floor rooms in dungeon minimaps (Room0Floor1..3): better floor split.
 - Title "ZELDA" shield logo (160x160): draw it.
-- Voices: Piper placeholders + practice pack.
+
 - Audio check in the browser (samples play, no dropouts).
