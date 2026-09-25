@@ -104,12 +104,36 @@ ICONS = {
     "gItemIconDekuStickTex": ([G + "stick/gGiStickDL"], 90, 0, -45),
     "gItemIconSwordKokiriTex": ([G + "sword_1/gGiKokiriSwordDL"], 90, 0, -45),
     "gItemIconClaimCheckTex": ([G + "ticketstone/gGiClaimCheckDL", G + "ticketstone/gGiClaimCheckWritingDL"], 0, 20, 0),
+    "gQuestIconMedallionForestTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiForestMedallionFaceDL"], 0, 0, 0, (80, 220, 90, 255), (20, 110, 30, 255)),
+    "gQuestIconMedallionFireTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiFireMedallionFaceDL"], 0, 0, 0, (255, 90, 50, 255), (150, 20, 10, 255)),
+    "gQuestIconMedallionWaterTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiWaterMedallionFaceDL"], 0, 0, 0, (90, 160, 255, 255), (20, 50, 170, 255)),
+    "gQuestIconMedallionSpiritTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiSpiritMedallionFaceDL"], 0, 0, 0, (255, 170, 60, 255), (160, 80, 10, 255)),
+    "gQuestIconMedallionShadowTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiShadowMedallionFaceDL"], 0, 0, 0, (200, 110, 230, 255), (90, 30, 120, 255)),
+    "gQuestIconMedallionLightTex": ([G + "medal/gGiMedallionDL", G + "medal/gGiLightMedallionFaceDL"], 0, 0, 0, (255, 240, 110, 255), (170, 140, 20, 255)),
+    "gQuestIconKokiriEmeraldTex": ([G + "jewel/gGiKokiriEmeraldSettingDL", G + "jewel/gGiKokiriEmeraldGemDL"], 0, 90, 0, (60, 240, 110, 255), (230, 190, 60, 255)),
+    "gQuestIconGoronRubyTex": ([G + "jewel/gGiGoronRubySettingDL", G + "jewel/gGiGoronRubyGemDL"], 0, 90, 0, (255, 60, 70, 255), (230, 190, 60, 255)),
+    "gQuestIconZoraSapphireTex": ([G + "jewel/gGiZoraSapphireSettingDL", G + "jewel/gGiZoraSapphireGemDL"], 0, 90, 0, (80, 140, 255, 255), (230, 190, 60, 255)),
+    "gQuestIconDungeonBossKeyTex": ([G + "bosskey/gGiBossKeyDL", G + "bosskey/gGiBossKeyGemDL"], 0, 0, -30),
+    "gQuestIconSmallKeyTex": ([G + "key/gGiSmallKeyDL"], 0, 0, -30),
+    "gQuestIconDungeonCompassTex": ([G + "compass/gGiCompassDL", G + "compass/gGiCompassGlassDL"], 0, 85, 0),
+    "gQuestIconDungeonMapTex": ([G + "map/gGiDungeonMapDL"], 0, 30, 0),
+    "gQuestIconStoneOfAgonyTex": ([G + "map/gGiStoneOfAgonyDL"], 0, 20, 0),
+    "gQuestIconGerudosCardTex": ([G + "gerudo/gGiGerudoCardDL"], 0, 20, 0),
+    "gQuestIconGoldSkulltulaTex": ([G + "sutaru/gGiSkulltulaTokenDL"], 0, 0, 0, (255, 220, 80, 255), (200, 140, 20, 255)),
+    "gQuestIconHeartContainerTex": ([G + "hearts/gGiHeartBorderDL", G + "hearts/gGiHeartContainerDL"], 0, 0, 0),
+    "gQuestIconHeartPieceTex": ([G + "hearts/gGiHeartPieceDL"], 0, 0, 0),
+    "gQuestIconMagicJarBigTex": ([G + "magicpot/gGiMagicJarLargeDL"], 20, 10, 0),
+    "gQuestIconMagicJarSmallTex": ([G + "magicpot/gGiMagicJarSmallDL"], 20, 10, 0),
 }
 
 
 # colour set by the game's draw code for models whose own DLs fix the colour:
 # (rgb, "whites" = only unsaturated light pixels, "all" = recolour by luminance)
 TINT = {
+    "gQuestIconKokiriEmeraldTex": ((60, 230, 110), "whites"),
+    "gQuestIconGoronRubyTex": ((240, 60, 70), "whites"),
+    "gQuestIconZoraSapphireTex": ((80, 140, 255), "all"),
+    "gQuestIconGoldSkulltulaTex": ((250, 205, 70), "all"),
     "gItemIconTunicKokiriTex": ((70, 170, 60), "whites"),
     "gItemIconTunicGoronTex": ((190, 40, 30), "whites"),
     "gItemIconTunicZoraTex": ((40, 70, 190), "whites"),

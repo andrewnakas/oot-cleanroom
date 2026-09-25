@@ -31,6 +31,32 @@ except ImportError:                  # optional hooks
     drawn = None
 
 
+SKY = ("vr_fine", "vr_cloud", "vr_holy")
+
+
+def fbm(seed, w, h, cells=(32, 16, 8, 4, 2)):
+    """Our own fractal noise in [-1, 1] (sum of smooth value-noise octaves)."""
+    out = np.zeros((h, w), np.float32)
+    amp, tot = 1.0, 0.0
+    for k, c in enumerate(cells):
+        out += amp * (detail(seed + k, w, h, 1.0, float(c)) - 1.0)
+        tot += amp
+        amp *= 0.55
+    return out / tot
+
+
+def sky_clouds(img, path):
+    """Skies: soft cloud banks brightening the grid's gradient, strongest where the grid is light."""
+    h, w = img.shape[:2]
+    n = fbm(h32("sky", path), w, h)
+    lum = img[..., :3].mean(-1) / 255.0
+    cover = np.clip(n * 1.6 + 0.1, 0, 1) * (0.35 + 0.65 * lum)
+    out = img.astype(np.float32)
+    out[..., :3] = out[..., :3] * (1 - 0.35 * cover[..., None]) + 245 * 0.35 * cover[..., None]
+    out[..., :3] *= (1 + 0.06 * fbm(h32("sky2", path), w, h, (4, 2)))[..., None]
+    return np.clip(out, 0, 255).astype(np.uint8)
+
+
 def encode_plain(rgba, t):
     fmt, siz = FMT[t]
     return texfmt.encode(rgba, fmt, siz)
@@ -70,9 +96,10 @@ def quantise(pixels, k, seed):
     return np.clip(np.round(pal), 0, 255).astype(np.uint8)
 
 
-def index_image(rgba, pal, seed=0):
+def index_image(rgba, pal, seed=0, amp=None):
     px = rgba.reshape(-1, 4).astype(np.int32)
-    amp = 30 if len(pal) <= 16 else 44          # dense 256-colour palettes need a wider pick
+    if amp is None:
+        amp = 30 if len(pal) <= 16 else 44      # dense 256-colour palettes need a wider pick
     px[:, :3] += np.random.default_rng(seed).integers(-amp, amp + 1, (len(px), 3))   # stochastic dither between entries
     p = pal.astype(np.int32)
     opaque_p = p[:, 3] >= 128
@@ -102,10 +129,13 @@ def gen_textures(T, P, kept, hook_stats):
         else:
             hook_stats["digest"] += 1
             img = from_digest(path, d)
+            if any(k in path for k in SKY) and not path.endswith("TLUT"):
+                img = sky_clouds(img, path)
         # per-texel dither: smooth regions must not quantise to the same texels as retail
         rng = np.random.default_rng(h32("tdither", path))
         img = img.astype(np.int16)
-        img[..., :3] += rng.integers(-13, 14, img.shape[:2] + (3,), dtype=np.int16)
+        amp = 3 if any(k in path for k in SKY) else 13        # skies stay smooth
+        img[..., :3] += rng.integers(-amp, amp + 1, img.shape[:2] + (3,), dtype=np.int16)
         rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
     primary = {}
@@ -144,7 +174,8 @@ def gen_textures(T, P, kept, hook_stats):
             out[path] = encode_plain(pal, t)
         elif t in (3, 4):
             if d.get("pal"):
-                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path)) + d.get("idx_base", 0)
+                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path),
+                                  amp=18 if any(k in path for k in SKY) else None) + d.get("idx_base", 0)
             else:                                     # no known palette: grey grid is an index map
                 idx = np.round(rgba[path][..., 0].astype(np.float32) * ((16 if t == 3 else 256) - 1) / 255).astype(np.uint8)
             img = np.zeros(idx.shape + (4,), np.uint8)

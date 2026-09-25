@@ -9,6 +9,7 @@ steps.json is a list of steps:
   {"shot": "name"}                        Page.captureScreenshot -> <out>/name.png
   {"key": "KeyX", "down": 0.1}            press a key (code) for `down` seconds
   {"keys": [["KeyX", 0.1], ["Enter", 0.1]], "gap": 0.3}
+  {"press_until": "<js expr>", "key": "KeyX", "every": 3, "timeout": 60}   press a key until true
 Console lines are printed (trimmed) and saved to <out>/console.txt.
 """
 import argparse
@@ -144,6 +145,16 @@ def main():
                 print(f"wait {'ok' if ok else 'TIMEOUT'} ({time.time()-t0:.1f}s): {st['wait'][:80]}", flush=True)
                 if not ok and st.get("required", True):
                     break
+            elif "press_until" in st:
+                end = time.time() + st.get("timeout", 60)
+                ok = False
+                while time.time() < end:
+                    if pg.eval(st["press_until"], timeout=30) is True:
+                        ok = True
+                        break
+                    pg.key(st.get("key", "KeyX"), st.get("down", 0.2))
+                    pg.pump(st.get("every", 3.0))
+                print(f"press_until {'ok' if ok else 'TIMEOUT'} ({time.time()-t0:.1f}s): {st['press_until'][:60]}", flush=True)
             elif "eval" in st:
                 v = pg.eval(st["eval"], timeout=st.get("timeout", 600))
                 print(f"eval -> {str(v)[:400]}", flush=True)

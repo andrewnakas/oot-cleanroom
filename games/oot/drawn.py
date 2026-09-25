@@ -216,6 +216,8 @@ def label_tex(path, d, lines):
         top = text_mask([lines[0]], w, h // 3, "sans")
         bot = text_mask([lines[1]], w, h - h // 3, "sansx")
         m = np.concatenate([top, bot], 0)
+    elif "DoAction" in base:                             # button labels sit on round buttons: keep them compact
+        m = text_mask(lines, w, h, "sans", align="center", pad_x=8, size=9)
     else:
         m = text_mask(lines, w, h, "sansx" if h >= 16 else "sans", align=align)
     if "Button" in base and d["type"] == 9:              # file select buttons: grey bevel, dark text
@@ -281,6 +283,60 @@ def pause_header(path, d):
 
 # ------------------------------------------------------------ dispatch
 
+def title_logo(path, d):
+    """Title logo: our own shield, sword and ZELDA lettering inside the kept silhouette."""
+    w, h = d["w"], d["h"]
+    W, H = w * SS, h * SS
+    base = from_digest(path, d).astype(np.float32)
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    dr = ImageDraw.Draw(img)
+    # sword, lower-left to upper-right behind the shield
+    dr.line([(0.10 * W, 0.88 * H), (0.60 * W, 0.12 * H)], fill=(215, 225, 240, 255), width=int(0.05 * W))
+    dr.line([(0.10 * W, 0.88 * H), (0.60 * W, 0.12 * H)], fill=(160, 175, 200, 255), width=int(0.015 * W))
+    dr.line([(0.50 * W, 0.20 * H), (0.62 * W, 0.30 * H)], fill=(60, 70, 160, 255), width=int(0.05 * W))   # guard
+    dr.line([(0.58 * W, 0.16 * H), (0.66 * W, 0.08 * H)], fill=(70, 80, 170, 255), width=int(0.035 * W))  # grip
+    # shield
+    sh = [(0.08 * W, 0.32 * H), (0.46 * W, 0.26 * H), (0.46 * W, 0.62 * H), (0.27 * W, 0.84 * H), (0.08 * W, 0.62 * H)]
+    dr.polygon(sh, fill=(150, 160, 170, 255))
+    inner = [(x * 0.86 + 0.27 * W * 0.14, y * 0.86 + 0.55 * H * 0.14) for x, y in sh]
+    dr.polygon(inner, fill=(35, 55, 140, 255))
+    tri = [(0.27 * W, 0.34 * H), (0.36 * W, 0.50 * H), (0.18 * W, 0.50 * H)]
+    dr.polygon(tri, fill=(245, 205, 60, 255))
+    mid = [((tri[0][0] + tri[1][0]) / 2, (tri[0][1] + tri[1][1]) / 2), ((tri[1][0] + tri[2][0]) / 2, tri[1][1]),
+           ((tri[0][0] + tri[2][0]) / 2, (tri[0][1] + tri[2][1]) / 2)]
+    dr.polygon(mid, fill=(35, 55, 140, 255))
+    dr.polygon([(0.20 * W, 0.58 * H), (0.34 * W, 0.58 * H), (0.27 * W, 0.70 * H)], fill=(190, 40, 40, 255))   # crest
+    # lettering
+    f = font("serif", int(0.30 * H))
+    txt = "ZELDA"
+    bb = f.getbbox(txt)
+    sx = (0.90 * W) / (bb[2] - bb[0])
+    layer = Image.new("L", (int((bb[2] - bb[0]) + 40), int((bb[3] - bb[1]) + 40)), 0)
+    ImageDraw.Draw(layer).text((20 - bb[0], 20 - bb[1]), txt, font=f, fill=255, stroke_width=int(0.012 * H), stroke_fill=255)
+    layer = layer.resize((int(layer.width * sx), int(layer.height * 1.15)))
+    m = np.asarray(layer, np.float32) / 255
+    ox, oy = int(0.08 * W - 20 * sx), int(0.34 * H - 20)
+    full = np.zeros((H, W), np.float32)
+    y0, x0 = max(0, oy), max(0, ox)
+    y1, x1 = min(H, oy + m.shape[0]), min(W, ox + m.shape[1])
+    full[y0:y1, x0:x1] = m[y0 - oy:y1 - oy, x0 - ox:x1 - ox]
+    arr = np.asarray(img, np.float32)
+    edge = dilate(full, 4 * SS // 2)
+    gold = np.asarray([235, 190, 70], np.float32)
+    red = np.stack([np.linspace(215, 120, H)[:, None] * np.ones((1, W)), np.full((H, W), 20.0),
+                    np.full((H, W), 35.0)], -1)
+    arr[..., :3] = arr[..., :3] * (1 - edge[..., None]) + gold * edge[..., None]
+    arr[..., 3] = np.maximum(arr[..., 3], edge * 255)
+    arr[..., :3] = arr[..., :3] * (1 - full[..., None]) + red * full[..., None]
+    arr[..., 3] = np.maximum(arr[..., 3], full * 255)
+    arr = arr.reshape(h, SS, w, SS, 4).mean((1, 3))
+    a = arr[..., 3:4] / 255
+    out = base.copy()
+    out[..., :3] = arr[..., :3] / np.maximum(a, 1e-6) * a + base[..., :3] * (1 - a)
+    out[..., 3] = np.maximum(base[..., 3], arr[..., 3])
+    return np.clip(out, 0, 255)
+
+
 ICON_DIR = os.path.join(HERE, "overrides", "icons")
 
 
@@ -294,6 +350,8 @@ def icon_override(path, d):
 
 
 def texture(path, d):
+    if path.endswith("gTitleZeldaShieldLogoTex"):
+        return title_logo(path, d)
     if "/icon_item_static/" in path or "/icon_item_24_static/" in path:
         img = icon_override(path, d)
         if img is not None:
