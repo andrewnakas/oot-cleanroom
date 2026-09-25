@@ -57,17 +57,24 @@ def _group(b0, b1, r, y2, y1):
     return out
 
 
-def decode(data: bytes, book, nsamples=None):
+def decode(data: bytes, book, nsamples=None, bits=4):
+    """bits=2 is the 5-byte-frame 'small' ADPCM (OoT CODEC_SMALL_ADPCM)."""
     ent = _entries(book)
     y2 = y1 = 0
     out = []
-    for f in range(0, len(data) - 8, 9):
+    fb = 1 + 16 * bits // 8
+    for f in range(0, len(data) - fb + 1, fb):
         hdr = data[f]
         scale, pred = hdr >> 4, hdr & 0xF
         nib = []
-        for b in data[f + 1:f + 9]:
-            nib += [b >> 4, b & 0xF]
-        nib = [n - 16 if n >= 8 else n for n in nib]
+        if bits == 4:
+            for b in data[f + 1:f + 9]:
+                nib += [b >> 4, b & 0xF]
+            nib = [n - 16 if n >= 8 else n for n in nib]
+        else:
+            for b in data[f + 1:f + 5]:
+                nib += [b >> 6, (b >> 4) & 3, (b >> 2) & 3, b & 3]
+            nib = [n - 4 if n >= 2 else n for n in nib]
         for g in range(2):
             r = [n << scale for n in nib[g * 8:g * 8 + 8]]
             o = _group(ent[pred][0], ent[pred][1], r, y2, y1)
@@ -103,7 +110,7 @@ def _encode_group(b0, b1, target, y2, y1, scale):
     return nib, out, err
 
 
-def _encode_group_vec(b0, b1, shift, target, y2, y1):
+def _encode_group_vec(b0, b1, shift, target, y2, y1, lo=-8, hi=7):
     """Vectorised _encode_group over C candidates (arrays of shape (C, 8)/(C,))."""
     C = b0.shape[0]
     r = np.zeros((C, 8), dtype=np.int64)
@@ -116,7 +123,7 @@ def _encode_group_vec(b0, b1, shift, target, y2, y1):
         for k in range(i):
             acc = acc + b1[:, i - 1 - k] * r[:, k]
         want = (target[i] - acc / 2048.0) / step
-        n = np.clip(np.round(want), -8, 7).astype(np.int64)
+        n = np.clip(np.round(want), lo, hi).astype(np.int64)
         for _ in range(8):
             val = (acc + ((n << shift) << 11)) >> 11
             bad = ((val < -32768) | (val > 32767)) & (n != 0)
@@ -131,13 +138,16 @@ def _encode_group_vec(b0, b1, shift, target, y2, y1):
     return nib, out, err
 
 
-def encode(samples, book=None):
-    """samples: int16-range ints. Returns (bytes, book, decoded int16 array)."""
+def encode(samples, book=None, bits=4):
+    """samples: int16-range ints. Returns (bytes, book, decoded int16 array).
+    bits=2: 5-byte 'small' frames (residuals -2..1, scale 0..15)."""
     book = book or make_book()
     ent = _entries(book)
     npred = book["npred"]
-    preds = np.repeat(np.arange(npred), 13)
-    scales = np.tile(np.arange(13), npred).astype(np.int64)
+    ns = 13 if bits == 4 else 16
+    lo, hi = (-8, 7) if bits == 4 else (-2, 1)
+    preds = np.repeat(np.arange(npred), ns)
+    scales = np.tile(np.arange(ns), npred).astype(np.int64)
     b0 = ent[preds, 0, :]
     b1 = ent[preds, 1, :]
     x = np.asarray(samples, dtype=np.int64)
@@ -149,13 +159,18 @@ def encode(samples, book=None):
     C = len(preds)
     for f in range(0, len(x), 16):
         frame = x[f:f + 16]
-        n0, o0, e0 = _encode_group_vec(b0, b1, scales, frame[:8], np.full(C, y2), np.full(C, y1))
-        n1, o1, e1 = _encode_group_vec(b0, b1, scales, frame[8:], o0[:, 6], o0[:, 7])
+        n0, o0, e0 = _encode_group_vec(b0, b1, scales, frame[:8], np.full(C, y2), np.full(C, y1), lo, hi)
+        n1, o1, e1 = _encode_group_vec(b0, b1, scales, frame[8:], o0[:, 6], o0[:, 7], lo, hi)
         c = int(np.argmin(e0 + e1))
         out.append((int(scales[c]) << 4) | int(preds[c]))
         nib = np.concatenate([n0[c], n1[c]])
-        for i in range(0, 16, 2):
-            out.append(((int(nib[i]) & 0xF) << 4) | (int(nib[i + 1]) & 0xF))
+        if bits == 4:
+            for i in range(0, 16, 2):
+                out.append(((int(nib[i]) & 0xF) << 4) | (int(nib[i + 1]) & 0xF))
+        else:
+            for i in range(0, 16, 4):
+                out.append(((int(nib[i]) & 3) << 6) | ((int(nib[i + 1]) & 3) << 4) |
+                           ((int(nib[i + 2]) & 3) << 2) | (int(nib[i + 3]) & 3))
         dec[f:f + 8] = o0[c]
         dec[f + 8:f + 16] = o1[c]
         y2, y1 = int(o1[c][6]), int(o1[c][7])
