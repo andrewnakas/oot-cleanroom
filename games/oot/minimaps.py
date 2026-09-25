@@ -101,16 +101,17 @@ def main(argv):
             if not tris:
                 continue
             ylo, yhi = -1e9, 1e9
-            fl = m.group(2) or m.group(3)
-            if fl:
-                ys = sorted({round(float(t[:, 1].mean()) / 200) * 200 for t in tris})
-                # split the room's floor heights into bands; FloorN / BasementN pick one band
-                bands = np.array_split(np.array(ys), max(1, len(ys) and min(len(ys), 3)))
-                idx = int(fl) - 1
-                if m.group(3):
-                    bands = bands[::-1]
-                if idx < len(bands) and len(bands[idx]):
-                    ylo, yhi = bands[idx].min() - 100, bands[idx].max() + 100
+            if m.group(2) or m.group(3):
+                # the dungeon's floor bands (sFloorCoordY), named top-down FloorN..Floor1, Basement1..
+                fl_idx = [i for i in range(8) if T["floorY"][mi][i] < 9999]
+                pn = [n for n in arc.files if "/g%sPauseScreenMapFloor" % PAUSE_NAMES[mi] in n]
+                nf = max([int(x) for n in pn for x in re.findall(r"MapFloor(\d+)", n)] or [0])
+                order = ["F%d" % k2 for k2 in range(nf, 0, -1)] + ["B%d" % k2 for k2 in range(1, 9)]
+                want = ("F" + m.group(2)) if m.group(2) else ("B" + m.group(3))
+                if want in order and order.index(want) < len(fl_idx):
+                    fi = fl_idx[order.index(want)]
+                    ylo = T["floorY"][mi][fi]
+                    yhi = T["floorY"][mi][fi - 1] if fi > 0 and T["floorY"][mi][fi - 1] < 9999 else 1e9
             local = k - start
             offx = T["offX"][mi][local] if local < len(T["offX"][mi]) else 1000
             offy = T["offY"][mi][local] if local < len(T["offY"][mi]) else -800
