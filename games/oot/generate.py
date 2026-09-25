@@ -99,7 +99,24 @@ def quantise(pixels, k, seed):
     return np.clip(np.round(pal), 0, 255).astype(np.uint8)
 
 
-def index_image(rgba, pal, seed=0, amp=None):
+BAYER4 = (np.array([[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]], np.float32) + 0.5) / 16 - 0.5
+
+
+def index_image(rgba, pal, seed=0, amp=None, ordered=False):
+    if ordered:                                  # smooth-looking ordered dither for our own pictures
+        h, w = rgba.shape[:2]
+        off = np.tile(BAYER4, (h // 4 + 1, w // 4 + 1))[:h, :w] * 2 * (amp or 22)
+        px = rgba.reshape(-1, 4).astype(np.float32).copy()
+        px[:, :3] += off.reshape(-1, 1)
+        p = pal.astype(np.float32)
+        opaque_p = p[:, 3] >= 128
+        idx = np.empty(len(px), np.int64)
+        for i in range(0, len(px), 8192):
+            q = px[i:i + 8192]
+            dd = ((q[:, None, :3] - p[None, :, :3]) ** 2).sum(-1)
+            dd = dd + np.where((q[:, 3:4] >= 128) != opaque_p[None, :], 1e9, 0)
+            idx[i:i + 8192] = np.argmin(dd, 1)
+        return idx.astype(np.uint8).reshape(h, w)
     px = rgba.reshape(-1, 4).astype(np.int32)
     if amp is None:
         amp = 30 if len(pal) <= 16 else 44      # dense 256-colour palettes need a wider pick
@@ -201,7 +218,8 @@ def gen_textures(T, P, kept, hook_stats):
                     amp = 14
                 else:
                     amp = None
-                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path), amp=amp) + d.get("idx_base", 0)
+                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path), amp=amp,
+                                  ordered=(path in hooked and ROOMBG.search(path) is not None)) + d.get("idx_base", 0)
             else:                                     # no known palette: grey grid is an index map
                 idx = np.round(rgba[path][..., 0].astype(np.float32) * ((16 if t == 3 else 256) - 1) / 255).astype(np.uint8)
             img = np.zeros(idx.shape + (4,), np.uint8)
