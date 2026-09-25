@@ -143,7 +143,7 @@ def gen_textures(T, P, kept, hook_stats):
         # per-texel dither: smooth regions must not quantise to the same texels as retail
         rng = np.random.default_rng(h32("tdither", path))
         img = img.astype(np.int16)
-        amp = 3 if (any(k in path for k in SKY) or ROOMBG.search(path)) else (8 if path in hooked else 13)   # skies and our drawings stay clean
+        amp = 3 if any(k in path for k in SKY) else (8 if (path in hooked or ROOMBG.search(path)) else 13)   # skies and our drawings stay clean
         img[..., :3] += rng.integers(-amp, amp + 1, img.shape[:2] + (3,), dtype=np.int16)
         rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
@@ -183,8 +183,15 @@ def gen_textures(T, P, kept, hook_stats):
             out[path] = encode_plain(pal, t)
         elif t in (3, 4):
             if d.get("pal"):
-                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path),
-                                  amp=18 if (any(k in path for k in SKY) or ROOMBG.search(path)) else (14 if path in hooked else None)) + d.get("idx_base", 0)
+                if any(k in path for k in SKY):
+                    amp = 18
+                elif ROOMBG.search(path):
+                    amp = 32                       # painted backdrops: calmer than the default, still taint-safe
+                elif path in hooked:
+                    amp = 14
+                else:
+                    amp = None
+                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path), amp=amp) + d.get("idx_base", 0)
             else:                                     # no known palette: grey grid is an index map
                 idx = np.round(rgba[path][..., 0].astype(np.float32) * ((16 if t == 3 else 256) - 1) / 255).astype(np.uint8)
             img = np.zeros(idx.shape + (4,), np.uint8)
