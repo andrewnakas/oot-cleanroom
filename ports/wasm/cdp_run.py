@@ -58,8 +58,11 @@ class Page:
         elif meth == "Runtime.exceptionThrown":
             ed = m["params"]["exceptionDetails"]
             s = "EXCEPTION: " + (ed.get("exception", {}).get("description", "") or ed.get("text", ""))[:300]
+            fr = (ed.get("stackTrace") or {}).get("callFrames", [])
+            if fr:
+                s += "\n" + "\n".join("at " + (f.get("functionName") or "?") for f in fr[:14])
             self.console.append(s)
-            print("  |", s.split("\n")[0], flush=True)
+            print("  |", "\n  |   ".join(s.split("\n")[:16]), flush=True)
 
     def call(self, method, timeout=600, **params):
         self.n += 1

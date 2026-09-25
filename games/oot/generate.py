@@ -13,6 +13,7 @@ Samples: resynthesised from the outline, our own 2-predictor VADPCM book.
 Backgrounds: JPEG from the 16x16 grid plus detail.
 """
 import io
+import re
 import struct
 import json
 import os
@@ -33,6 +34,7 @@ except ImportError:                  # optional hooks
 
 
 SKY = ("vr_fine", "vr_cloud", "vr_holy")
+ROOMBG = re.compile(r"textures/vr_\w+VR_static/")       # prerendered room backdrops (shops, houses)
 
 
 def fbm(seed, w, h, cells=(32, 16, 8, 4, 2)):
@@ -134,10 +136,14 @@ def gen_textures(T, P, kept, hook_stats):
             img = from_digest(path, d)
             if any(k in path for k in SKY) and not path.endswith("TLUT"):
                 img = sky_clouds(img, path)
+            elif ROOMBG.search(path) and not path.endswith("TLUT"):
+                f = img.astype(np.float32)
+                f[..., :3] *= (1 + 0.10 * fbm(h32("paint", path), img.shape[1], img.shape[0], (16, 8, 4, 2)))[..., None]
+                img = np.clip(f, 0, 255).astype(np.uint8)
         # per-texel dither: smooth regions must not quantise to the same texels as retail
         rng = np.random.default_rng(h32("tdither", path))
         img = img.astype(np.int16)
-        amp = 3 if any(k in path for k in SKY) else (8 if path in hooked else 13)   # skies and our drawings stay clean
+        amp = 3 if (any(k in path for k in SKY) or ROOMBG.search(path)) else (8 if path in hooked else 13)   # skies and our drawings stay clean
         img[..., :3] += rng.integers(-amp, amp + 1, img.shape[:2] + (3,), dtype=np.int16)
         rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
@@ -178,7 +184,7 @@ def gen_textures(T, P, kept, hook_stats):
         elif t in (3, 4):
             if d.get("pal"):
                 idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path),
-                                  amp=18 if any(k in path for k in SKY) else (14 if path in hooked else None)) + d.get("idx_base", 0)
+                                  amp=18 if (any(k in path for k in SKY) or ROOMBG.search(path)) else (14 if path in hooked else None)) + d.get("idx_base", 0)
             else:                                     # no known palette: grey grid is an index map
                 idx = np.round(rgba[path][..., 0].astype(np.float32) * ((16 if t == 3 else 256) - 1) / 255).astype(np.uint8)
             img = np.zeros(idx.shape + (4,), np.uint8)
@@ -221,7 +227,10 @@ def gen_background(path, d, seed):
     im = Image.fromarray(np.clip(img[..., :3], 0, 255).astype(np.uint8), "RGB")
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=92, subsampling=2)     # 4:2:0 like the retail backgrounds
-    return buf.getvalue()
+    jpg = buf.getvalue()
+    # SoH's loader sizes its output buffer from the resource's data size and then
+    # writes a full 320x240x2 image: backgrounds must be (at least) that long.
+    return jpg + bytes(max(0, 320 * 240 * 2 - len(jpg)))
 
 
 def main(argv):

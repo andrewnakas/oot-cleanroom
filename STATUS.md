@@ -48,7 +48,9 @@ Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-clean
    Source patches are in `ports/soh/port_patches.py` (dev CVars via `?dev=`, `web_scene`, `web_player_pos`, no extractor preload: the site is 35 MB smaller).
 
 ## Known issues
-- Once in ~4 headless runs, the game threw a wasm "memory access out of bounds" while loading a scene from the debug scene select. It isn't reproduced yet; it may be in the engine fork. If you hit it: reload.
+- FIXED: the wasm "memory access out of bounds" crash on scene loads was heap corruption.
+  SoH's `ResourceMgr_LoadJPEG` sizes its output buffer from the first background's data size, then writes 320x240x2 bytes; retail JPEGs are padded to 153,600 bytes.
+  Our clean JPEGs are now padded to that size too (generate.py).
 - Audio: the engine output is verified non-silent in headless tests, but nobody has listened yet. Please listen: music instruments and SFX are resynthesised from coarse outlines, and voices are TTS placeholders.
 
 ## Next
