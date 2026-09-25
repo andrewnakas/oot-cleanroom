@@ -29,8 +29,32 @@ def briefs():
     return _B
 
 
+# Link's masks: our own colours per mask (skin = the mask's surface)
+MASKS = {
+    "BunnyHoodEye": {"kind": "eye1", "skin": [236, 228, 214], "iris": [30, 20, 20], "sclera": [30, 20, 20], "brows": False, "pupil": 0.0},
+    "GerudoMaskEye": {"kind": "eye1", "skin": [190, 130, 80], "iris": [210, 160, 40], "brow": [180, 40, 30]},
+    "GerudoMaskMouth": {"kind": "mouth", "skin": [190, 130, 80], "lip": [150, 60, 50]},
+    "GoronMaskEye": {"kind": "eye1", "skin": [150, 115, 70], "iris": [40, 25, 15], "brow": [80, 55, 30], "sclera": [230, 220, 200]},
+    "GoronMaskMouth": {"kind": "mouth", "skin": [150, 115, 70], "lip": [90, 60, 35]},
+    "SkullMaskEye": {"kind": "eye1", "skin": [226, 218, 196], "iris": [20, 15, 10], "sclera": [20, 15, 10], "brows": False, "pupil": 0.0},
+    "ZoraMaskEye": {"kind": "eye1", "skin": [190, 215, 240], "iris": [90, 50, 140], "brows": False},
+    "ZoraMaskMouth": {"kind": "mouth", "skin": [190, 215, 240], "lip": [120, 150, 190]},
+}
+
+
+def mask_brief(path):
+    name = path.rsplit("/", 1)[1]
+    for k, v in MASKS.items():
+        if k in name:
+            return v
+    return None
+
+
 def classify(path, d):
     name = path.rsplit("/", 1)[1]
+    mb = mask_brief(path)
+    if mb:
+        return mb["kind"]
     if re.search(r"(TLUT|Pal|Brow|Lash|Boarder|Border|Mask|Hood)", name):
         return None
     obj = path.split("/")[1]
@@ -127,13 +151,16 @@ def mouth_ops(name, c):
 
 
 def texture(path, d):
+    if path.endswith("gLinkChildKeatonMaskEyeBrowTex"):      # the fox mask's arched brows
+        ops = [{"arc": [0.5, 0.95, 0.42, 0.6, 200, 340], "w": 0.16, "c": [60, 35, 10]}]
+        return facepaint.render({"base": [236, 200, 40], "detail": 0.04, "ops": ops}, d["w"], d["h"])
     kind = classify(path, d)
     if not kind:
         return None
     b = briefs()
     obj = path.split("/")[1]
     c = dict(b["default"])
-    c.update(b["chars"][obj])
+    c.update(mask_brief(path) or b["chars"][obj])
     if c.get("skin") in (None, "grid"):
         c["skin"] = skin_from(d, [230, 190, 150])
     # step flat colours off the 5-bit grid values a retail texture would also land on
