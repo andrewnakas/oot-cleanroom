@@ -1,59 +1,733 @@
 {
  "_doc": "Our own colour descriptions per character (object folder). skin 'grid' = take it from the texture's kept colour grid. pair=false: wide textures still hold one eye.",
- "default": {"skin": "grid", "iris": [80, 55, 35], "brow": [70, 45, 25], "lash": [30, 20, 15], "sclera": [248, 248, 244]},
+ "default": {
+  "skin": "grid",
+  "iris": [
+   80,
+   55,
+   35
+  ],
+  "brow": [
+   70,
+   45,
+   25
+  ],
+  "lash": [
+   30,
+   20,
+   15
+  ],
+  "sclera": [
+   248,
+   248,
+   244
+  ]
+ },
  "chars": {
-  "object_link_boy": {"iris": [40, 90, 225], "brow": [185, 145, 55], "lash": [70, 50, 25]},
-  "object_link_child": {"iris": [40, 90, 225], "brow": [185, 145, 55], "lash": [70, 50, 25]},
-  "object_zl1": {"iris": [60, 100, 200], "brow": [170, 120, 60]},
-  "object_zl2": {"iris": [70, 95, 190], "brow": [160, 110, 55]},
-  "object_zl4": {"iris": [60, 110, 205], "brow": [180, 125, 60], "skin": [250, 218, 182]},
-  "object_sa": {"iris": [40, 75, 210], "brow": [70, 95, 40]},
-  "object_ma1": {"iris": [50, 85, 210], "brow": [150, 70, 40]},
-  "object_ma2": {"iris": [50, 85, 210], "brow": [150, 70, 40]},
-  "object_du": {"iris": [45, 20, 85], "brow": [70, 45, 20], "sclera": [60, 25, 90]},
-  "object_ru1": {"iris": [110, 55, 150], "brow": [120, 150, 200]},
-  "object_ru2": {"iris": [110, 55, 150], "brow": [120, 150, 200]},
-  "object_in": {"iris": [45, 30, 20], "brow": [45, 30, 20]},
-  "object_im": {"iris": [170, 35, 35], "brow": [210, 210, 210]},
-  "object_nb": {"iris": [195, 150, 40], "brow": [165, 45, 30]},
-  "object_tw": {"iris": [230, 200, 60], "brow": [200, 200, 200]},
-  "object_ganon": {"iris": [230, 190, 50], "brow": [175, 50, 30], "sclera": [240, 230, 200]},
-  "object_ganon2": {"iris": [230, 190, 50], "brow": [175, 50, 30]},
-  "object_gnd": {"iris": [230, 190, 50], "brow": [175, 50, 30]},
-  "object_gndd": {"iris": [230, 190, 50], "brow": [175, 50, 30]},
-  "object_xc": {"iris": [190, 30, 40], "brow": [210, 200, 150]},
-  "object_kz": {"iris": [20, 20, 25], "brow": [150, 170, 200], "pupil": 0.0},
-  "object_md": {"iris": [40, 80, 200], "brow": [210, 110, 40]},
-  "object_kw1": {"iris": [60, 45, 30]},
-  "object_human": {"iris": [70, 50, 35]},
-  "object_ane": {"iris": [70, 50, 35]},
-  "object_cne": {"iris": [70, 50, 35]},
-  "object_os": {"iris": [70, 50, 35]},
-  "object_ossan": {"iris": [70, 50, 35]},
-  "object_fu": {"iris": [70, 50, 35]},
-  "object_ds": {"iris": [70, 50, 35]},
-  "object_ds2": {"iris": [70, 50, 35]},
-  "object_gr": {"iris": [190, 150, 40], "brow": [165, 45, 30]},
-  "object_ge1": {"iris": [190, 150, 40], "brow": [165, 45, 30]},
-  "object_cs": {"iris": [70, 50, 35]},
-  "object_bg": {"iris": [70, 50, 35]},
-  "object_aob": {"iris": [70, 50, 35]},
-  "object_ani": {"iris": [70, 50, 35]},
-  "object_tk": {"iris": [60, 40, 25], "brow": [90, 70, 50]},
-  "object_rs": {"iris": [70, 50, 35]},
-  "object_ta": {"iris": [70, 50, 35]},
-  "object_owl": {"iris": [240, 200, 40], "brow": [110, 80, 50], "brows": false},
-  "object_ms": {"iris": [70, 50, 35]},
-  "object_mm": {"iris": [70, 50, 35]},
-  "object_jj": {"iris": [40, 40, 50], "brows": false},
-  "object_fa": {"iris": [60, 60, 180]},
-  "object_masterkokirihead": {"iris": [60, 45, 30]},
-  "object_gla": {"iris": [70, 50, 35]},
-  "object_dog": {"iris": [25, 20, 15], "brows": false, "irisr": 0.8},
-  "object_horse": {"iris": [35, 25, 20], "brows": false, "irisr": 0.8},
-  "object_horse_link_child": {"iris": [35, 25, 20], "brows": false, "irisr": 0.8},
-  "object_dns": {"iris": [250, 220, 60], "brows": false, "sclera": [30, 20, 10], "pupil": 0.0},
-  "object_dnk": {"iris": [250, 220, 60], "brows": false, "sclera": [30, 20, 10], "pupil": 0.0},
-  "object_dekunuts": {"iris": [250, 220, 60], "brows": false, "sclera": [30, 20, 10], "pupil": 0.0}
+  "object_link_boy": {
+   "iris": [
+    40,
+    90,
+    225
+   ],
+   "brow": [
+    185,
+    145,
+    55
+   ],
+   "lash": [
+    70,
+    50,
+    25
+   ]
+  },
+  "object_link_child": {
+   "iris": [
+    40,
+    90,
+    225
+   ],
+   "brow": [
+    185,
+    145,
+    55
+   ],
+   "lash": [
+    70,
+    50,
+    25
+   ]
+  },
+  "object_zl1": {
+   "iris": [
+    60,
+    100,
+    200
+   ],
+   "brow": [
+    170,
+    120,
+    60
+   ]
+  },
+  "object_zl2": {
+   "iris": [
+    70,
+    95,
+    190
+   ],
+   "brow": [
+    160,
+    110,
+    55
+   ]
+  },
+  "object_zl4": {
+   "iris": [
+    60,
+    110,
+    205
+   ],
+   "brow": [
+    180,
+    125,
+    60
+   ],
+   "skin": [
+    250,
+    218,
+    182
+   ]
+  },
+  "object_sa": {
+   "iris": [
+    40,
+    75,
+    210
+   ],
+   "brow": [
+    70,
+    95,
+    40
+   ]
+  },
+  "object_ma1": {
+   "iris": [
+    50,
+    85,
+    210
+   ],
+   "brow": [
+    150,
+    70,
+    40
+   ]
+  },
+  "object_ma2": {
+   "iris": [
+    50,
+    85,
+    210
+   ],
+   "brow": [
+    150,
+    70,
+    40
+   ]
+  },
+  "object_du": {
+   "iris": [
+    45,
+    20,
+    85
+   ],
+   "brow": [
+    70,
+    45,
+    20
+   ],
+   "sclera": [
+    60,
+    25,
+    90
+   ]
+  },
+  "object_ru1": {
+   "iris": [
+    110,
+    55,
+    150
+   ],
+   "brow": [
+    120,
+    150,
+    200
+   ]
+  },
+  "object_ru2": {
+   "iris": [
+    110,
+    55,
+    150
+   ],
+   "brow": [
+    120,
+    150,
+    200
+   ]
+  },
+  "object_in": {
+   "iris": [
+    45,
+    30,
+    20
+   ],
+   "brow": [
+    45,
+    30,
+    20
+   ]
+  },
+  "object_im": {
+   "iris": [
+    170,
+    35,
+    35
+   ],
+   "brow": [
+    210,
+    210,
+    210
+   ]
+  },
+  "object_nb": {
+   "iris": [
+    195,
+    150,
+    40
+   ],
+   "brow": [
+    165,
+    45,
+    30
+   ]
+  },
+  "object_tw": {
+   "iris": [
+    230,
+    200,
+    60
+   ],
+   "brow": [
+    200,
+    200,
+    200
+   ]
+  },
+  "object_ganon": {
+   "iris": [
+    230,
+    190,
+    50
+   ],
+   "brow": [
+    175,
+    50,
+    30
+   ],
+   "sclera": [
+    240,
+    230,
+    200
+   ]
+  },
+  "object_ganon2": {
+   "iris": [
+    230,
+    190,
+    50
+   ],
+   "brow": [
+    175,
+    50,
+    30
+   ]
+  },
+  "object_gnd": {
+   "iris": [
+    230,
+    190,
+    50
+   ],
+   "brow": [
+    175,
+    50,
+    30
+   ]
+  },
+  "object_gndd": {
+   "iris": [
+    230,
+    190,
+    50
+   ],
+   "brow": [
+    175,
+    50,
+    30
+   ]
+  },
+  "object_xc": {
+   "iris": [
+    190,
+    30,
+    40
+   ],
+   "brow": [
+    210,
+    200,
+    150
+   ]
+  },
+  "object_kz": {
+   "iris": [
+    20,
+    20,
+    25
+   ],
+   "brow": [
+    150,
+    170,
+    200
+   ],
+   "pupil": 0.0
+  },
+  "object_md": {
+   "iris": [
+    40,
+    80,
+    200
+   ],
+   "brow": [
+    210,
+    110,
+    40
+   ]
+  },
+  "object_kw1": {
+   "iris": [
+    60,
+    45,
+    30
+   ]
+  },
+  "object_human": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_ane": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_cne": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_os": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_ossan": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_fu": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_ds": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_ds2": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_gr": {
+   "iris": [
+    190,
+    150,
+    40
+   ],
+   "brow": [
+    165,
+    45,
+    30
+   ]
+  },
+  "object_ge1": {
+   "iris": [
+    190,
+    150,
+    40
+   ],
+   "brow": [
+    165,
+    45,
+    30
+   ]
+  },
+  "object_cs": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_bg": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_aob": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_ani": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_tk": {
+   "iris": [
+    60,
+    40,
+    25
+   ],
+   "brow": [
+    90,
+    70,
+    50
+   ]
+  },
+  "object_rs": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_ta": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_owl": {
+   "iris": [
+    240,
+    200,
+    40
+   ],
+   "brow": [
+    110,
+    80,
+    50
+   ],
+   "brows": false
+  },
+  "object_ms": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_mm": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_jj": {
+   "iris": [
+    40,
+    40,
+    50
+   ],
+   "brows": false
+  },
+  "object_fa": {
+   "iris": [
+    60,
+    60,
+    180
+   ]
+  },
+  "object_masterkokirihead": {
+   "iris": [
+    60,
+    45,
+    30
+   ]
+  },
+  "object_gla": {
+   "iris": [
+    70,
+    50,
+    35
+   ]
+  },
+  "object_dog": {
+   "iris": [
+    25,
+    20,
+    15
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_horse": {
+   "iris": [
+    35,
+    25,
+    20
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_horse_link_child": {
+   "iris": [
+    35,
+    25,
+    20
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_dns": {
+   "iris": [
+    250,
+    220,
+    60
+   ],
+   "brows": false,
+   "sclera": [
+    30,
+    20,
+    10
+   ],
+   "pupil": 0.0
+  },
+  "object_dnk": {
+   "iris": [
+    250,
+    220,
+    60
+   ],
+   "brows": false,
+   "sclera": [
+    30,
+    20,
+    10
+   ],
+   "pupil": 0.0
+  },
+  "object_dekunuts": {
+   "iris": [
+    250,
+    220,
+    60
+   ],
+   "brows": false,
+   "sclera": [
+    30,
+    20,
+    10
+   ],
+   "pupil": 0.0
+  },
+  "object_oF1d_map": {
+   "iris": [
+    40,
+    25,
+    15
+   ],
+   "brow": [
+    70,
+    50,
+    30
+   ]
+  },
+  "object_dy_obj": {
+   "iris": [
+    60,
+    150,
+    90
+   ],
+   "brow": [
+    120,
+    60,
+    120
+   ]
+  },
+  "object_fish": {
+   "iris": [
+    50,
+    35,
+    25
+   ]
+  },
+  "object_tr": {
+   "iris": [
+    230,
+    200,
+    60
+   ],
+   "brow": [
+    200,
+    200,
+    200
+   ]
+  },
+  "object_zo": {
+   "iris": [
+    60,
+    30,
+    90
+   ],
+   "brows": false
+  },
+  "object_geldb": {
+   "iris": [
+    195,
+    150,
+    40
+   ],
+   "brow": [
+    165,
+    45,
+    30
+   ]
+  },
+  "object_hni": {
+   "iris": [
+    35,
+    25,
+    20
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_horse_ganon": {
+   "iris": [
+    150,
+    20,
+    20
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_horse_normal": {
+   "iris": [
+    35,
+    25,
+    20
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_horse_zelda": {
+   "iris": [
+    35,
+    25,
+    20
+   ],
+   "brows": false,
+   "irisr": 0.8
+  },
+  "object_niw": {
+   "iris": [
+    20,
+    15,
+    10
+   ],
+   "brows": false,
+   "irisr": 0.9
+  },
+  "object_nwc": {
+   "iris": [
+    20,
+    15,
+    10
+   ],
+   "brows": false,
+   "irisr": 0.9
+  },
+  "object_crow": {
+   "iris": [
+    200,
+    40,
+    30
+   ],
+   "brows": false
+  },
+  "object_sd": {
+   "iris": [
+    60,
+    45,
+    30
+   ]
+  },
+  "object_ik": {
+   "iris": [
+    200,
+    150,
+    40
+   ],
+   "brows": false
+  },
+  "object_cow": {
+   "iris": [
+    30,
+    20,
+    15
+   ],
+   "brows": false,
+   "irisr": 0.8
+  }
  }
 }

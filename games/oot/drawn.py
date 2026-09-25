@@ -236,6 +236,41 @@ def label_tex(path, d, lines):
     return outlined(m, r=1)
 
 
+# ------------------------------------------------------------ stone panels
+
+def fbm(seed, w, h, cells=(24, 12, 6, 3, 1.5)):
+    from cleanroom.decomp.gen import detail
+    out = np.zeros((h, w), np.float32)
+    amp, tot = 1.0, 0.0
+    for k, c in enumerate(cells):
+        out += amp * (detail(seed + k, w, h, 1.0, float(c)) - 1.0)
+        tot += amp
+        amp *= 0.6
+    return out / tot
+
+
+def stone(path, d):
+    """Carved-stone look for pause-page tiles: grid colours, our fractal grain, bevelled edges of the kept alpha."""
+    from cleanroom.decomp.gen import upsample_grid, h32
+    w, h = d["w"], d["h"]
+    n = int(round(len(d["grid"]) ** 0.5))
+    img = upsample_grid(d["grid"], n, w, h)
+    g = fbm(h32("stone", path), w, h)
+    lum = img[..., :3].mean(-1, keepdims=True)
+    grey = lum * 0.55 + img[..., :3] * 0.45
+    img[..., :3] = grey * (0.82 + 0.45 * g[..., None])
+    if "alpha2" in d:
+        a = unpack_alpha2(d["alpha2"], w, h)
+        m = (a > 127).astype(np.float32)
+        up = np.clip(m - np.roll(m, 1, 0), 0, 1) + np.clip(m - np.roll(m, 1, 1), 0, 1)
+        dn = np.clip(m - np.roll(m, -1, 0), 0, 1) + np.clip(m - np.roll(m, -1, 1), 0, 1)
+        img[..., :3] = img[..., :3] * (1 + 0.35 * np.clip(up, 0, 1)[..., None]) * (1 - 0.45 * np.clip(dn, 0, 1)[..., None])
+        img[..., 3] = a
+    else:
+        img[..., 3] = 255
+    return np.clip(img, 0, 255)
+
+
 # ------------------------------------------------------------ pause page headers
 
 _SPEC = None
@@ -269,7 +304,7 @@ def pause_header(path, d):
     T = spec()
     cols = [c for c in range(3) if _find(page, c, 0)] if page in ("SelectItem", "QuestStatus") else [col]
     w, h = d["w"], d["h"]
-    strip = np.concatenate([from_digest(_find(page, c, 0), T[_find(page, c, 0)]).astype(np.float32) for c in cols], 1)
+    strip = np.concatenate([stone(_find(page, c, 0), T[_find(page, c, 0)]).astype(np.float32) for c in cols], 1)
     W = strip.shape[1]
     tm = np.roll(text_mask([PAUSE_TITLES[page]], W, h, "sansx", size=15), -3, 0)
     hi = np.roll(np.roll(tm, 1, 0), 1, 1)
@@ -349,7 +384,34 @@ def icon_override(path, d):
     return im
 
 
+PIC_DIR = os.path.join(HERE, "overrides", "pictures")
+
+
+def picture_override(path, d):
+    """Pictures rendered from the game's own geometry (e.g. games.oot.worldmap)."""
+    f = os.path.join(PIC_DIR, path.rsplit("/", 1)[1] + ".png")
+    if not os.path.exists(f):
+        return None
+    return np.asarray(Image.open(f).convert("RGBA").resize((d["w"], d["h"])), np.float32)
+
+
+def soft_cloud(path, d):
+    """World-map fog: the grid's soft shape with our billowy edge, no grain."""
+    from cleanroom.decomp.gen import upsample_grid, h32
+    w, h = d["w"], d["h"]
+    n = int(round(len(d["grid"]) ** 0.5))
+    g = upsample_grid(d["grid"], n, w, h)[..., 0] / 255.0
+    billow = fbm(h32("cloud", path), w, h, (12, 6, 3))
+    v = np.clip((g - 0.25) * 1.6 + 0.25 * billow, 0, 1)
+    return grey_img(v)
+
+
 def texture(path, d):
+    if "gWorldMapCloud" in path:
+        return soft_cloud(path, d)
+    img = picture_override(path, d)
+    if img is not None:
+        return img
     if path.endswith("gTitleZeldaShieldLogoTex"):
         return title_logo(path, d)
     if "/icon_item_static/" in path or "/icon_item_24_static/" in path:
@@ -366,6 +428,7 @@ def texture(path, d):
         img = pause_header(path, d)
         if img is not None:
             return img
+        return stone(path, d)
     lines = labels.label(path)
     if lines:
         return label_tex(path, d, lines)
@@ -377,3 +440,26 @@ def texture(path, d):
     except FileNotFoundError:
         pass
     return None
+
+
+# ------------------------------------------------------------ samples
+
+VOICE_DIR = os.path.join(HERE, "voices")
+_VOICE_LINES = None
+
+
+def sample(path, d):
+    """Voice slots: our placeholder TTS take (games/oot/voices/<name>.wav, built by
+    cleanroom.voice.voices from voice_lines.json), already at the slot's rate and length."""
+    global _VOICE_LINES
+    if _VOICE_LINES is None:
+        f = os.path.join(HERE, "voice_lines.json")
+        _VOICE_LINES = json.load(open(f)) if os.path.exists(f) else {}
+    if path not in _VOICE_LINES:
+        return None
+    f = os.path.join(VOICE_DIR, os.path.basename(path)[:-5] + ".wav")
+    if not os.path.exists(f):
+        return None
+    import wave
+    with wave.open(f) as w:
+        return np.frombuffer(w.readframes(w.getnframes()), "<i2").astype(np.float32) / 32768

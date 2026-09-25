@@ -107,6 +107,7 @@ def main():
     ap.add_argument("--port", type=int, default=9334)
     ap.add_argument("--size", default="1280,960")
     ap.add_argument("--quiet", action="store_true")
+    ap.add_argument("--inject", help="JS file evaluated in every new document before page scripts")
     a = ap.parse_args()
     steps = json.load(open(a.steps))
     os.makedirs(a.out, exist_ok=True)
@@ -131,6 +132,8 @@ def main():
         pg = Page(ws, a.quiet)
         pg.call("Runtime.enable")
         pg.call("Page.enable")
+        if a.inject:
+            pg.call("Page.addScriptToEvaluateOnNewDocument", source=open(a.inject, encoding="utf-8").read())
         pg.call("Page.navigate", url=a.url)
         for st in steps:
             t0 = time.time()

@@ -13,6 +13,7 @@ Samples: resynthesised from the outline, our own 2-predictor VADPCM book.
 Backgrounds: JPEG from the 16x16 grid plus detail.
 """
 import io
+import struct
 import json
 import os
 import sys
@@ -121,10 +122,12 @@ def pal_cell_means(d):
 def gen_textures(T, P, kept, hook_stats):
     out = {}
     rgba = {}
+    hooked = set()
     for path, d in T.items():
         img = drawn.texture(path, d) if drawn else None
         if img is not None:
             hook_stats["hooked"] += 1
+            hooked.add(path)
             img = np.clip(img, 0, 255).astype(np.uint8)
         else:
             hook_stats["digest"] += 1
@@ -134,7 +137,7 @@ def gen_textures(T, P, kept, hook_stats):
         # per-texel dither: smooth regions must not quantise to the same texels as retail
         rng = np.random.default_rng(h32("tdither", path))
         img = img.astype(np.int16)
-        amp = 3 if any(k in path for k in SKY) else 13        # skies stay smooth
+        amp = 3 if (any(k in path for k in SKY) or path in hooked) else 13   # skies and our drawings stay clean
         img[..., :3] += rng.integers(-amp, amp + 1, img.shape[:2] + (3,), dtype=np.int16)
         rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
@@ -175,7 +178,7 @@ def gen_textures(T, P, kept, hook_stats):
         elif t in (3, 4):
             if d.get("pal"):
                 idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path),
-                                  amp=18 if any(k in path for k in SKY) else None) + d.get("idx_base", 0)
+                                  amp=18 if any(k in path for k in SKY) else (8 if path in hooked else None)) + d.get("idx_base", 0)
             else:                                     # no known palette: grey grid is an index map
                 idx = np.round(rgba[path][..., 0].astype(np.float32) * ((16 if t == 3 else 256) - 1) / 255).astype(np.uint8)
             img = np.zeros(idx.shape + (4,), np.uint8)
@@ -248,6 +251,15 @@ def main(argv):
         for path, d in B.items():
             files[path] = o2r.bg_build(files[path], gen_background(path, d, h32("bg", path)))
             nb += 1
+    # unreferenced data blobs (no display list, room or C source uses them): blanked, since
+    # some may be leftover image data; the text/ blobs are Navi's hint text (kept facts)
+    nblob = 0
+    for path, data in files.items():
+        if o2r.rtype(data) == "OBLB" and not path.startswith("text/"):
+            n = struct.unpack("<I", data[o2r.HDR:o2r.HDR + 4])[0]
+            files[path] = data[:o2r.HDR + 4] + bytes(n) + data[o2r.HDR + 4 + n:]
+            nblob += 1
+    print(f"blobs blanked: {nblob}")
     o2r.write_all(out_path, files)
     print(f"generated: textures {stats}, samples {ns}, backgrounds {nb} -> {out_path} "
           f"({os.path.getsize(out_path) // 1024} KB)")

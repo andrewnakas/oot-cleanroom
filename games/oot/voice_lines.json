@@ -1,0 +1,734 @@
+{
+ "_doc": "Placeholder TTS lines for voice sample slots (words from the sample names). who -> _characters[who].tts (Piper model, pitch lift, speed).",
+ "_characters": {
+  "link_adult": {
+   "tts": {
+    "model": "en_US-ryan-high",
+    "semitones": 1.0,
+    "length": 0.9
+   }
+  },
+  "link_child": {
+   "tts": {
+    "model": "en_US-amy-medium",
+    "semitones": 3.0,
+    "length": 0.9
+   }
+  },
+  "navi": {
+   "tts": {
+    "model": "en_US-kristin-medium",
+    "semitones": 6.0,
+    "length": 0.8
+   }
+  },
+  "ganondorf": {
+   "tts": {
+    "model": "en_US-joe-medium",
+    "semitones": -4.0,
+    "length": 1.1
+   }
+  },
+  "girl": {
+   "tts": {
+    "model": "en_US-amy-medium",
+    "semitones": 2.0,
+    "length": 0.9
+   }
+  },
+  "woman": {
+   "tts": {
+    "model": "en_US-kristin-medium",
+    "semitones": 0.0,
+    "length": 0.9
+   }
+  },
+  "witch": {
+   "tts": {
+    "model": "en_US-hfc_female-medium",
+    "semitones": 3.0,
+    "length": 0.9
+   }
+  },
+  "fairy": {
+   "tts": {
+    "model": "en_US-hfc_female-medium",
+    "semitones": 1.0,
+    "length": 1.0
+   }
+  },
+  "goron": {
+   "tts": {
+    "model": "en_US-joe-medium",
+    "semitones": -3.0,
+    "length": 1.0
+   }
+  },
+  "man": {
+   "tts": {
+    "model": "en_US-joe-medium",
+    "semitones": 0.0,
+    "length": 0.9
+   }
+  },
+  "gerudo": {
+   "tts": {
+    "model": "en_US-hfc_female-medium",
+    "semitones": -1.0,
+    "length": 0.9
+   }
+  }
+ },
+ "audio/samples/Adult Link - Attack 1_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Attack 2_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Attack 3_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Attack 4_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Cast Attacking Magic_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Choking_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Climb Edge_META": {
+  "who": "link_adult",
+  "text": "Hnn!"
+ },
+ "audio/samples/Adult Link - Dangling Gasp 1_META": {
+  "who": "link_adult",
+  "text": "Nngh!"
+ },
+ "audio/samples/Adult Link - Dangling Gasp 2_META": {
+  "who": "link_adult",
+  "text": "Nngh!"
+ },
+ "audio/samples/Adult Link - Dangling Grunt_META": {
+  "who": "link_adult",
+  "text": "Nngh!"
+ },
+ "audio/samples/Adult Link - Dramatic Gasp_META": {
+  "who": "link_adult",
+  "text": "Hah!"
+ },
+ "audio/samples/Adult Link - Falling 1_META": {
+  "who": "link_adult",
+  "text": "Waaah!"
+ },
+ "audio/samples/Adult Link - Falling 2_META": {
+  "who": "link_adult",
+  "text": "Waaah!"
+ },
+ "audio/samples/Adult Link - Finished Stretching_META": {
+  "who": "link_adult",
+  "text": "Ahh."
+ },
+ "audio/samples/Adult Link - Gasp 1_META": {
+  "who": "link_adult",
+  "text": "Hah!"
+ },
+ "audio/samples/Adult Link - Gasp 2_META": {
+  "who": "link_adult",
+  "text": "Hah!"
+ },
+ "audio/samples/Adult Link - Gasp 3_META": {
+  "who": "link_adult",
+  "text": "Hah!"
+ },
+ "audio/samples/Adult Link - Gasping (Unused)_META": {
+  "who": "link_adult",
+  "text": "Hah!"
+ },
+ "audio/samples/Adult Link - Glug_META": {
+  "who": "link_adult",
+  "text": "Glug."
+ },
+ "audio/samples/Adult Link - Hup_META": {
+  "who": "link_adult",
+  "text": "Hup!"
+ },
+ "audio/samples/Adult Link - Hurt (Unused)_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Hurt 1_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Hurt 2_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Hurt 3_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Hurt 4_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Hurt 5_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Knocked Back_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Lift (Unused)_META": {
+  "who": "link_adult",
+  "text": "Nngh!"
+ },
+ "audio/samples/Adult Link - Painful Landing_META": {
+  "who": "link_adult",
+  "text": "Ugh!"
+ },
+ "audio/samples/Adult Link - Pant 1_META": {
+  "who": "link_adult",
+  "text": "Hah, hah."
+ },
+ "audio/samples/Adult Link - Pant 2_META": {
+  "who": "link_adult",
+  "text": "Hah, hah."
+ },
+ "audio/samples/Adult Link - Refreshed_META": {
+  "who": "link_adult",
+  "text": "Ahh."
+ },
+ "audio/samples/Adult Link - Sigh 1_META": {
+  "who": "link_adult",
+  "text": "Haah."
+ },
+ "audio/samples/Adult Link - Sigh 2_META": {
+  "who": "link_adult",
+  "text": "Haah."
+ },
+ "audio/samples/Adult Link - Sigh 3_META": {
+  "who": "link_adult",
+  "text": "Haah."
+ },
+ "audio/samples/Adult Link - Small Gasp (Unused)_META": {
+  "who": "link_adult",
+  "text": "Hah!"
+ },
+ "audio/samples/Adult Link - Sneezes_META": {
+  "who": "link_adult",
+  "text": "Achoo!"
+ },
+ "audio/samples/Adult Link - Spur Horse 1_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Spur Horse 2_META": {
+  "who": "link_adult",
+  "text": "Hyah!"
+ },
+ "audio/samples/Adult Link - Stretch Start_META": {
+  "who": "link_adult",
+  "text": "Ahh."
+ },
+ "audio/samples/Adult Link - Stretching_META": {
+  "who": "link_adult",
+  "text": "Ahh."
+ },
+ "audio/samples/Adult Link - Strong Attack 1_META": {
+  "who": "link_adult",
+  "text": "Hyaaah!"
+ },
+ "audio/samples/Adult Link - Strong Attack 2_META": {
+  "who": "link_adult",
+  "text": "Hyaaah!"
+ },
+ "audio/samples/Adult Link - Unsettled Moan_META": {
+  "who": "link_adult",
+  "text": "Ohh."
+ },
+ "audio/samples/Child Link - Attack 1_META": {
+  "who": "link_child",
+  "text": "Hyah!"
+ },
+ "audio/samples/Child Link - Attack 2_META": {
+  "who": "link_child",
+  "text": "Hyah!"
+ },
+ "audio/samples/Child Link - Attack 3_META": {
+  "who": "link_child",
+  "text": "Hyah!"
+ },
+ "audio/samples/Child Link - Attack 4_META": {
+  "who": "link_child",
+  "text": "Hyah!"
+ },
+ "audio/samples/Child Link - Awakening Grunt_META": {
+  "who": "link_child",
+  "text": "Nngh!"
+ },
+ "audio/samples/Child Link - Cast Attack Spell_META": {
+  "who": "link_child",
+  "text": "Hyah!"
+ },
+ "audio/samples/Child Link - Dangling Gasp 1_META": {
+  "who": "link_child",
+  "text": "Nngh!"
+ },
+ "audio/samples/Child Link - Dangling Gasp 2_META": {
+  "who": "link_child",
+  "text": "Nngh!"
+ },
+ "audio/samples/Child Link - Dramatic Gasp_META": {
+  "who": "link_child",
+  "text": "Hah!"
+ },
+ "audio/samples/Child Link - Dying Gasp_META": {
+  "who": "link_child",
+  "text": "Hah!"
+ },
+ "audio/samples/Child Link - Exhausted Panting_META": {
+  "who": "link_child",
+  "text": "Hah, hah."
+ },
+ "audio/samples/Child Link - Falling 1_META": {
+  "who": "link_child",
+  "text": "Waaah!"
+ },
+ "audio/samples/Child Link - Falling 2_META": {
+  "who": "link_child",
+  "text": "Waaah!"
+ },
+ "audio/samples/Child Link - Gasp 1_META": {
+  "who": "link_child",
+  "text": "Hah!"
+ },
+ "audio/samples/Child Link - Gasp 2_META": {
+  "who": "link_child",
+  "text": "Hah!"
+ },
+ "audio/samples/Child Link - Gasp 3_META": {
+  "who": "link_child",
+  "text": "Hah!"
+ },
+ "audio/samples/Child Link - Glug_META": {
+  "who": "link_child",
+  "text": "Glug."
+ },
+ "audio/samples/Child Link - Grunt_META": {
+  "who": "link_child",
+  "text": "Nngh!"
+ },
+ "audio/samples/Child Link - Hup 1_META": {
+  "who": "link_child",
+  "text": "Hup!"
+ },
+ "audio/samples/Child Link - Hup 2_META": {
+  "who": "link_child",
+  "text": "Hup!"
+ },
+ "audio/samples/Child Link - Hurt 1_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Hurt 2_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Hurt 3_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Hurt 4_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Hurt 5_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Knocked Back_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Moans From Heat_META": {
+  "who": "link_child",
+  "text": "Ohh."
+ },
+ "audio/samples/Child Link - Painful Landing_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Refreshed_META": {
+  "who": "link_child",
+  "text": "Ahh."
+ },
+ "audio/samples/Child Link - Shivers_META": {
+  "who": "link_child",
+  "text": "Ohh."
+ },
+ "audio/samples/Child Link - Sigh 1_META": {
+  "who": "link_child",
+  "text": "Haah."
+ },
+ "audio/samples/Child Link - Sigh 2_META": {
+  "who": "link_child",
+  "text": "Haah."
+ },
+ "audio/samples/Child Link - Sneeze_META": {
+  "who": "link_child",
+  "text": "Achoo!"
+ },
+ "audio/samples/Child Link - Strangled (Unused)_META": {
+  "who": "link_child",
+  "text": "Ugh!"
+ },
+ "audio/samples/Child Link - Stretch Refreshingly_META": {
+  "who": "link_child",
+  "text": "Ahh."
+ },
+ "audio/samples/Child Link - Strong Attack 1_META": {
+  "who": "link_child",
+  "text": "Hyaaah!"
+ },
+ "audio/samples/Child Link - Strong Attack 2_META": {
+  "who": "link_child",
+  "text": "Hyaaah!"
+ },
+ "audio/samples/Child Link - Wheeze_META": {
+  "who": "link_child",
+  "text": "Hah, hah."
+ },
+ "audio/samples/Child Link - Wiping Off Sweat_META": {
+  "who": "link_child",
+  "text": "Phew."
+ },
+ "audio/samples/Child Link - Yawn Starts_META": {
+  "who": "link_child",
+  "text": "Ahh."
+ },
+ "audio/samples/Child Link - Yawn and Stretch_META": {
+  "who": "link_child",
+  "text": "Ahh."
+ },
+ "audio/samples/Ganondorf Attacks_META": {
+  "who": "ganondorf",
+  "text": "Hyah!"
+ },
+ "audio/samples/Ganondorf Breathes (Unused)_META": {
+  "who": "ganondorf",
+  "text": "Hrrgh."
+ },
+ "audio/samples/Ganondorf Chuckles_META": {
+  "who": "ganondorf",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Ganondorf Dying Breath_META": {
+  "who": "ganondorf",
+  "text": "Ahh..."
+ },
+ "audio/samples/Ganondorf Gurgling Yell (Unused)_META": {
+  "who": "ganondorf",
+  "text": "Hrrgh."
+ },
+ "audio/samples/Ganondorf Heavy Attack_META": {
+  "who": "ganondorf",
+  "text": "Hyah!"
+ },
+ "audio/samples/Ganondorf Hurt 1_META": {
+  "who": "ganondorf",
+  "text": "Ugh!"
+ },
+ "audio/samples/Ganondorf Hurt 2_META": {
+  "who": "ganondorf",
+  "text": "Ugh!"
+ },
+ "audio/samples/Ganondorf Laughing_META": {
+  "who": "ganondorf",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Ganondorf Rebuffs_META": {
+  "who": "ganondorf",
+  "text": "Grr!"
+ },
+ "audio/samples/Ganondorf Recovers_META": {
+  "who": "ganondorf",
+  "text": "Hmm."
+ },
+ "audio/samples/Ganondorf Vomits_META": {
+  "who": "ganondorf",
+  "text": "Hrrgh."
+ },
+ "audio/samples/Ganondorf Yells in Defiance_META": {
+  "who": "ganondorf",
+  "text": "Aaah!"
+ },
+ "audio/samples/Ganondorf's Final Attack (Unused)_META": {
+  "who": "ganondorf",
+  "text": "Hyah!"
+ },
+ "audio/samples/Ganondorf's Final Attack 2 (Unused)_META": {
+  "who": "ganondorf",
+  "text": "Hyah!"
+ },
+ "audio/samples/Gerudo Attacks_META": {
+  "who": "gerudo",
+  "text": "Hyah!"
+ },
+ "audio/samples/Gerudo Breathes_META": {
+  "who": "gerudo",
+  "text": "Hrrgh."
+ },
+ "audio/samples/Gerudo Hurt_META": {
+  "who": "gerudo",
+  "text": "Ugh!"
+ },
+ "audio/samples/Gerudo Vanquished_META": {
+  "who": "gerudo",
+  "text": "Aaagh."
+ },
+ "audio/samples/Girl Delighted_META": {
+  "who": "girl",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Girl Disappointed_META": {
+  "who": "girl",
+  "text": "Aww."
+ },
+ "audio/samples/Girl Discombobulated (Unused)_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Gasps_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Grunts in Effort_META": {
+  "who": "girl",
+  "text": "Nngh!"
+ },
+ "audio/samples/Girl Hurt_META": {
+  "who": "girl",
+  "text": "Ugh!"
+ },
+ "audio/samples/Girl Inquiring 1_META": {
+  "who": "girl",
+  "text": "Hmm?"
+ },
+ "audio/samples/Girl Inquiring 2_META": {
+  "who": "girl",
+  "text": "Hmm?"
+ },
+ "audio/samples/Girl Laughing_META": {
+  "who": "girl",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Girl Scared_META": {
+  "who": "girl",
+  "text": "Eek!"
+ },
+ "audio/samples/Girl Screams 1_META": {
+  "who": "girl",
+  "text": "Aaah!"
+ },
+ "audio/samples/Girl Screams 2_META": {
+  "who": "girl",
+  "text": "Aaah!"
+ },
+ "audio/samples/Girl Screams 3_META": {
+  "who": "girl",
+  "text": "Aaah!"
+ },
+ "audio/samples/Girl Screams 4_META": {
+  "who": "girl",
+  "text": "Aaah!"
+ },
+ "audio/samples/Girl Sighs Contentedly_META": {
+  "who": "girl",
+  "text": "Haah."
+ },
+ "audio/samples/Girl Sighs_META": {
+  "who": "girl",
+  "text": "Haah."
+ },
+ "audio/samples/Girl Startled 1_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Startled 2_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Startled 3_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Surprised 1_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Surprised 2_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Girl Surprised 3_META": {
+  "who": "girl",
+  "text": "Hah!"
+ },
+ "audio/samples/Goron Inquiring_META": {
+  "who": "goron",
+  "text": "Hmm?"
+ },
+ "audio/samples/Goron Oh (High)_META": {
+  "who": "goron",
+  "text": "Oh!"
+ },
+ "audio/samples/Goron Oh_META": {
+  "who": "goron",
+  "text": "Oh!"
+ },
+ "audio/samples/Goron Recognizes_META": {
+  "who": "goron",
+  "text": "Oh!"
+ },
+ "audio/samples/Goron Yawns_META": {
+  "who": "goron",
+  "text": "Ahh."
+ },
+ "audio/samples/Goron and Redead Moan_META": {
+  "who": "goron",
+  "text": "Ohh."
+ },
+ "audio/samples/Great Fairy Laughter_META": {
+  "who": "fairy",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Great Fairy Titters_META": {
+  "who": "fairy",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Ingo - Hyah!_META": {
+  "who": "man",
+  "text": "Hyah!"
+ },
+ "audio/samples/Ingo - Hyeaaaaugh_META": {
+  "who": "man",
+  "text": "Hyeaaah!"
+ },
+ "audio/samples/Ingo Exclaims_META": {
+  "who": "man",
+  "text": "Hey!"
+ },
+ "audio/samples/Ingo Yowls_META": {
+  "who": "man",
+  "text": "Aaah!"
+ },
+ "audio/samples/Navi - Hello!_META": {
+  "who": "navi",
+  "text": "Hello!"
+ },
+ "audio/samples/Navi - Hey!_META": {
+  "who": "navi",
+  "text": "Hey!"
+ },
+ "audio/samples/Navi - Listen!_META": {
+  "who": "navi",
+  "text": "Listen!"
+ },
+ "audio/samples/Navi - Look!_META": {
+  "who": "navi",
+  "text": "Look!"
+ },
+ "audio/samples/Navi - Watch Out!_META": {
+  "who": "navi",
+  "text": "Watch out!"
+ },
+ "audio/samples/Talon Distressed_META": {
+  "who": "man",
+  "text": "Eek!"
+ },
+ "audio/samples/Talon Fearful_META": {
+  "who": "man",
+  "text": "Eek!"
+ },
+ "audio/samples/Talon Snoring_META": {
+  "who": "man",
+  "text": "Zzz."
+ },
+ "audio/samples/Talon Startled_META": {
+  "who": "man",
+  "text": "Hah!"
+ },
+ "audio/samples/Twinrova Gasps_META": {
+  "who": "witch",
+  "text": "Hah!"
+ },
+ "audio/samples/Twinrova Laughs_META": {
+  "who": "witch",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Witch Arguing_META": {
+  "who": "witch",
+  "text": "Hmph!"
+ },
+ "audio/samples/Witch Attacks_META": {
+  "who": "witch",
+  "text": "Hyah!"
+ },
+ "audio/samples/Witch Cackles 1_META": {
+  "who": "witch",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Witch Cackles 2_META": {
+  "who": "witch",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Witch Howls_META": {
+  "who": "witch",
+  "text": "Aaah!"
+ },
+ "audio/samples/Witch Hurt_META": {
+  "who": "witch",
+  "text": "Ugh!"
+ },
+ "audio/samples/Witch Inquires_META": {
+  "who": "witch",
+  "text": "Hmm?"
+ },
+ "audio/samples/Witch Surprised_META": {
+  "who": "witch",
+  "text": "Hah!"
+ },
+ "audio/samples/Witch Yells a Curse_META": {
+  "who": "witch",
+  "text": "Aaah!"
+ },
+ "audio/samples/Woman Chuckles_META": {
+  "who": "woman",
+  "text": "Ha ha ha!"
+ },
+ "audio/samples/Woman Grunts_META": {
+  "who": "woman",
+  "text": "Nngh!"
+ },
+ "audio/samples/Woman Hup_META": {
+  "who": "woman",
+  "text": "Hup!"
+ },
+ "audio/samples/Woman Yells, Startled_META": {
+  "who": "woman",
+  "text": "Hah!"
+ },
+ "audio/samples/Woman Yells_META": {
+  "who": "woman",
+  "text": "Aaah!"
+ }
+}

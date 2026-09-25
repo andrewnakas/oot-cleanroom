@@ -1,0 +1,1791 @@
+{
+"audio/samples/Tambo Drum_META": [
+1.0
+],
+"audio/samples/Small Cymbal_META": [
+1.1225
+],
+"audio/samples/Rainfall_META": [
+0.7079,
+0.75
+],
+"audio/samples/Step - Ground_META": [
+0.6891
+],
+"audio/samples/Step - Sand_META": [
+0.5
+],
+"audio/samples/Step - Rock_META": [
+0.7492
+],
+"audio/samples/Step - Jabu Jabu_META": [
+0.5
+],
+"audio/samples/Step - Water_META": [
+0.5
+],
+"audio/samples/Step - Carpet_META": [
+0.5
+],
+"audio/samples/Step - Thick Carpet_META": [
+0.1873
+],
+"audio/samples/Step - Tall Grass_META": [
+0.5
+],
+"audio/samples/Synth Pad Sting_META": [
+0.6891
+],
+"audio/samples/Small Splash_META": [
+0.6891
+],
+"audio/samples/Crunchy Drop_META": [
+0.5
+],
+"audio/samples/Step - Wood_META": [
+0.5
+],
+"audio/samples/Sliding Block_META": [
+0.5
+],
+"audio/samples/Boots Sliding_META": [
+0.0312,
+0.7256
+],
+"audio/samples/Heavy Slide_META": [
+0.5
+],
+"audio/samples/Crackling Fire (Keese)_META": [
+0.5
+],
+"audio/samples/Howling Wind_META": [
+0.0312,
+0.1984
+],
+"audio/samples/High Static_META": [
+0.5
+],
+"audio/samples/Distorted Static_META": [
+0.5
+],
+"audio/samples/Heavy Static_META": [
+0.5
+],
+"audio/samples/Large Water Splash_META": [
+0.5
+],
+"audio/samples/Swimming_META": [
+0.5
+],
+"audio/samples/Stone Doof_META": [
+0.5
+],
+"audio/samples/Gunshot_META": [
+0.0312
+],
+"audio/samples/Step - Wooden Bridge_META": [
+0.7937
+],
+"audio/samples/Step - Fire_META": [
+0.5
+],
+"audio/samples/Iron Boots 2_META": [
+0.5
+],
+"audio/samples/Step - Ice_META": [
+0.5
+],
+"audio/samples/Metal Clink_META": [
+0.6891
+],
+"audio/samples/Sword Strike_META": [
+0.0431
+],
+"audio/samples/Whish_META": [
+0.6891
+],
+"audio/samples/Sheathe Sword_META": [
+0.6891
+],
+"audio/samples/Draw Sword_META": [
+0.6891
+],
+"audio/samples/Air Swish_META": [
+0.6891
+],
+"audio/samples/Air Whistle_META": [
+0.6891
+],
+"audio/samples/Sword Striking Metal Shield_META": [
+0.6891
+],
+"audio/samples/Bow Pulled Taut_META": [
+0.6891
+],
+"audio/samples/Bowstring Twang_META": [
+0.0312
+],
+"audio/samples/Moving Metal Chain_META": [
+0.6891
+],
+"audio/samples/Hissing Fuse_META": [
+0.5
+],
+"audio/samples/Bombchu Motor_META": [
+0.0431
+],
+"audio/samples/Heavy Thump_META": [
+0.6891
+],
+"audio/samples/Egg Hatching_META": [
+0.6891
+],
+"audio/samples/Arrow Thunk in Wood_META": [
+0.6891
+],
+"audio/samples/Air Whoosh_META": [
+0.6891
+],
+"audio/samples/Broken Wood_META": [
+0.6891
+],
+"audio/samples/Whip Snap_META": [
+0.6891
+],
+"audio/samples/Popping Cork_META": [
+0.0431
+],
+"audio/samples/Buzzing Synth_META": [
+0.5
+],
+"audio/samples/Soft Thump_META": [
+0.6891
+],
+"audio/samples/Eye of Truth_META": [
+0.6891
+],
+"audio/samples/Dramatic Swoosh_META": [
+0.0312,
+0.5
+],
+"audio/samples/Opening Wooden Door_META": [
+0.5
+],
+"audio/samples/Closing Wooden Door_META": [
+0.0312
+],
+"audio/samples/Crystal Synth (Low)_META": [
+0.6891
+],
+"audio/samples/Shimmering Treasure_META": [
+0.0431
+],
+"audio/samples/Explosion 1_META": [
+0.5
+],
+"audio/samples/Gallop_META": [
+0.5
+],
+"audio/samples/Horse Neigh_META": [
+0.5
+],
+"audio/samples/Horse Snort_META": [
+0.0312
+],
+"audio/samples/Flowing Creek_META": [
+0.6891
+],
+"audio/samples/Rushing Waterfall_META": [
+0.0312
+],
+"audio/samples/Ocarina_Looped_META": [
+0.63
+],
+"audio/samples/Mechanically Shifting Stone_META": [
+0.5
+],
+"audio/samples/Metal Door_META": [
+0.0312
+],
+"audio/samples/Rolling Boulder_META": [
+0.6891
+],
+"audio/samples/Bubbling Lava_META": [
+0.0431,
+0.6891
+],
+"audio/samples/Retracting Metal Chain_META": [
+0.5
+],
+"audio/samples/Relaxed Cucco Clucks_META": [
+0.5
+],
+"audio/samples/Frog Ribbit_META": [
+0.0263
+],
+"audio/samples/Stone Strike_META": [
+0.5
+],
+"audio/samples/Howling Wind (Short)_META": [
+0.6891
+],
+"audio/samples/Cucco Crows_META": [
+0.5
+],
+"audio/samples/Wolf Howl_META": [
+0.0312,
+0.5
+],
+"audio/samples/Water Splish_META": [
+0.5
+],
+"audio/samples/Wooden Strike_META": [
+0.5
+],
+"audio/samples/Clattering Spear_META": [
+0.0312
+],
+"audio/samples/Flying Fairy_META": [
+0.75
+],
+"audio/samples/Settled Stone Block_META": [
+0.5
+],
+"audio/samples/Creaking Door_META": [
+0.5
+],
+"audio/samples/Creaking Wood_META": [
+0.0312
+],
+"audio/samples/Ignition_META": [
+0.5
+],
+"audio/samples/Warp Circle Ambience_META": [
+0.236
+],
+"audio/samples/Fairy Magic_META": [
+0.5
+],
+"audio/samples/Ganon's Electrical Charge_META": [
+0.5
+],
+"audio/samples/Broken Pottery_META": [
+0.0312
+],
+"audio/samples/Water Drips_META": [
+0.6891
+],
+"audio/samples/Underwater Bubbles_META": [
+0.5
+],
+"audio/samples/Fire Crackling_META": [
+0.5
+],
+"audio/samples/Cow Moo_META": [
+0.0312
+],
+"audio/samples/Flamethrower_META": [
+0.6891
+],
+"audio/samples/Lightning_META": [
+0.0431,
+0.6891
+],
+"audio/samples/Heavy Platform Rotating_META": [
+0.5
+],
+"audio/samples/Light Rock Slam_META": [
+0.5
+],
+"audio/samples/Heavy Rumbling_META": [
+0.5
+],
+"audio/samples/Mechanical Ramp-Up_META": [
+0.0312
+],
+"audio/samples/Flapping Cloak_META": [
+0.5
+],
+"audio/samples/People Chattering_META": [
+0.6891
+],
+"audio/samples/Shattered Glass_META": [
+0.0312
+],
+"audio/samples/Cloth Ripping_META": [
+0.6891
+],
+"audio/samples/Dodongo Roar_META": [
+0.6891
+],
+"audio/samples/Dog Yip_META": [
+0.0312
+],
+"audio/samples/Flute_META": [
+0.3337
+],
+"audio/samples/Accordion_META": [
+1.0
+],
+"audio/samples/Dialogue Continue (Harp)_META": [
+0.5
+],
+"audio/samples/Malon_META": [
+0.4341
+],
+"audio/samples/Person Whistling_META": [
+0.6891
+],
+"audio/samples/Dong (Failed Learning)_META": [
+0.4872
+],
+"audio/samples/Clanging Bells_META": [
+0.0431
+],
+"audio/samples/Whistle_META": [
+0.5
+],
+"audio/samples/Harp 1_META": [
+0.375,
+0.75
+],
+"audio/samples/Z Target_META": [
+0.5
+],
+"audio/samples/Enemy Target Lock-On_META": [
+0.0312
+],
+"audio/samples/Rupee_META": [
+0.2374
+],
+"audio/samples/Adult Link - Attack 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Attack 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Attack 3_META": [
+0.625
+],
+"audio/samples/Adult Link - Attack 4_META": [
+0.625
+],
+"audio/samples/Adult Link - Strong Attack 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Strong Attack 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Dangling Grunt_META": [
+0.625
+],
+"audio/samples/Adult Link - Climb Edge_META": [
+0.625
+],
+"audio/samples/Adult Link - Dangling Gasp 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Hurt 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Hurt 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Hurt 3_META": [
+0.625
+],
+"audio/samples/Adult Link - Hurt 4_META": [
+0.625
+],
+"audio/samples/Adult Link - Knocked Back_META": [
+0.625
+],
+"audio/samples/Adult Link - Hurt 5_META": [
+0.625
+],
+"audio/samples/Adult Link - Falling 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Falling 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Gasp 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Gasp 3_META": [
+0.625
+],
+"audio/samples/Adult Link - Pant 1_META": [
+0.625
+],
+"audio/samples/Child Link - Dying Gasp_META": [
+0.625
+],
+"audio/samples/Adult Link - Spur Horse 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Spur Horse 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Pant 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Painful Landing_META": [
+0.625
+],
+"audio/samples/Adult Link - Dangling Gasp 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Hup_META": [
+0.625
+],
+"audio/samples/Adult Link - Gasp 1_META": [
+0.625
+],
+"audio/samples/Child Link - Attack 1_META": [
+0.625
+],
+"audio/samples/Child Link - Attack 2_META": [
+0.625
+],
+"audio/samples/Child Link - Attack 3_META": [
+0.625
+],
+"audio/samples/Child Link - Attack 4_META": [
+0.625
+],
+"audio/samples/Child Link - Strong Attack 1_META": [
+0.625
+],
+"audio/samples/Child Link - Strong Attack 2_META": [
+0.625
+],
+"audio/samples/Child Link - Dangling Gasp 1_META": [
+0.625
+],
+"audio/samples/Child Link - Sigh 1_META": [
+0.625
+],
+"audio/samples/Child Link - Sigh 2_META": [
+0.625
+],
+"audio/samples/Child Link - Hurt 1_META": [
+0.625
+],
+"audio/samples/Child Link - Hurt 2_META": [
+0.625
+],
+"audio/samples/Child Link - Hurt 3_META": [
+0.625
+],
+"audio/samples/Child Link - Hurt 4_META": [
+0.625
+],
+"audio/samples/Child Link - Knocked Back_META": [
+0.625
+],
+"audio/samples/Child Link - Hurt 5_META": [
+0.625
+],
+"audio/samples/Child Link - Falling 1_META": [
+0.625
+],
+"audio/samples/Child Link - Falling 2_META": [
+0.625
+],
+"audio/samples/Child Link - Gasp 1_META": [
+0.625
+],
+"audio/samples/Child Link - Gasp 2_META": [
+0.625
+],
+"audio/samples/Child Link - Wheeze_META": [
+0.625
+],
+"audio/samples/Child Link - Exhausted Panting_META": [
+0.625
+],
+"audio/samples/Child Link - Painful Landing_META": [
+0.625
+],
+"audio/samples/Child Link - Dangling Gasp 2_META": [
+0.625
+],
+"audio/samples/Child Link - Glug_META": [
+0.625
+],
+"audio/samples/Child Link - Refreshed_META": [
+0.625
+],
+"audio/samples/Child Link - Hup 1_META": [
+0.625
+],
+"audio/samples/Child Link - Hup 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Glug_META": [
+0.625
+],
+"audio/samples/Adult Link - Refreshed_META": [
+0.625
+],
+"audio/samples/Navi - Watch Out!_META": [
+0.5
+],
+"audio/samples/Navi - Look!_META": [
+0.5
+],
+"audio/samples/Navi - Hey!_META": [
+0.5
+],
+"audio/samples/Adult Link - Lift (Unused)_META": [
+0.625
+],
+"audio/samples/Adult Link - Cast Attacking Magic_META": [
+0.625
+],
+"audio/samples/Child Link - Charge Up (Unused)_META": [
+0.625
+],
+"audio/samples/Child Link - Cast Attack Spell_META": [
+0.625
+],
+"audio/samples/Child Link - Strangled (Unused)_META": [
+0.625
+],
+"audio/samples/Child Link - Gasp 3_META": [
+0.625
+],
+"audio/samples/Child Link - Shivers_META": [
+0.625
+],
+"audio/samples/Child Link - Sneeze_META": [
+0.625
+],
+"audio/samples/Child Link - Grunt_META": [
+0.625
+],
+"audio/samples/Child Link - Moans From Heat_META": [
+0.625
+],
+"audio/samples/Child Link - Awakening Grunt_META": [
+0.625
+],
+"audio/samples/Child Link - Wiping Off Sweat_META": [
+0.625
+],
+"audio/samples/Child Link - Yawn Starts_META": [
+0.625
+],
+"audio/samples/Child Link - Yawn and Stretch_META": [
+0.625
+],
+"audio/samples/Child Link - Stretch Refreshingly_META": [
+0.625
+],
+"audio/samples/Adult Link - Hurt (Unused)_META": [
+0.625
+],
+"audio/samples/Adult Link - Choking_META": [
+0.625
+],
+"audio/samples/Adult Link - Gasping (Unused)_META": [
+0.625
+],
+"audio/samples/Adult Link - Small Gasp (Unused)_META": [
+0.625
+],
+"audio/samples/Adult Link - Unsettled Moan_META": [
+0.625
+],
+"audio/samples/Adult Link - Sneezes_META": [
+0.625
+],
+"audio/samples/Adult Link - Sigh 1_META": [
+0.625
+],
+"audio/samples/Adult Link - Sigh 2_META": [
+0.625
+],
+"audio/samples/Adult Link - Sigh 3_META": [
+0.625
+],
+"audio/samples/Adult Link - Stretch Start_META": [
+0.625
+],
+"audio/samples/Adult Link - Stretching_META": [
+0.625
+],
+"audio/samples/Adult Link - Finished Stretching_META": [
+0.625
+],
+"audio/samples/Talon Snoring_META": [
+0.5
+],
+"audio/samples/Talon Startled_META": [
+0.5
+],
+"audio/samples/Talon Distressed_META": [
+0.5
+],
+"audio/samples/Talon Fearful_META": [
+0.5
+],
+"audio/samples/Ingo Yowls_META": [
+0.5
+],
+"audio/samples/Ingo Exclaims_META": [
+0.5
+],
+"audio/samples/Ingo - Hyeaaaaugh_META": [
+0.5
+],
+"audio/samples/Ingo - Hyah!_META": [
+0.5
+],
+"audio/samples/Great Fairy Laughter_META": [
+0.5
+],
+"audio/samples/Great Fairy Titters_META": [
+0.5
+],
+"audio/samples/Girl Gasps_META": [
+0.5
+],
+"audio/samples/Girl Screams 1_META": [
+0.5
+],
+"audio/samples/Girl Inquiring 1_META": [
+0.5
+],
+"audio/samples/Girl Hurt_META": [
+0.5
+],
+"audio/samples/Girl Startled 1_META": [
+0.5
+],
+"audio/samples/Girl Screams 2_META": [
+0.5
+],
+"audio/samples/Girl Delighted_META": [
+0.5
+],
+"audio/samples/Girl Surprised 1_META": [
+0.5
+],
+"audio/samples/Girl Surprised 2_META": [
+0.5
+],
+"audio/samples/Girl Discombobulated (Unused)_META": [
+0.5
+],
+"audio/samples/Skulltula Screaming_META": [
+0.5
+],
+"audio/samples/Skulltula Grunts Angrily_META": [
+0.5
+],
+"audio/samples/Girl Sighs_META": [
+0.5
+],
+"audio/samples/Girl Startled 2_META": [
+0.5
+],
+"audio/samples/Girl Inquiring 2_META": [
+0.5
+],
+"audio/samples/Girl Disappointed_META": [
+0.5
+],
+"audio/samples/Girl Laughing_META": [
+0.5
+],
+"audio/samples/Girl Startled 3_META": [
+0.5
+],
+"audio/samples/Girl Grunts in Effort_META": [
+0.5
+],
+"audio/samples/Woman Yells_META": [
+0.4454
+],
+"audio/samples/Woman Yells, Startled_META": [
+0.4454
+],
+"audio/samples/Woman Grunts_META": [
+0.4454
+],
+"audio/samples/Navi - Listen!_META": [
+0.5
+],
+"audio/samples/Woman Hup_META": [
+0.4454
+],
+"audio/samples/Girl Screams 3_META": [
+0.5
+],
+"audio/samples/Girl Screams 4_META": [
+0.5
+],
+"audio/samples/Girl Sighs Contentedly_META": [
+0.5
+],
+"audio/samples/Girl Surprised 3_META": [
+0.5
+],
+"audio/samples/Girl Scared_META": [
+0.5
+],
+"audio/samples/King Zora Scoots_META": [
+0.5
+],
+"audio/samples/Navi - Hello!_META": [
+0.5
+],
+"audio/samples/Adult Link - Dramatic Gasp_META": [
+0.625
+],
+"audio/samples/Child Link - Dramatic Gasp_META": [
+0.625
+],
+"audio/samples/Heavy Gunshot_META": [
+0.5
+],
+"audio/samples/Monstrous Roaring_META": [
+0.6891
+],
+"audio/samples/Rustling Thicket_META": [
+0.5
+],
+"audio/samples/Cracking Egg_META": [
+0.5
+],
+"audio/samples/Resounding Smash_META": [
+0.5
+],
+"audio/samples/Larval Sound Base_META": [
+0.6891
+],
+"audio/samples/Cloaking Poe_META": [
+0.5
+],
+"audio/samples/Chittering Keese_META": [
+0.5
+],
+"audio/samples/Rustling Large Wings_META": [
+0.5
+],
+"audio/samples/Dinosaur Cry_META": [
+0.6891
+],
+"audio/samples/Scritch_META": [
+0.5
+],
+"audio/samples/Gruff Voice_META": [
+0.5
+],
+"audio/samples/Lizalfos Laughter_META": [
+0.5
+],
+"audio/samples/Lizalfos Triumphant Cry_META": [
+0.5
+],
+"audio/samples/Lizalfos Foot Patter_META": [
+0.0312
+],
+"audio/samples/Deku Scrub Collapses_META": [
+0.5
+],
+"audio/samples/Broken Small Pottery_META": [
+0.5
+],
+"audio/samples/Dodongo Inhale_META": [
+0.5
+],
+"audio/samples/Gulp_META": [
+0.5
+],
+"audio/samples/Deku Baba Chomp_META": [
+0.5
+],
+"audio/samples/Guay Hurt_META": [
+0.5
+],
+"audio/samples/Buzzing_META": [
+0.5
+],
+"audio/samples/Deku Baba Lunge_META": [
+0.0312
+],
+"audio/samples/Monstrous Growl_META": [
+0.5
+],
+"audio/samples/Moaning Phantom Ganon_META": [
+0.5
+],
+"audio/samples/Phantom Ganon Laughing_META": [
+0.5
+],
+"audio/samples/Gerudo Scimitar Slash_META": [
+0.5
+],
+"audio/samples/Electric Burst_META": [
+0.5
+],
+"audio/samples/Ganondorf Hovering_META": [
+0.5
+],
+"audio/samples/Magical Charge-Up_META": [
+0.5
+],
+"audio/samples/Echoing Thunderburst_META": [
+0.5
+],
+"audio/samples/Phantom Ganon in Agony_META": [
+0.5
+],
+"audio/samples/Phantom Ganon Attacks_META": [
+0.5
+],
+"audio/samples/Phantom Ganon Groans (Unused)_META": [
+0.5
+],
+"audio/samples/Thunder and Groan_META": [
+0.5
+],
+"audio/samples/Goron and Redead Moan_META": [
+0.5
+],
+"audio/samples/Goron Yawns_META": [
+0.0312
+],
+"audio/samples/Phantom Ganon's Laughter_META": [
+0.5
+],
+"audio/samples/Phantom Ganon Growls_META": [
+0.5
+],
+"audio/samples/Witch Charges (Unused)_META": [
+0.0312
+],
+"audio/samples/Goron Inquiring_META": [
+0.5
+],
+"audio/samples/Goron Recognizes_META": [
+0.0312
+],
+"audio/samples/Metal Clink (Copy)_META": [
+1.0
+],
+"audio/samples/Muted Timpani_META": [
+0.5
+],
+"audio/samples/Chanting_META": [
+0.0312
+],
+"audio/samples/Cawing Bird_META": [
+0.0625,
+1.0
+],
+"audio/samples/Witch Arguing_META": [
+0.5
+],
+"audio/samples/Iron Boots 1_META": [
+0.0312
+],
+"audio/samples/Witch Cackles 1_META": [
+0.4454
+],
+"audio/samples/Witch Cackles 2_META": [
+0.4454
+],
+"audio/samples/Witch Hurt_META": [
+0.4454
+],
+"audio/samples/Witch Attacks_META": [
+0.4454
+],
+"audio/samples/Witch Inquires_META": [
+0.5
+],
+"audio/samples/Witch Yells a Curse_META": [
+0.4454
+],
+"audio/samples/Witch Surprised_META": [
+0.5
+],
+"audio/samples/Twinrova Gasps_META": [
+0.5
+],
+"audio/samples/Twinrova Thrown Off_META": [
+0.5
+],
+"audio/samples/Twinrova Laughs_META": [
+0.5
+],
+"audio/samples/Witch Howls_META": [
+0.5
+],
+"audio/samples/Woman Chuckles_META": [
+0.5
+],
+"audio/samples/Finger Snap_META": [
+0.5
+],
+"audio/samples/Iron Knuckle Attacks_META": [
+0.4454
+],
+"audio/samples/Iron Knuckle Grunt (Unused)_META": [
+0.4454
+],
+"audio/samples/Iron Knuckle Charges_META": [
+0.4454
+],
+"audio/samples/Iron Knuckle Dies_META": [
+0.4454
+],
+"audio/samples/Iron Knuckle Grunts_META": [
+0.4454
+],
+"audio/samples/Iron Knuckle Murmurs (Unused)_META": [
+0.3969
+],
+"audio/samples/Gerudo Attacks_META": [
+0.4454
+],
+"audio/samples/Gerudo Hurt_META": [
+0.3969
+],
+"audio/samples/Gerudo Vanquished_META": [
+0.3969
+],
+"audio/samples/Gerudo Breathes_META": [
+0.5
+],
+"audio/samples/Ganondorf Laughing_META": [
+0.3969
+],
+"audio/samples/Ganondorf Attacks_META": [
+0.4454
+],
+"audio/samples/Ganondorf Heavy Attack_META": [
+0.4454
+],
+"audio/samples/Ganondorf Rebuffs_META": [
+0.4454
+],
+"audio/samples/Ganondorf Strikes the Ground_META": [
+0.4454
+],
+"audio/samples/Ganondorf Hurt 1_META": [
+0.5
+],
+"audio/samples/Ganondorf Hurt 2_META": [
+0.5
+],
+"audio/samples/Ganondorf Breathes (Unused)_META": [
+0.4454
+],
+"audio/samples/Ganondorf Recovers_META": [
+0.4454
+],
+"audio/samples/Ganondorf Gurgling Yell (Unused)_META": [
+0.3969
+],
+"audio/samples/Ganondorf Dying Breath_META": [
+0.3969
+],
+"audio/samples/Ganondorf Vomits_META": [
+0.4454
+],
+"audio/samples/Ganondorf Yells in Defiance_META": [
+0.5
+],
+"audio/samples/Ganondorf's Final Attack (Unused)_META": [
+0.5
+],
+"audio/samples/Ganondorf's Final Attack 2 (Unused)_META": [
+0.3969
+],
+"audio/samples/Ganondorf Chuckles_META": [
+0.3746
+],
+"audio/samples/Enemy Struck_META": [
+0.6139
+],
+"audio/samples/Redead Scream_META": [
+0.5
+],
+"audio/samples/Bird Chirp 1_META": [
+0.5,
+1.3348
+],
+"audio/samples/Insect Chirrup_META": [
+0.5
+],
+"audio/samples/Bird Chirp 2_META": [
+0.5
+],
+"audio/samples/Crickets_META": [
+0.5
+],
+"audio/samples/Loud Bird Chirp_META": [
+0.5
+],
+"audio/samples/Crow Caws_META": [
+0.6891
+],
+"audio/samples/Bird Call_META": [
+1.0
+],
+"audio/samples/Bird Screech_META": [
+1.0
+],
+"audio/samples/Bird Song (Unused)_META": [
+1.0
+],
+"audio/samples/Owl Hoot_META": [
+1.0
+],
+"audio/samples/Hawk Screech_META": [
+1.0
+],
+"audio/samples/Small Bird Chirps_META": [
+1.0
+],
+"audio/samples/Rushing Water_META": [
+0.6674
+],
+"audio/samples/Low Thunder_META": [
+0.6891
+],
+"audio/samples/Bass Drum 1_META": [
+0.3858,
+0.4088,
+0.4331,
+0.4589,
+0.4861,
+0.515,
+0.5457,
+0.5781,
+0.6125,
+0.6489,
+0.6875,
+0.7284,
+0.7717,
+0.8176,
+0.8662,
+0.9177
+],
+"audio/samples/Snare Drum 1_META": [
+1.0,
+1.0595
+],
+"audio/samples/Snare Drum 2_META": [
+1.0595,
+1.1225,
+1.1892
+],
+"audio/samples/Cymbal_META": [
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599
+],
+"audio/samples/Timpani_META": [
+0.3536,
+0.3746,
+0.3968,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599,
+1.3348,
+1.4142,
+1.4983,
+1.5874,
+1.6818,
+1.7818,
+1.8877,
+2.0
+],
+"audio/samples/Oboe_META": [
+0.3968
+],
+"audio/samples/Clarinet_META": [
+0.5
+],
+"audio/samples/Bassoon_META": [
+2.3784
+],
+"audio/samples/Horn_META": [
+1.0
+],
+"audio/samples/Trumpet_META": [
+0.5
+],
+"audio/samples/Trombone_META": [
+0.6674
+],
+"audio/samples/Tuba_META": [
+3.1748
+],
+"audio/samples/Glockenspiel_META": [
+0.5297
+],
+"audio/samples/Strings (Low)_META": [
+4.0
+],
+"audio/samples/Strings 1_META": [
+1.2599
+],
+"audio/samples/Strings 2_META": [
+0.63
+],
+"audio/samples/Harp 3_META": [
+2.1189
+],
+"audio/samples/Pizzicato Violin_META": [
+0.5612
+],
+"audio/samples/Harpsichord_META": [
+2.3177
+],
+"audio/samples/Piano_META": [
+1.0
+],
+"audio/samples/Piano (Soft)_META": [
+0.5
+],
+"audio/samples/Harp 2_META": [
+0.75
+],
+"audio/samples/Marimba 1_META": [
+0.8909
+],
+"audio/samples/Marimba 2_META": [
+0.4454
+],
+"audio/samples/sample_2_003EB2A0_META": [
+1.3348
+],
+"audio/samples/Tom Drum_META": [
+0.2227,
+0.236,
+0.25,
+0.2649,
+0.2806,
+0.2973,
+0.315,
+0.3337,
+0.3536,
+0.3746,
+0.3968,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+2.1189
+],
+"audio/samples/Drum Sidestick_META": [
+1.0,
+1.0595,
+2.0
+],
+"audio/samples/Finger Cymbals_META": [
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599,
+1.3348,
+1.4142,
+1.4983,
+1.5874,
+1.6818,
+1.7818,
+1.8877,
+2.0,
+2.1189,
+2.2449,
+2.3784,
+2.5198,
+2.6697,
+2.8284,
+2.9966,
+3.1748,
+3.3636,
+3.5636,
+3.7755,
+4.0,
+4.2379,
+4.4898,
+4.7568,
+5.0397,
+5.3394,
+5.6569,
+5.9932,
+6.3496,
+6.7272,
+7.1272
+],
+"audio/samples/Sitar_META": [
+1.7818
+],
+"audio/samples/Koto_META": [
+0.8909
+],
+"audio/samples/sample_3_003F9B30_META": [
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+1.0595
+],
+"audio/samples/sample_3_003FB500_META": [
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599,
+1.3348,
+1.4142,
+1.4983,
+1.5874,
+1.6818,
+1.7818,
+1.8877,
+2.0,
+2.1189,
+2.2449,
+2.3784,
+2.5198,
+2.6697,
+2.8284,
+2.9966,
+3.1748,
+3.3636,
+3.5636,
+3.7755,
+4.0,
+4.2379,
+4.4898,
+4.7568,
+5.0397,
+5.3394,
+5.6569,
+5.9932,
+6.3496,
+6.7272,
+7.1272,
+7.551,
+8.0,
+8.4757,
+8.9797,
+9.5137,
+10.0794,
+10.6787,
+11.3137,
+11.9865,
+12.6992,
+13.4543,
+14.2544
+],
+"audio/samples/sample_3_003F0F70_META": [
+1.0
+],
+"audio/samples/sample_3_003FC320_META": [
+1.0
+],
+"audio/samples/sample_3_004073F0_META": [
+1.0
+],
+"audio/samples/Fiddle_META": [
+0.63
+],
+"audio/samples/Acoustic Guitar 1_META": [
+1.2599
+],
+"audio/samples/Acoustic Guitar 2_META": [
+0.4204
+],
+"audio/samples/Vocal Oohs_META": [
+0.9745
+],
+"audio/samples/Vocal Eees_META": [
+0.6891
+],
+"audio/samples/Drum and Sitar_META": [
+0.315,
+0.3337,
+0.3536,
+0.3746,
+0.3968,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937
+],
+"audio/samples/Percussive Resonance_META": [
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599,
+1.3348,
+1.4142,
+1.4983,
+1.5874,
+1.6818,
+1.7818,
+1.8877,
+2.0,
+2.1189,
+2.2449,
+2.3784,
+2.5198,
+2.6697,
+2.8284,
+2.9966,
+3.1748,
+3.3636,
+3.5636,
+3.7755,
+4.0,
+4.2379,
+4.4898,
+4.7568,
+5.0397,
+5.3394,
+5.6569,
+5.9932,
+6.3496,
+6.7272,
+7.1272,
+7.551,
+8.0,
+8.4757,
+8.9797,
+9.5137,
+10.0794,
+10.6787
+],
+"audio/samples/Resonant Bass Marimba_META": [
+0.5794
+],
+"audio/samples/Haunting Wind_META": [
+0.6891
+],
+"audio/samples/Off Hi-Hat_META": [
+0.868
+],
+"audio/samples/Vocal Aahs_META": [
+0.5162
+],
+"audio/samples/Resonant Vocal Aahs_META": [
+0.365
+],
+"audio/samples/Ghostly Wind_META": [
+1.0
+],
+"audio/samples/Ghostly Echoes_META": [
+1.4983
+],
+"audio/samples/Echoing Drums_META": [
+0.25
+],
+"audio/samples/Mechanical Rumbling_META": [
+1.0
+],
+"audio/samples/Rattling Scream_META": [
+0.6891
+],
+"audio/samples/Vocal Ohs_META": [
+0.75
+],
+"audio/samples/Flute and Voice_META": [
+3.1748
+],
+"audio/samples/Off-Kilter Flute_META": [
+1.2599
+],
+"audio/samples/Voice_META": [
+0.63
+],
+"audio/samples/Melodic Wooden Clacking_META": [
+1.0595
+],
+"audio/samples/Guitar (Low)_META": [
+2.3811
+],
+"audio/samples/Guitar_META": [
+1.0011
+],
+"audio/samples/Guitar (High)_META": [
+0.3341,
+0.6682
+],
+"audio/samples/Viola_META": [
+0.5946
+],
+"audio/samples/Church Bell_META": [
+0.6891
+],
+"audio/samples/sample_5_004185F0_META": [
+0.5
+],
+"audio/samples/sample_5_0041AB30_META": [
+1.0
+],
+"audio/samples/sample_5_0041CDF0_META": [
+1.2278
+],
+"audio/samples/sample_5_0041F8C0_META": [
+2.1189
+],
+"audio/samples/sample_5_00420160_META": [
+2.6016
+],
+"audio/samples/sample_5_00420C20_META": [
+0.5794
+],
+"audio/samples/Harpsichord (High)_META": [
+1.3348
+],
+"audio/samples/sample_6_0043AF50_META": [
+0.315,
+0.3337,
+0.3536,
+0.3746,
+0.3968,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599,
+1.3348,
+1.4142,
+1.4983,
+1.5874,
+1.6818,
+1.7818,
+1.8877,
+2.0,
+2.1189
+],
+"audio/samples/sample_6_00445480_META": [
+0.375,
+0.3973,
+0.4209,
+0.446,
+0.4725,
+0.5006,
+0.5303,
+0.5619,
+0.5953,
+0.6307,
+0.6682,
+0.7079,
+0.75,
+0.7946,
+0.8418,
+0.8919,
+0.9449,
+1.0011,
+1.0607,
+1.1237,
+1.1906,
+1.2613,
+1.3363,
+1.4158,
+1.5,
+1.5892,
+1.6837,
+1.7838,
+1.8899,
+2.0023
+],
+"audio/samples/sample_6_0044AF80_META": [
+0.75
+],
+"audio/samples/sample_6_004280A0_META": [
+1.0
+],
+"audio/samples/sample_6_00433170_META": [
+0.4454
+],
+"audio/samples/sample_6_004361C0_META": [
+1.0
+],
+"audio/samples/sample_6_00438480_META": [
+1.2278
+],
+"audio/samples/Banjo (Low)_META": [
+1.7818
+],
+"audio/samples/Banjo_META": [
+1.1892
+],
+"audio/samples/Bass Guitar_META": [
+2.3811
+],
+"audio/samples/Drum 1_META": [
+0.2102,
+0.2227,
+0.236,
+0.25,
+0.2649,
+0.2806,
+0.2973,
+0.315,
+0.3337,
+0.3536,
+0.3746,
+0.3969,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674
+],
+"audio/samples/Drum 2_META": [
+0.3536,
+0.3746,
+0.3968,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0
+],
+"audio/samples/Slap Bass_META": [
+1.3008,
+1.3781,
+1.4601,
+1.5469,
+1.6389,
+1.7363,
+1.8396,
+1.949,
+2.0649,
+2.1876,
+2.3177,
+2.4555,
+2.6016,
+2.7562,
+2.9201,
+3.0938,
+3.2778,
+3.4727,
+3.6792,
+3.8979
+],
+"audio/samples/Shaker_META": [
+1.0,
+1.0595,
+1.1225,
+1.1892
+],
+"audio/samples/Steel Drum_META": [
+1.0
+],
+"audio/samples/Steel Drum (High)_META": [
+0.4454
+],
+"audio/samples/Cowbell_META": [
+0.2102
+],
+"audio/samples/Crystal Synth_META": [
+0.8418
+],
+"audio/samples/Some Manner of Drum_META": [
+4.0
+],
+"audio/samples/Another Type of Drum_META": [
+2.9966
+],
+"audio/samples/Quick Drum_META": [
+2.1213
+],
+"audio/samples/Islamic Chant_META": [
+0.125
+],
+"audio/samples/Gong_META": [
+0.315,
+0.3337,
+0.3536,
+0.3746,
+0.3968,
+0.4204,
+0.4454,
+0.4719,
+0.5,
+0.5297,
+0.5612,
+0.5946,
+0.63,
+0.6674,
+0.7071,
+0.7492,
+0.7937,
+0.8409,
+0.8909,
+0.9439,
+1.0,
+1.0595,
+1.1225,
+1.1892,
+1.2599,
+1.3348,
+1.4142,
+1.4983,
+1.5874,
+1.6818,
+1.7818,
+1.8877,
+2.0,
+2.1189,
+2.9966
+],
+"audio/samples/Windchimes_META": [
+0.375,
+0.3973,
+0.4209,
+0.446,
+0.4725,
+0.5006,
+0.5303,
+0.5619,
+0.5953,
+0.6307,
+0.6682,
+0.7079,
+0.75,
+0.7946,
+0.8418,
+0.8919,
+0.9449,
+1.0011,
+1.0607,
+1.1237,
+1.1906,
+1.2613,
+1.3363,
+1.4158,
+1.5,
+1.5892,
+1.6837,
+1.7838,
+1.8899,
+2.0023
+],
+"audio/samples/Clap_META": [
+0.5
+],
+"audio/samples/Goron Drum_META": [
+0.5
+],
+"audio/samples/Church Organ_META": [
+1.0
+],
+"audio/samples/Electric Organ_META": [
+0.5
+],
+"audio/samples/Goron Oh (High)_META": [
+2.1189
+],
+"audio/samples/Goron Oh_META": [
+2.6016
+]
+}

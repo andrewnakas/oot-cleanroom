@@ -60,8 +60,10 @@ def _src(sel, table, env):
 
 
 class Renderer:
-    def __init__(self, arc, size=128, light=(-0.4, 0.55, 0.75)):
+    def __init__(self, arc, size=128, light=(-0.4, 0.55, 0.75), cull=True, alpha_min=0.35):
         self.arc = arc
+        self.cull = cull
+        self.alpha_min = alpha_min
         self.size = size
         self.tris = []                       # list of (pos3x3, uv3x2, shade3x4, state dict)
         self.light = np.asarray(light, np.float32) / np.linalg.norm(light)
@@ -185,9 +187,9 @@ class Renderer:
             area = (sx[1] - sx[0]) * (syy[2] - syy[0]) - (sx[2] - sx[0]) * (syy[1] - syy[0])
             if abs(area) < 1e-6:
                 continue
-            if (ts["geom"] & G_CULL_BACK) and area > 0:
+            if self.cull and (ts["geom"] & G_CULL_BACK) and area > 0:
                 continue
-            if (ts["geom"] & G_CULL_FRONT) and area < 0:
+            if self.cull and (ts["geom"] & G_CULL_FRONT) and area < 0:
                 continue
             x0, x1 = int(max(0, np.floor(sx.min()))), int(min(S, np.ceil(sx.max()) + 1))
             y0, y1 = int(max(0, np.floor(syy.min()))), int(min(S, np.ceil(syy.max()) + 1))
@@ -218,7 +220,7 @@ class Renderer:
             tex = self.sample(ts, W @ uv, nn)
             out = self.combine(ts, tex, shade)
             a = np.clip(out[:, 3], 0, 1)
-            keep = a > 0.35
+            keep = a > self.alpha_min
             if not keep.any():
                 continue
             yy, xx = np.nonzero(vis)
