@@ -1,6 +1,8 @@
 """CLEAN ROOM: spec facts + kept archive -> clean oot.o2r.
 
-    python -m games.oot.generate <spec dir> <kept.o2r> <out oot.o2r> [--only tex|snd|bg]
+    python -m games.oot.generate <spec dir> <kept.o2r> <out oot.o2r> [--only tex|snd|bg] [--base clean.o2r]
+
+--base starts from an earlier clean archive (quick texture iterations).
 
 Textures: colour grid + alpha outline + our detail (cleanroom.decomp.gen.from_digest),
 or a hook (fonts, labels, faces: games.oot.drawn). Palette (CI) textures: every
@@ -184,7 +186,7 @@ def gen_background(path, d, seed):
 def main(argv):
     spec, kept_path, out_path = argv[1:4]
     only = argv[argv.index("--only") + 1] if "--only" in argv else None
-    files = o2r.read_all(kept_path)
+    files = o2r.read_all(argv[argv.index("--base") + 1] if "--base" in argv else kept_path)
     T = json.load(open(os.path.join(spec, "textures.json")))
     P = json.load(open(os.path.join(spec, "palettes.json")))
     S = json.load(open(os.path.join(spec, "samples.json")))
