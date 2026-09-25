@@ -1,10 +1,13 @@
 # The Legend of Zelda: Ocarina of Time clean room: status
 
-_Last update: 2026-09-25 ~03:00_
+_Last update: 2026-09-25 ~07:40_
 
 Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-cleanroom)
 
 ## For the morning
+- The public site boots with the authentic N64 logo -> title attract intro (Link riding in Hyrule Field).
+  In headless software rendering this intro is slow, so the title logo can take more than 100 s; with a real GPU it should be quick.
+  Press Start (Space) once the logo shows, then File 1 -> name -> start.
 - **Play it** (keyboard: WASD stick, X=A, C=B, Z, Space=Start, arrows=C, Esc=SoH menu; gamepad works).
   Dev shortcut to test any scene: `?dev=gSettings.BootSequence:3` opens the debug scene select.
 - Things to look at: faces (eyes/mouths are drawn procedurally per character), item icons (rendered from the 3D get-item models), sky (noisy), pause screens.
