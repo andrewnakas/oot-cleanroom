@@ -123,7 +123,62 @@ def main(argv):
         for i, im in enumerate(ims):
             S.paste(im, ((i % 10) * W, (i // 10) * H))
         S.save(argv[argv.index("--sheet") + 1])
-    print(f"minimaps: {len(made)} -> {out}")
+    made2 = pause_maps(arc, argv[2], out)
+    print(f"minimaps: {len(made)}, pause maps: {len(made2)} -> {out}")
+
+
+# ------------------------------------------------------------ pause-screen dungeon maps
+
+PAUSE_NAMES = ["DekuTree", "DodongosCavern", "Jabu", "ForestTemple", "FireTemple", "WaterTemple", "SpiritTemple",
+               "ShadowTemple", "BottomOfTheWell", "IceCavern"]
+
+
+def pause_maps(arc, soh_src, out):
+    """map_48x85_static: per floor, every room's floors seen from above, each pixel holding the
+    room's palette index (sRoomPalette; the game colours them at runtime). Left/right halves."""
+    data = open(os.path.join(soh_src, "code", "z_map_data.c"), encoding="utf-8").read()
+    pal = c_array(data, "sRoomPalette")
+    fy = c_array(data, "sFloorCoordY")
+    made = []
+    for mi, (scene, nm) in enumerate(zip(SCENES, PAUSE_NAMES)):
+        rooms = sorted({int(m.group(1)) for n in arc.files
+                        for m in [re.match(r"scenes/nonmq/%s_scene/%s_room_(\d+)" % (scene, scene), n)] if m})
+        tris = [(r, t) for r in rooms for t in room_tris(arc, scene, r)]
+        floors = [i for i in range(8) if fy[mi][i] < 9999]
+        names = sorted({m.group(1) for n in arc.files
+                        for m in [re.search(r"g%sPauseScreenMap((?:Floor|Basement)\d)LeftTex$" % nm, n)] if m})
+        nf = sum(1 for n in names if n.startswith("Floor"))
+        order = ["Floor%d" % k for k in range(nf, 0, -1)] + ["Basement%d" % k for k in range(1, 9)]
+        allp = np.concatenate([t for _, t in tris]) if tris else np.zeros((1, 3))
+        x0, x1 = allp[:, 0].min(), allp[:, 0].max()
+        z0, z1 = allp[:, 2].min(), allp[:, 2].max()
+        sc = min((W - 6) / max(1, x1 - x0), (H - 6) / max(1, z1 - z0))
+        for k, fi in enumerate(floors):
+            if k >= len(order) or order[k] not in names:
+                continue
+            lo = fy[mi][fi]
+            hi = fy[mi][fi - 1] if fi > 0 and fy[mi][fi - 1] < 9999 else 1e9
+            img = Image.new("L", (W, H), 0)
+            d = ImageDraw.Draw(img)
+            for r, p in tris:
+                v1, v2 = p[1] - p[0], p[2] - p[0]
+                n = np.cross(v1, v2)
+                ln = np.linalg.norm(n)
+                if ln == 0 or abs(n[1]) / ln < 0.6 or not (lo <= p[:, 1].mean() < hi):
+                    continue
+                idx = int(pal[mi][r]) if r < len(pal[mi]) else 1
+                pts = [(3 + (x - x0) * sc + (W - 6 - (x1 - x0) * sc) / 2, 3 + (z - z0) * sc + (H - 6 - (z1 - z0) * sc) / 2)
+                       for x, _, z in p]
+                d.polygon(pts, fill=idx * 17)
+            a = np.asarray(img)
+            rgba = np.zeros((H, W, 4), np.uint8)
+            rgba[..., :3] = a[..., None]
+            rgba[..., 3] = 255
+            for half, sl in (("Left", slice(0, 48)), ("Right", slice(48, 96))):
+                nmf = "g%sPauseScreenMap%s%sTex" % (nm, order[k], half)
+                Image.fromarray(rgba[:, sl]).save(os.path.join(out, nmf + ".png"))
+                made.append(nmf)
+    return made
 
 
 if __name__ == "__main__":

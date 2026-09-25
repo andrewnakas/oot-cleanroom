@@ -143,7 +143,8 @@ def gen_textures(T, P, kept, hook_stats):
         # per-texel dither: smooth regions must not quantise to the same texels as retail
         rng = np.random.default_rng(h32("tdither", path))
         img = img.astype(np.int16)
-        amp = 3 if any(k in path for k in SKY) else (8 if (path in hooked or ROOMBG.search(path)) else 13)   # skies and our drawings stay clean
+        face = bool(re.search(r"(Eyes?|Mouth|Pupil|Iris)", path.rsplit("/", 1)[1]))   # flat skin like retail: full dither
+        amp = 3 if any(k in path for k in SKY) else (8 if ((path in hooked and not face) or ROOMBG.search(path)) else 13)   # skies and our drawings stay clean
         img[..., :3] += rng.integers(-amp, amp + 1, img.shape[:2] + (3,), dtype=np.int16)
         rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
@@ -187,7 +188,7 @@ def gen_textures(T, P, kept, hook_stats):
                     amp = 18
                 elif ROOMBG.search(path):
                     amp = 32                       # painted backdrops: calmer than the default, still taint-safe
-                elif path in hooked:
+                elif path in hooked and not re.search(r"(Eyes?|Mouth|Pupil|Iris)", path.rsplit("/", 1)[1]):
                     amp = 14
                 else:
                     amp = None

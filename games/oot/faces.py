@@ -148,5 +148,6 @@ def texture(path, d):
         else:
             ops = eye_ops(0.5, 0.58, 0.33, 0.27, st, c)
     alpha = unpack_alpha2(d["alpha2"], w, h) if "alpha2" in d else None
-    return facepaint.render({"base": c["skin"], "detail": 0.02, "ops": ops}, w, h, alpha=alpha,
-                            seed=hash(path) & 0xFFFF)
+    from cleanroom.decomp.gen import h32
+    return facepaint.render({"base": c["skin"], "detail": 0.05, "ops": ops}, w, h, alpha=alpha,
+                            seed=h32("face", path) & 0xFFFF)     # stable across runs (str hash() is salted)
