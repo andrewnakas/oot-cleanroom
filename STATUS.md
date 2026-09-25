@@ -8,7 +8,10 @@ Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-clean
 - **Play it** (keyboard: WASD stick, X=A, C=B, Z, Space=Start, arrows=C, Esc=SoH menu; gamepad works).
   Dev shortcut to test any scene: `?dev=gSettings.BootSequence:3` opens the debug scene select.
 - Things to look at: faces (eyes/mouths are drawn procedurally per character), item icons (rendered from the 3D get-item models), sky (noisy), pause screens.
-- Voices: not done yet (see Next).
+- **Voices to record**: practice pack at `C:/Users/andre/n64work/oot/practice_pack` (163 lines, 11 characters: link_adult, link_child, navi, ganondorf, girl, woman, witch, fairy, goron, man, gerudo).
+  Play `practice_<character>_call_and_response.wav` and answer after each beep (SCRIPT.txt lists the lines). Then run
+  `CLEANROOM_GAME=games/oot python -m cleanroom.voice.takes cut <recording> <character> <takes>/<character>`.
+  Until then, the voice slots use Piper TTS placeholders (`games/oot/voices`, lines in `voice_lines.json`).
 
 ## Works (verified headless)
 - Boot → N64 logo → title → file select → name entry, all with clean assets.

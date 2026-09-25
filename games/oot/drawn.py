@@ -406,7 +406,41 @@ def soft_cloud(path, d):
     return grey_img(v)
 
 
+def hud_glyph(path, d):
+    """HUD counters, message markers, ocarina buttons."""
+    w, h = d["w"], d["h"]
+    name = path.rsplit("/", 1)[1]
+    m = re.match(r"g(Ammo|Counter)Digit(\d)Tex", name)
+    if m:
+        if m.group(1) == "Ammo":
+            cov = np.clip(text_mask([m.group(2)], w, h, "sansx", size=h + 2, pad_x=0) * 1.4, 0, 1)
+            return outlined(cov, r=1)
+        cov = text_mask([m.group(2)], w, h, "sansx", size=h - 3)
+        return grey_img(cov)
+    if name == "gCounterColonTex":
+        return grey_img(text_mask([":"], w, h, "sansx", size=h - 3))
+    if name == "gMessageContinueTriangleTex":
+        return grey_img(_tri(w, h, [(3, 4), (13, 4), (8, 12)]))
+    if name == "gMessageEndSquareTex":
+        m = np.zeros((h, w), np.float32)
+        m[4:12, 4:12] = 1
+        return grey_img(m)
+    if name == "gMessageArrowTex":
+        return grey_img(_tri(w, h, [(4, 3), (13, 8), (4, 13)]))
+    m = re.match(r"gOcarinaBtnIcon(A|CUp|CDown|CLeft|CRight)Tex", name)
+    if m:
+        k = m.group(1)
+        cov = button_glyph(k if k == "A" else k, w, h)
+        img = grey_img(cov)
+        return img
+    return None
+
+
 def texture(path, d):
+    if "/parameter_static/" in path or "/message_static/" in path:
+        img = hud_glyph(path, d)
+        if img is not None:
+            return img
     if "gWorldMapCloud" in path:
         return soft_cloud(path, d)
     img = picture_override(path, d)

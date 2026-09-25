@@ -158,6 +158,20 @@ def main():
                     pg.key(st.get("key", "KeyX"), st.get("down", 0.2))
                     pg.pump(st.get("every", 3.0))
                 print(f"press_until {'ok' if ok else 'TIMEOUT'} ({time.time()-t0:.1f}s): {st['press_until'][:60]}", flush=True)
+            elif "stack" in st:
+                pg.call("Debugger.enable")
+                pg.ws.send(json.dumps({"id": 99999, "method": "Debugger.pause", "params": {}}))
+                end = time.time() + 15
+                while time.time() < end:
+                    try:
+                        m = json.loads(pg.ws.recv())
+                    except websocket.WebSocketTimeoutException:
+                        continue
+                    if m.get("method") == "Debugger.paused":
+                        for f in m["params"]["callFrames"][:st["stack"]]:
+                            print("  at", f.get("functionName") or "?", flush=True)
+                        pg.ws.send(json.dumps({"id": 99998, "method": "Debugger.resume", "params": {}}))
+                        break
             elif "eval" in st:
                 v = pg.eval(st["eval"], timeout=st.get("timeout", 600))
                 print(f"eval -> {str(v)[:400]}", flush=True)
