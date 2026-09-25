@@ -32,6 +32,12 @@ def main(argv):
     html = re.sub(r"<title>[^<]*</title>", "<title>Ocarina of Time Clean Room</title>", html)
     html = html.replace("<h1>Ship of Harkinian</h1>", "<h1>Ocarina of Time &mdash; Clean Room</h1>")
     html = html.replace("WebAssembly Port", "Ship of Harkinian web build &middot; every ROM asset regenerated")
+    # this site always ships its archives: a failed download (e.g. mid-deploy) retries
+    # instead of falling back to the shell's "load game files / ROM" picker
+    html = html.replace('showError("Download failed: "+r.join(", ")),hideProgress()',
+                        'setStatus("Download interrupted, retrying..."),setTimeout(function(){location.reload()},4000)')
+    html = html.replace("Click or drag to load game files", "Loading game files...")
+    html = html.replace("Requires soh.o2r and either oot.o2r or a .z64 ROM", "No ROM needed")
     extra = os.path.join(HERE, "site_extra.html")
     if os.path.exists(extra):
         html = html.replace("</body>", open(extra, encoding="utf-8").read() + "</body>")
