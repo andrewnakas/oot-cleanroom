@@ -1,12 +1,22 @@
 # The Legend of Zelda: Ocarina of Time clean room: status
 
-_Last update: 2026-09-25 night 1_
+_Last update: 2026-09-25 ~03:00_
+
+Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-cleanroom)
 
 ## For the morning
-- (in progress) nothing to record yet; the voice practice pack will be listed here.
+- **Play it** (keyboard: WASD stick, X=A, C=B, Z, Space=Start, arrows=C, Esc=SoH menu; gamepad works).
+  Dev shortcut to test any scene: `?dev=gSettings.BootSequence:3` opens the debug scene select.
+- Things to look at: faces (eyes/mouths are drawn procedurally per character), item icons (rendered from the 3D get-item models), sky (noisy), pause screens.
+- Voices: not done yet (see Next).
+
+## Works (verified headless)
+- Boot → N64 logo → title → file select → name entry, all with clean assets.
+- Debug scene select → Hyrule Field: Link walks (position changes), HUD with icons, hearts, magic, minimap.
+- Taint scan: **0 failing** (26,425 streams: textures raw+RGBA, samples raw+PCM, backgrounds RGB, SoH's soh.o2r).
 
 ## Decisions (log)
-1. **Web route = Ship of Harkinian, Emscripten fork** (zalo/Shipwright `feature/emscripten-web-port`, the user suggested SoH).
+1. **Web route = Ship of Harkinian, Emscripten fork** (zalo/Shipwright `feature/emscripten-web-port`; the user suggested SoH).
    It already runs OoT in WebGL, with saves in IndexedDB and gamepad/keyboard/touch input. Checked in the first hour:
    zalo's prebuilt build boots in headless SwiftShader. Why not the others:
    - ROM + WASM emulator: we would have to build the IDO decomp on Windows (no WSL or docker here), and it's slower in the browser.
@@ -19,20 +29,24 @@ _Last update: 2026-09-25 night 1_
    - Regenerated: OTEX textures 12,655, OSMP samples 449 (363 ADPCM, 86 small 2-bit ADPCM), OBGI JPEG backgrounds 35.
    - Kept as facts: display lists, vertices, collision, skeletons, animations, scenes/rooms, cutscenes, paths, text, sequences (OSEQ), soundfont definitions (OSFT), matrices.
    - The 62 OBLB blobs are kept for now (small mixed data); TODO check them for image data.
-4. **Palette textures**: each clean image is generated as RGBA from its facts. Each palette is then k-means fitted to the clean images that use it, and the indices are re-derived.
+4. **Palette textures**: each clean image is generated as RGBA from its facts. Each palette is then k-means fitted to the clean images that use it, with per-entry jitter, and the indices are re-derived with stochastic dither.
    - Links come from display lists (CRC64 path hashes), extractor XML TlutOffset, name pairing (Tex/TLUT, `vr_*_pal_static`), and palette state carried across a room's DLs.
    - Palette swaps (secondary palettes) are recoloured from the primary by the ratio of their coarse grids.
    - Sky textures index a bank of 128 entries (`idx_base`).
-5. **Spec** (`games/oot/spec`, committed): facts only (grid, 2-bit alpha, sizes, sample outlines).
-   `kept.o2r` (geometry etc. with every texel/sample/JPEG blanked) stays local in `n64work/oot/spec_local`.
-6. Web build: emsdk 6.0.10 needed `-DFMT_CONSTEVAL=` (old bundled fmt) and `-DBUILD_SHARED_LIBS=OFF` (libzip). See `n64work/oot/webbuild.sh`.
-
-## Works
-- Dirty extraction, spec, and generation of all textures. The clean-texture archive boots to the title screen in zalo's build.
+5. **Taint**: the first scan had 1,307 failures, all coincidental. Smooth or flat regions quantised to the same 5-bit texels as retail, and k-means palette centroids landed on the same grid points. Fixed with texel dither (±13), backgrounds noise (±14), palette jitter (±9), and index dither (±30 / ±44 for 256-colour palettes).
+   Raw JPEG bytes are not scanned (standard tables); decoded pixels are. SoH's own MQ/RAND buttons matched retail and are re-typeset (`ports/soh/clean_soh.py`).
+6. **Text**: message font = Marcellus (OFL); labels = Montserrat (OFL); Shift-JIS/kanji font = Noto Sans JP (OFL, rendered from each cell's SJIS code).
+   NTSC 1.2 uses the kanji font for "PRESS START" and name entry. Labels: `games/oot/labels.py`.
+7. **Item icons**: rendered by our Python F3DEX2 software renderer (`dlrender.py`) from the get-item models, using the clean textures (`icons.py`, 84 icons; the PNGs are in `games/oot/overrides/icons`).
+8. **Faces**: parametric eyes/mouths (`faces.py`). State comes from the texture name; colours come from `face_briefs.json` per character.
+9. Web build: emsdk 6.0.10 needed `-DFMT_CONSTEVAL=` (old bundled fmt) and `-DBUILD_SHARED_LIBS=OFF` (libzip).
+   Source patches are in `ports/soh/port_patches.py` (dev CVars via `?dev=`, `web_scene`, `web_player_pos`, no extractor preload: the site is 35 MB smaller).
 
 ## Next
-- Fonts (nes_font_static / message_static glyphs), title logo, "PRESS START", ©, file select, pause-menu item/map names: re-typeset.
-- Faces (Link and NPC eyes/mouths): facepaint briefs.
-- Pause dungeon maps (runtime palette, index maps): render from collision.
-- soh.o2r (SoH's own assets): taint-check it against the dirty archive.
-- Taint scan, own web build, site, publish.
+- Sky/skybox smoothness (the dither makes skies look like static): smoother clean generation for vr_* textures, keeping taint 0.
+- Pause-screen stone panels (slot frames, quest-status relief): draw them.
+- Remaining icons without get-item models: Master Sword, fishing pole, Kokiri boots, quest items (medallions, stones, songs) via renders or briefs.
+- Pause dungeon maps (runtime palette index maps) and area minimaps: render from collision.
+- Title "ZELDA" shield logo (160x160): draw it.
+- Voices: Piper placeholders + practice pack.
+- Audio check in the browser (samples play, no dropouts).

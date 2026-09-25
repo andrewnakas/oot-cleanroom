@@ -281,7 +281,23 @@ def pause_header(path, d):
 
 # ------------------------------------------------------------ dispatch
 
+ICON_DIR = os.path.join(HERE, "overrides", "icons")
+
+
+def icon_override(path, d):
+    """Rendered item icons (games.oot.icons): the game's own models with our textures."""
+    f = os.path.join(ICON_DIR, path.rsplit("/", 1)[1] + ".png")
+    if not os.path.exists(f):
+        return None
+    im = np.asarray(Image.open(f).convert("RGBA").resize((d["w"], d["h"])), np.float32)
+    return im
+
+
 def texture(path, d):
+    if "/icon_item_static/" in path or "/icon_item_24_static/" in path:
+        img = icon_override(path, d)
+        if img is not None:
+            return img
     if "/kanji/" in path:
         return kanji_glyph(path, d)
     if "/nes_font_static/" in path:
