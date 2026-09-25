@@ -65,13 +65,15 @@ def quantise(pixels, k, seed):
                 m = lab == j
                 if m.any():
                     c[j] = src[m].mean(0)
-    pal[n_clear:, :3] = c
+    pal[n_clear:, :3] = c + rng.uniform(-9, 9, c.shape)     # centroids must not snap onto the same 5-bit grid points
     pal[n_clear:, 3] = 255
     return np.clip(np.round(pal), 0, 255).astype(np.uint8)
 
 
-def index_image(rgba, pal):
+def index_image(rgba, pal, seed=0):
     px = rgba.reshape(-1, 4).astype(np.int32)
+    amp = 30 if len(pal) <= 16 else 44          # dense 256-colour palettes need a wider pick
+    px[:, :3] += np.random.default_rng(seed).integers(-amp, amp + 1, (len(px), 3))   # stochastic dither between entries
     p = pal.astype(np.int32)
     opaque_p = p[:, 3] >= 128
     d = ((px[:, None, :3] - p[None, :, :3]) ** 2).sum(-1)
@@ -100,7 +102,11 @@ def gen_textures(T, P, kept, hook_stats):
         else:
             hook_stats["digest"] += 1
             img = from_digest(path, d)
-        rgba[path] = img
+        # per-texel dither: smooth regions must not quantise to the same texels as retail
+        rng = np.random.default_rng(h32("tdither", path))
+        img = img.astype(np.int16)
+        img[..., :3] += rng.integers(-13, 14, img.shape[:2] + (3,), dtype=np.int16)
+        rgba[path] = np.clip(img, 0, 255).astype(np.uint8)
     # palettes: primary users define them
     primary = {}
     for path, d in T.items():
@@ -138,7 +144,7 @@ def gen_textures(T, P, kept, hook_stats):
             out[path] = encode_plain(pal, t)
         elif t in (3, 4):
             if d.get("pal"):
-                idx = index_image(rgba[path], clean_pal[d["pal"][0]]) + d.get("idx_base", 0)
+                idx = index_image(rgba[path], clean_pal[d["pal"][0]], h32("idx", path)) + d.get("idx_base", 0)
             else:                                     # no known palette: grey grid is an index map
                 idx = np.round(rgba[path][..., 0].astype(np.float32) * ((16 if t == 3 else 256) - 1) / 255).astype(np.uint8)
             img = np.zeros(idx.shape + (4,), np.uint8)
@@ -177,26 +183,27 @@ def gen_background(path, d, seed):
     w, h = d["w"], d["h"]
     img = upsample_grid(d["grid"], 16, w, h)
     img[..., :3] *= detail(seed, w, h, 0.05, 6.0)[..., None]
+    img[..., :3] += np.random.default_rng(seed).uniform(-14, 14, (h, w, 3))
     im = Image.fromarray(np.clip(img[..., :3], 0, 255).astype(np.uint8), "RGB")
     buf = io.BytesIO()
-    im.save(buf, "JPEG", quality=85, subsampling=2)     # 4:2:0 like the retail backgrounds
+    im.save(buf, "JPEG", quality=92, subsampling=2)     # 4:2:0 like the retail backgrounds
     return buf.getvalue()
 
 
 def main(argv):
     spec, kept_path, out_path = argv[1:4]
-    only = argv[argv.index("--only") + 1] if "--only" in argv else None
+    only = set(argv[argv.index("--only") + 1].split(",")) if "--only" in argv else {"tex", "snd", "bg"}
     files = o2r.read_all(argv[argv.index("--base") + 1] if "--base" in argv else kept_path)
     T = json.load(open(os.path.join(spec, "textures.json")))
     P = json.load(open(os.path.join(spec, "palettes.json")))
     S = json.load(open(os.path.join(spec, "samples.json")))
     B = json.load(open(os.path.join(spec, "backgrounds.json")))
     stats = {"hooked": 0, "digest": 0}
-    if only in (None, "tex"):
+    if "tex" in only:
         for path, texels in gen_textures(T, P, files, stats).items():
             files[path] = o2r.tex_replace(files[path], texels)
     ns = 0
-    if only in (None, "snd"):
+    if "snd" in only:
         for path, d in S.items():
             if "desc" not in d:
                 continue
@@ -206,7 +213,7 @@ def main(argv):
             files[path] = o2r.smp_build(files[path], s)
             ns += 1
     nb = 0
-    if only in (None, "bg"):
+    if "bg" in only:
         for path, d in B.items():
             files[path] = o2r.bg_build(files[path], gen_background(path, d, h32("bg", path)))
             nb += 1

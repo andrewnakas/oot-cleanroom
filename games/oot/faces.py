@@ -31,7 +31,7 @@ def briefs():
 
 def classify(path, d):
     name = path.rsplit("/", 1)[1]
-    if re.search(r"(TLUT|Pal|Brow|Lash|Boarder|Border|Mask[A-Z]\w*Eye)", name):
+    if re.search(r"(TLUT|Pal|Brow|Lash|Boarder|Border|Mask|Hood)", name):
         return None
     obj = path.split("/")[1]
     b = briefs()

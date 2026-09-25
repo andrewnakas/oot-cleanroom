@@ -1,7 +1,5 @@
 __pycache__/
 *.pyc
+*.o2r
 *.z64
-*.n64
-*.v64
-*.zip
-baserom*
+site/

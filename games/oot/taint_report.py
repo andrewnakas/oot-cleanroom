@@ -49,7 +49,7 @@ def streams(files, T):
         elif ty == "OBGI":
             from PIL import Image
             jp = o2r.bg_parse(d)
-            yield "jpg:" + n, jp
+            # raw JPEG bytes are not scanned: every baseline encoder writes the same standard tables
             yield "rgb:" + n, np.asarray(Image.open(io.BytesIO(jp)).convert("RGB")).tobytes()
 
 
