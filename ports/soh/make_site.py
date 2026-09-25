@@ -23,7 +23,9 @@ def main(argv):
     shutil.copyfile(oot_o2r, os.path.join(site, "oot.o2r"))
     html = open(os.path.join(build, "soh.html"), encoding="utf-8").read()
     ver = str(int(os.path.getmtime(os.path.join(site, "oot.o2r"))))
-    boot = ("<script>try{var _dv=new URLSearchParams(location.search).get('dev');if(_dv)window._devCvars=_dv;}catch(e){}</script>"
+    # default boot: the authentic N64-logo -> title sequence (SoH's own ship logo stalls on some hosts)
+    boot = ("<script>window._devCvars='gSettings.BootSequence:1';try{var _dv=new URLSearchParams(location.search).get('dev');"
+            "if(_dv)window._devCvars=_dv;}catch(e){}</script>"
             "<script>if(!location.hash||location.hash.length<2){history.replaceState(null,'',"
             "location.pathname+location.search+'#soh=soh.o2r%3Fv%3D" + ver + "&oot=oot.o2r%3Fv%3D" + ver + "');}</script>")
     html = html.replace("<head>", "<head>" + boot, 1)

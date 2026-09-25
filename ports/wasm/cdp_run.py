@@ -161,6 +161,34 @@ def main():
                     pg.key(st.get("key", "KeyX"), st.get("down", 0.2))
                     pg.pump(st.get("every", 3.0))
                 print(f"press_until {'ok' if ok else 'TIMEOUT'} ({time.time()-t0:.1f}s): {st['press_until'][:60]}", flush=True)
+            elif "netlog" in st:
+                pg.call("Network.enable")
+                urls = {}
+                end = time.time() + st["netlog"]
+                while time.time() < end:
+                    try:
+                        m = json.loads(pg.ws.recv())
+                    except websocket.WebSocketTimeoutException:
+                        continue
+                    if m.get("method") == "Network.requestWillBeSent":
+                        u = m["params"]["request"]["url"].split("?")[0]
+                        urls[u] = urls.get(u, 0) + 1
+                for u, n in sorted(urls.items(), key=lambda kv: -kv[1])[:12]:
+                    print(f"  {n:5d}  {u[:120]}", flush=True)
+            elif "profile" in st:
+                pg.call("Profiler.enable")
+                pg.call("Profiler.start")
+                pg.pump(st["profile"])
+                pr = pg.call("Profiler.stop", timeout=120)["profile"]
+                nodes = {n["id"]: n for n in pr["nodes"]}
+                self_t = {}
+                deltas = pr.get("timeDeltas", [])
+                for sid, dt in zip(pr.get("samples", []), deltas):
+                    fn = nodes[sid]["callFrame"]["functionName"] or "(anon)"
+                    self_t[fn] = self_t.get(fn, 0) + dt
+                tot = sum(self_t.values()) or 1
+                for fn, t in sorted(self_t.items(), key=lambda kv: -kv[1])[:st.get("top", 15)]:
+                    print(f"  {100 * t / tot:5.1f}%  {fn[:110]}", flush=True)
             elif "stack" in st:
                 pg.call("Debugger.enable")
                 pg.ws.send(json.dumps({"id": 99999, "method": "Debugger.pause", "params": {}}))

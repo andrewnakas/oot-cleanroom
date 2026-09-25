@@ -48,6 +48,7 @@ Play: https://andrewnakas.github.io/oot-cleanroom/  (repo: andrewnakas/oot-clean
    Source patches are in `ports/soh/port_patches.py` (dev CVars via `?dev=`, `web_scene`, `web_player_pos`, no extractor preload: the site is 35 MB smaller).
 
 ## Known issues
+- FIXED: on GitHub Pages the default SoH boot (ship "powered by libultraship" logo) crawled for minutes in headless tests; the site now defaults to the authentic N64-logo -> title boot (`gSettings.BootSequence:1`), same as zalo's build. Verified: public URL reaches the title in about 60 s (headless, software GL).
 - FIXED: the wasm "memory access out of bounds" crash on scene loads was heap corruption.
   SoH's `ResourceMgr_LoadJPEG` sizes its output buffer from the first background's data size, then writes 320x240x2 bytes; retail JPEGs are padded to 153,600 bytes.
   Our clean JPEGs are now padded to that size too (generate.py).
