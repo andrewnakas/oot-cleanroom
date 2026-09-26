@@ -387,6 +387,17 @@ def icon_override(path, d):
 PIC_DIR = os.path.join(HERE, "overrides", "pictures")
 
 
+TEX_DIR = os.path.join(HERE, "overrides", "textures")
+
+
+def texture_override(path, d):
+    """Generated surface textures (games.oot.aitex)."""
+    f = os.path.join(TEX_DIR, path.rsplit("/", 1)[1] + ".png")
+    if not os.path.exists(f):
+        return None
+    return np.asarray(Image.open(f).convert("RGBA").resize((d["w"], d["h"])), np.float32)
+
+
 def picture_override(path, d):
     """Pictures rendered from the game's own geometry (e.g. games.oot.worldmap)."""
     f = os.path.join(PIC_DIR, path.rsplit("/", 1)[1] + ".png")
@@ -475,6 +486,9 @@ def texture(path, d):
     if "gWorldMapCloud" in path:
         return soft_cloud(path, d)
     img = picture_override(path, d)
+    if img is not None:
+        return img
+    img = texture_override(path, d)
     if img is not None:
         return img
     if path.endswith("gTitleZeldaShieldLogoTex"):

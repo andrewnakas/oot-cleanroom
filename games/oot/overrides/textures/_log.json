@@ -1,0 +1,1010 @@
+{
+ "scenes/shared/spot04_scene/spot04_sceneTex_00FE18": {
+  "prompt": "forest dirt ground with fallen leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 85854,
+  "steps": 22,
+  "why": "spot04 up brown solid area 270928871"
+ },
+ "scenes/shared/spot04_scene/spot04_sceneTex_00FA18": {
+  "prompt": "dark tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 96034,
+  "steps": 22,
+  "why": "spot04 side dark solid area 121141953"
+ },
+ "scenes/shared/spot04_scene/spot04_sceneTex_00E218": {
+  "prompt": "rough tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 50405,
+  "steps": 22,
+  "why": "spot04 side brown solid area 108036289"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_014308": {
+  "prompt": "rough tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 50061,
+  "steps": 22,
+  "why": "spot04 side brown solid area 111788742"
+ },
+ "scenes/shared/spot04_scene/spot04_room_1Tex_0052A8": {
+  "prompt": "rough grey rock cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 22808,
+  "steps": 22,
+  "why": "spot04 side grey solid area 74255038"
+ },
+ "scenes/shared/spot04_scene/spot04_room_1Tex_006EA8": {
+  "prompt": "rough tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 91587,
+  "steps": 22,
+  "why": "spot04 side brown solid area 176116614"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01B398": {
+  "prompt": "green meadow grass, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 16796,
+  "steps": 22,
+  "why": "spot00 up green solid area 1599378164"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_024818": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 55621,
+  "steps": 22,
+  "why": "spot00 side brown solid area 384760451"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01D998": {
+  "prompt": "packed earth path, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 24246,
+  "steps": 22,
+  "why": "spot00 up brown solid area 72808538"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_025018": {
+  "prompt": "flat stone paving, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 80088,
+  "steps": 22,
+  "why": "spot00 up grey solid area 85250949"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_020818": {
+  "prompt": "clear shallow water surface, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 18578,
+  "steps": 22,
+  "why": "spot00 up blue solid area 65798218"
+ },
+ "scenes/shared/spot04_scene/spot04_sceneTex_00EA18": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 92076,
+  "steps": 22,
+  "why": "spot04 side grey cutout area 119243146"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_002BF8": {
+  "prompt": "dark tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 89975,
+  "steps": 22,
+  "why": "spot04 side dark solid area 4741867"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_002DF8": {
+  "prompt": "dense green hedge leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 22053,
+  "steps": 22,
+  "why": "spot04 side green solid area 591699"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_0043F8": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 62860,
+  "steps": 22,
+  "why": "spot04 side brown solid area 671365"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_002FF8": {
+  "prompt": "forest dirt ground with fallen leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 58027,
+  "steps": 22,
+  "why": "spot04 up brown solid area 185317"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_0033F8": {
+  "prompt": "lush short grass with clover, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 85685,
+  "steps": 22,
+  "why": "spot04 up green solid area 587433"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_003BF8": {
+  "prompt": "dense green hedge leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 62354,
+  "steps": 22,
+  "why": "spot04 side green solid area 103871"
+ },
+ "scenes/shared/spot04_scene/spot04_sceneTex_00F218": {
+  "prompt": "flat stone paving, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 34219,
+  "steps": 22,
+  "why": "spot04 up grey solid area 6040427"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_013108": {
+  "prompt": "dense green hedge leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 27994,
+  "steps": 22,
+  "why": "spot04 side green solid area 8513388"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_012F08": {
+  "prompt": "dark tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 87370,
+  "steps": 22,
+  "why": "spot04 side dark solid area 9561468"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00CB08": {
+  "prompt": "rough grey rock cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 84159,
+  "steps": 22,
+  "why": "spot04 side grey solid area 10170830"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_015308": {
+  "prompt": "dense green hedge leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 97320,
+  "steps": 22,
+  "why": "spot04 side green solid area 336568"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_014B08": {
+  "prompt": "lush short grass with clover, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 41418,
+  "steps": 22,
+  "why": "spot04 up green solid area 788392"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00CF08": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 61507,
+  "steps": 22,
+  "why": "spot04 side brown solid area 8500123"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_013F08": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 33839,
+  "steps": 22,
+  "why": "spot04 side brown solid area 11498018"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00D408": {
+  "prompt": "forest dirt ground with fallen leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 76036,
+  "steps": 22,
+  "why": "spot04 up brown solid area 353600"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00D308": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 61793,
+  "steps": 22,
+  "why": "spot04 side brown solid area 620880"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_015B08": {
+  "prompt": "forest dirt ground with fallen leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 19535,
+  "steps": 22,
+  "why": "spot04 up brown solid area 5074897"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_015D08": {
+  "prompt": "dense green hedge leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 78205,
+  "steps": 22,
+  "why": "spot04 side green solid area 1247832"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_011D08": {
+  "prompt": "dark tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 61674,
+  "steps": 22,
+  "why": "spot04 side dark solid area 2335053"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00F508": {
+  "prompt": "lush short grass with clover, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 92760,
+  "steps": 22,
+  "why": "spot04 up green solid area 363831"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00F108": {
+  "prompt": "dark tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 73764,
+  "steps": 22,
+  "why": "spot04 side dark solid area 62283"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_016908": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 85360,
+  "steps": 22,
+  "why": "spot04 side brown solid area 2194705"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_016508": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 13108,
+  "steps": 22,
+  "why": "spot04 side brown solid area 2283472"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_016108": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 69992,
+  "steps": 22,
+  "why": "spot04 side brown solid area 3599494"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00D508": {
+  "prompt": "forest dirt ground with fallen leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 24883,
+  "steps": 22,
+  "why": "spot04 up brown solid area 40560"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_016D08": {
+  "prompt": "forest dirt ground with fallen leaves, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 22259,
+  "steps": 22,
+  "why": "spot04 up brown solid area 1009290"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_018A90": {
+  "prompt": "clear shallow water surface, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 48624,
+  "steps": 22,
+  "why": "spot04 up blue solid area 7402734"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_019290": {
+  "prompt": "light stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 22204,
+  "steps": 22,
+  "why": "spot04 up pale solid area 771368"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_01B090": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 9295,
+  "steps": 22,
+  "why": "spot04 side brown solid area 368522"
+ },
+ "scenes/shared/spot04_scene/spot04_room_1Tex_004EA8": {
+  "prompt": "wooden planks, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 63592,
+  "steps": 22,
+  "why": "spot04 side brown solid area 1743792"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_029598": {
+  "prompt": "weathered stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 1955,
+  "steps": 22,
+  "why": "spot00 side pale solid area 50726749"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_023018": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 37380,
+  "steps": 22,
+  "why": "spot00 side brown solid area 3547473"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_022818": {
+  "prompt": "flat stone paving, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 5017,
+  "steps": 22,
+  "why": "spot00 up grey solid area 1752102"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_026898": {
+  "prompt": "rough grey rock cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 89670,
+  "steps": 22,
+  "why": "spot00 side grey solid area 32615"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_016A98": {
+  "prompt": "rough grey rock cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 98601,
+  "steps": 22,
+  "why": "spot00 side grey solid area 57240"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01D198": {
+  "prompt": "packed earth path, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 52622,
+  "steps": 22,
+  "why": "spot00 up brown solid area 2850737"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_019B98": {
+  "prompt": "moss covered rock, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 97798,
+  "steps": 22,
+  "why": "spot00 side green solid area 29241984"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01BD98": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 81865,
+  "steps": 22,
+  "why": "spot00 side brown solid area 3300000"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_025818": {
+  "prompt": "packed earth path, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 48192,
+  "steps": 22,
+  "why": "spot00 up brown solid area 2186607"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01BB98": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 33147,
+  "steps": 22,
+  "why": "spot00 side brown solid area 450000"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01F618": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 93032,
+  "steps": 22,
+  "why": "spot00 side brown solid area 2035200"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_018B98": {
+  "prompt": "packed earth path, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 78147,
+  "steps": 22,
+  "why": "spot00 up brown solid area 59520305"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_017B98": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 45621,
+  "steps": 22,
+  "why": "spot00 side brown solid area 65515104"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_016B98": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 23984,
+  "steps": 22,
+  "why": "spot00 side brown solid area 15029201"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_015E98": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 5915,
+  "steps": 22,
+  "why": "spot00 side brown solid area 3481919"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_021818": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 1303,
+  "steps": 22,
+  "why": "spot00 side brown solid area 9866655"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_026098": {
+  "prompt": "dark tree bark, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 66206,
+  "steps": 22,
+  "why": "spot00 side dark solid area 3906995"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_025898": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 49864,
+  "steps": 22,
+  "why": "spot00 side brown solid area 4322800"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01F818": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 35970,
+  "steps": 22,
+  "why": "spot00 side brown solid area 15838389"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_027D98": {
+  "prompt": "weathered stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 4279,
+  "steps": 22,
+  "why": "spot00 side pale solid area 4171200"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_027998": {
+  "prompt": "weathered stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 91092,
+  "steps": 22,
+  "why": "spot00 side pale solid area 1228800"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_028598": {
+  "prompt": "weathered stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 85254,
+  "steps": 22,
+  "why": "spot00 side pale solid area 518400"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_026998": {
+  "prompt": "rough grey rock cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 75985,
+  "steps": 22,
+  "why": "spot00 side grey solid area 7161258"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_014998": {
+  "prompt": "packed earth path, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 73738,
+  "steps": 22,
+  "why": "spot00 up brown solid area 592884"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_014598": {
+  "prompt": "brown earth cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 19598,
+  "steps": 22,
+  "why": "spot00 side brown solid area 355210"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01E998": {
+  "prompt": "rough grey rock cliff, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 23123,
+  "steps": 22,
+  "why": "spot00 side grey solid area 16697752"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_023818": {
+  "prompt": "light stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 16508,
+  "steps": 22,
+  "why": "spot00 up pale solid area 2072213"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_022018": {
+  "prompt": "flat stone paving, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 96513,
+  "steps": 22,
+  "why": "spot00 up grey solid area 388800"
+ },
+ "objects/object_km1/gKm1BootWrinkleTex": {
+  "prompt": "worn brown leather, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 71273,
+  "steps": 22,
+  "why": "named gKm1BootWrinkleTex"
+ },
+ "objects/object_km1/gKm1Ear1Tex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 92851,
+  "steps": 22,
+  "why": "named gKm1Ear1Tex"
+ },
+ "objects/object_km1/gKm1Ear2Tex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 71165,
+  "steps": 22,
+  "why": "named gKm1Ear2Tex"
+ },
+ "objects/object_km1/gKm1HairTex": {
+  "prompt": "tan soft hair strands, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 17139,
+  "steps": 22,
+  "why": "named gKm1HairTex"
+ },
+ "objects/object_km1/gKm1HandTex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 39456,
+  "steps": 22,
+  "why": "named gKm1HandTex"
+ },
+ "objects/object_km1/gKm1Skin1Tex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 82084,
+  "steps": 22,
+  "why": "named gKm1Skin1Tex"
+ },
+ "objects/object_km1/gKm1Skin2Tex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 1098,
+  "steps": 22,
+  "why": "named gKm1Skin2Tex"
+ },
+ "objects/object_km1/gKm1TunicFringeTex": {
+  "prompt": "green woven cloth fabric, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 20609,
+  "steps": 22,
+  "why": "named gKm1TunicFringeTex"
+ },
+ "objects/object_km1/gKm1TunicTex": {
+  "prompt": "green woven cloth fabric, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 15823,
+  "steps": 22,
+  "why": "named gKm1TunicTex"
+ },
+ "objects/object_kw1/gKw1BeltBuckleTex": {
+  "prompt": "polished brass metal, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 88603,
+  "steps": 22,
+  "why": "named gKw1BeltBuckleTex"
+ },
+ "objects/object_kw1/gKw1BootsTex": {
+  "prompt": "worn brown leather, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 89970,
+  "steps": 22,
+  "why": "named gKw1BootsTex"
+ },
+ "objects/object_kw1/gKw1EarTex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 17259,
+  "steps": 22,
+  "why": "named gKw1EarTex"
+ },
+ "objects/object_kw1/gKw1HairTex": {
+  "prompt": "tan soft hair strands, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 94795,
+  "steps": 22,
+  "why": "named gKw1HairTex"
+ },
+ "objects/object_kw1/gKw1HairlineTex": {
+  "prompt": "tan soft hair strands, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 12123,
+  "steps": 22,
+  "why": "named gKw1HairlineTex"
+ },
+ "objects/object_kw1/gKw1HandTex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 72152,
+  "steps": 22,
+  "why": "named gKw1HandTex"
+ },
+ "objects/object_kw1/gKw1Skin1Tex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 51932,
+  "steps": 22,
+  "why": "named gKw1Skin1Tex"
+ },
+ "objects/object_kw1/gKw1Skin2Tex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 56146,
+  "steps": 22,
+  "why": "named gKw1Skin2Tex"
+ },
+ "objects/object_kw1/gKw1TunicTex": {
+  "prompt": "green woven cloth fabric, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 47671,
+  "steps": 22,
+  "why": "named gKw1TunicTex"
+ },
+ "objects/object_link_child/gLinkChildBeltClaspTex": {
+  "prompt": "polished brass metal, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 71821,
+  "steps": 22,
+  "why": "named gLinkChildBeltClaspTex"
+ },
+ "objects/object_link_child/gLinkChildBeltTex": {
+  "prompt": "brown leather strap, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 12522,
+  "steps": 22,
+  "why": "named gLinkChildBeltTex"
+ },
+ "objects/object_link_child/gLinkChildBootTex": {
+  "prompt": "worn brown leather, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 70300,
+  "steps": 22,
+  "why": "named gLinkChildBootTex"
+ },
+ "objects/object_link_child/gLinkChildDekuShieldBackTex": {
+  "prompt": "dark wooden planks with iron rivets, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 86385,
+  "steps": 22,
+  "why": "named gLinkChildDekuShieldBackTex"
+ },
+ "objects/object_link_child/gLinkChildEarTex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 49301,
+  "steps": 22,
+  "why": "named gLinkChildEarTex"
+ },
+ "objects/object_link_child/gLinkChildFairyOcarinaTex": {
+  "prompt": "glazed blue clay, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 38913,
+  "steps": 22,
+  "why": "named gLinkChildFairyOcarinaTex"
+ },
+ "objects/object_link_child/gLinkChildGoronBraceletTex": {
+  "prompt": "carved red stone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 18891,
+  "steps": 22,
+  "why": "named gLinkChildGoronBraceletTex"
+ },
+ "objects/object_link_child/gLinkChildGoronSymbolTex": {
+  "prompt": "red stone carving, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 41680,
+  "steps": 22,
+  "why": "named gLinkChildGoronSymbolTex"
+ },
+ "objects/object_link_child/gLinkChildHandTex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 19085,
+  "steps": 22,
+  "why": "named gLinkChildHandTex"
+ },
+ "objects/object_link_child/gLinkChildHylianShieldBackTex": {
+  "prompt": "dark wooden planks with iron rivets, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 43459,
+  "steps": 22,
+  "why": "named gLinkChildHylianShieldBackTex"
+ },
+ "objects/object_link_child/gLinkChildKokiriSwordSheathTex": {
+  "prompt": "brown leather sheath, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 95926,
+  "steps": 22,
+  "why": "named gLinkChildKokiriSwordSheathTex"
+ },
+ "objects/object_link_child/gLinkChildLowerBootTex": {
+  "prompt": "worn brown leather, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 43548,
+  "steps": 22,
+  "why": "named gLinkChildLowerBootTex"
+ },
+ "objects/object_link_child/gLinkChildMasterSwordEmblemTex": {
+  "prompt": "polished blue gemstone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 65627,
+  "steps": 22,
+  "why": "named gLinkChildMasterSwordEmblemTex"
+ },
+ "objects/object_link_child/gLinkChildMasterSwordGuardTex": {
+  "prompt": "purple and gold metal, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 72458,
+  "steps": 22,
+  "why": "named gLinkChildMasterSwordGuardTex"
+ },
+ "objects/object_link_child/gLinkChildMasterSwordPommelTex": {
+  "prompt": "purple and gold metal, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 32369,
+  "steps": 22,
+  "why": "named gLinkChildMasterSwordPommelTex"
+ },
+ "objects/object_link_child/gLinkChildNoseTex": {
+  "prompt": "smooth light skin, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 95793,
+  "steps": 22,
+  "why": "named gLinkChildNoseTex"
+ },
+ "objects/object_link_child/gLinkChildSlingshotSeedTex": {
+  "prompt": "small brown nut, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 69980,
+  "steps": 22,
+  "why": "named gLinkChildSlingshotSeedTex"
+ },
+ "objects/object_link_child/gLinkChildSlingshotTex": {
+  "prompt": "carved wood, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 90567,
+  "steps": 22,
+  "why": "named gLinkChildSlingshotTex"
+ },
+ "objects/object_link_child/gLinkChildSwordJewelTex": {
+  "prompt": "polished blue gemstone, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 92155,
+  "steps": 22,
+  "why": "named gLinkChildSwordJewelTex"
+ },
+ "objects/object_link_child/gLinkChildWaistTex": {
+  "prompt": "green woven cloth fabric, macro close-up photo of the material surface, seamless tileable PBR texture, flat, even lighting, highly detailed, sharp",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 45025,
+  "steps": 22,
+  "why": "named gLinkChildWaistTex"
+ },
+ "scenes/shared/spot04_scene/spot04_room_2Tex_0045F8": {
+  "prompt": "cluster of green leaves, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 80894,
+  "steps": 22,
+  "why": "spot04 side green cutout area 1195987"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00FD08": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 33503,
+  "steps": 22,
+  "why": "spot04 side grey cutout area 42296"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_010D08": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 69679,
+  "steps": 22,
+  "why": "spot04 side dark cutout area 39012"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00E108": {
+  "prompt": "cluster of green leaves, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 97546,
+  "steps": 22,
+  "why": "spot04 side green cutout area 121449"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00BF08": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 14726,
+  "steps": 22,
+  "why": "spot04 side brown cutout area 162240"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00E908": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 68242,
+  "steps": 22,
+  "why": "spot04 side brown cutout area 5175"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_017108": {
+  "prompt": "cluster of green leaves, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 74925,
+  "steps": 22,
+  "why": "spot04 side green cutout area 2121351"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_00D908": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 823,
+  "steps": 22,
+  "why": "spot04 side brown cutout area 697653"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_013308": {
+  "prompt": "cluster of green leaves, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 85300,
+  "steps": 22,
+  "why": "spot04 down green cutout area 728982"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_011F08": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 86276,
+  "steps": 22,
+  "why": "spot04 side dark cutout area 936422"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_019A90": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 43637,
+  "steps": 22,
+  "why": "spot04 up grey cutout area 1296855"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_01A490": {
+  "prompt": "white flowers, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 85885,
+  "steps": 22,
+  "why": "spot04 side pale cutout area 20818"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_01AE90": {
+  "prompt": "white flowers, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 4474,
+  "steps": 22,
+  "why": "spot04 side pale cutout area 5091"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_01AC90": {
+  "prompt": "white flowers, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 16904,
+  "steps": 22,
+  "why": "spot04 side pale cutout area 5242"
+ },
+ "scenes/shared/spot04_scene/spot04_room_0Tex_01A290": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 84911,
+  "steps": 22,
+  "why": "spot04 up dark cutout area 451380"
+ },
+ "scenes/shared/spot04_scene/spot04_room_1Tex_0056A8": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 7780,
+  "steps": 22,
+  "why": "spot04 side dark cutout area 780217"
+ },
+ "scenes/shared/spot04_scene/spot04_room_1Tex_007D78": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 31713,
+  "steps": 22,
+  "why": "spot04 up grey cutout area 644010"
+ },
+ "scenes/shared/spot04_scene/spot04_room_1Tex_007B78": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 13651,
+  "steps": 22,
+  "why": "spot04 side dark cutout area 3220474"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_028198": {
+  "prompt": "cluster of green leaves, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 7002,
+  "steps": 22,
+  "why": "spot00 side green cutout area 1170249"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_029F98": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 28682,
+  "steps": 22,
+  "why": "spot00 side grey cutout area 60259994"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01C198": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 19063,
+  "steps": 22,
+  "why": "spot00 side brown cutout area 1477283"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_029D98": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 78884,
+  "steps": 22,
+  "why": "spot00 side grey cutout area 9891641"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_013D98": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 22192,
+  "steps": 22,
+  "why": "spot00 side brown cutout area 4070400"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_016698": {
+  "prompt": "dry grass tufts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 48060,
+  "steps": 22,
+  "why": "spot00 side tan cutout area 438904"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_019398": {
+  "prompt": "dry grass tufts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 21089,
+  "steps": 22,
+  "why": "spot00 side tan cutout area 1160965"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_015D98": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 24396,
+  "steps": 22,
+  "why": "spot00 up brown cutout area 260712"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_017398": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 82290,
+  "steps": 22,
+  "why": "spot00 side brown cutout area 3474098"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_020018": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 82058,
+  "steps": 22,
+  "why": "spot00 side grey cutout area 8599022"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_021018": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 30607,
+  "steps": 22,
+  "why": "spot00 side grey cutout area 767318"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01C998": {
+  "prompt": "wooden fence posts, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 88559,
+  "steps": 22,
+  "why": "spot00 side brown cutout area 160357"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_014D98": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 92329,
+  "steps": 22,
+  "why": "spot00 side grey cutout area 15206400"
+ },
+ "scenes/shared/spot00_scene/spot00_scene_Tex_02A198": {
+  "prompt": "white flowers, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 14509,
+  "steps": 22,
+  "why": "spot00 side pale cutout area 10480"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01F598": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 62073,
+  "steps": 22,
+  "why": "spot00 up grey cutout area 8538540"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_01F198": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 20869,
+  "steps": 22,
+  "why": "spot00 side grey cutout area 8954319"
+ },
+ "scenes/shared/spot00_scene/spot00_sceneTex_024018": {
+  "prompt": "leaves and twigs, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 93629,
+  "steps": 22,
+  "why": "spot00 up grey cutout area 9117291"
+ },
+ "objects/object_link_child/gLinkChildDekuShieldFrontTex": {
+  "prompt": "round wooden shield face with a bold red spiral emblem, centered, flat texture, highly detailed",
+  "negative": "aerial view, satellite, landscape, map, sky, horizon, trees, houses, buildings, objects, text, watermark, logo, border, frame, perspective, vignette, person, face, blurry, lowres",
+  "seed": 34892,
+  "steps": 22,
+  "why": "named gLinkChildDekuShieldFrontTex"
+ }
+}
