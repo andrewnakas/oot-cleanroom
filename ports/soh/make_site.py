@@ -36,6 +36,11 @@ def main(argv):
     # instead of falling back to the shell's "load game files / ROM" picker
     html = html.replace('showError("Download failed: "+r.join(", ")),hideProgress()',
                         'setStatus("Download interrupted, retrying..."),setTimeout(function(){location.reload()},4000)')
+    # a click or tap while the game is still loading called into the wasm module before its
+    # runtime was up, which aborts it for good: ask only once the runtime is initialised
+    html = html.replace("onRuntimeInitialized:function(){", "onRuntimeInitialized:function(){window._rtReady=!0;", 1)
+    html = html.replace("if(Module&&Module._web_wants_text_input)",
+                        "if(Module&&window._rtReady&&Module._web_wants_text_input)")
     html = html.replace("Click or drag to load game files", "Loading game files...")
     html = html.replace("Requires soh.o2r and either oot.o2r or a .z64 ROM", "No ROM needed")
     extra = os.path.join(HERE, "site_extra.html")
